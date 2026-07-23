@@ -85,8 +85,8 @@ def skor(r):
 
 
 def telegram(msg):
-    tok = os.environ.get("TELEGRAM_TOKEN", "")
-    cid = os.environ.get("TELEGRAM_CHAT_ID", "")
+    tok = os.environ.get("TELEGRAM_TOKEN", "").strip()
+    cid = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
     if not tok or not cid:
         print("Telegram ayarli degil, mesaj konsola yazildi:\n" + msg)
         return
