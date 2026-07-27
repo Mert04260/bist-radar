@@ -1,0 +1,133 @@
+{
+ "tarih": "2026-07-24",
+ "taranan": 128,
+ "radar": [
+  {
+   "sym": "TUREX",
+   "skor": 90.5,
+   "risk": "Orta",
+   "fiyat": 7.95,
+   "guven": true,
+   "faktor": {
+    "Trend": 12.5,
+    "Hacim": 20.0,
+    "Para": 19.9,
+    "Teknik": 20.0
+   }
+  },
+  {
+   "sym": "OYAKC",
+   "skor": 84.8,
+   "risk": "Orta",
+   "fiyat": 21.3,
+   "guven": false,
+   "faktor": {
+    "Trend": 16.0,
+    "Hacim": 12.9,
+    "Para": 18.9,
+    "Teknik": 20.0
+   }
+  },
+  {
+   "sym": "CCOLA",
+   "skor": 78.9,
+   "risk": "Orta",
+   "fiyat": 91.15,
+   "guven": false,
+   "faktor": {
+    "Trend": 20.0,
+    "Hacim": 4.0,
+    "Para": 19.1,
+    "Teknik": 20.0
+   }
+  },
+  {
+   "sym": "AGROT",
+   "skor": 77.9,
+   "risk": "Orta",
+   "fiyat": 2.78,
+   "guven": false,
+   "faktor": {
+    "Trend": 16.0,
+    "Hacim": 17.3,
+    "Para": 9.0,
+    "Teknik": 20.0
+   }
+  },
+  {
+   "sym": "EREGL",
+   "skor": 77.3,
+   "risk": "Orta",
+   "fiyat": 43.28,
+   "guven": false,
+   "faktor": {
+    "Trend": 20.0,
+    "Hacim": 5.9,
+    "Para": 15.9,
+    "Teknik": 20.0
+   }
+  },
+  {
+   "sym": "KCAER",
+   "skor": 77.0,
+   "risk": "Orta",
+   "fiyat": 15.0,
+   "guven": false,
+   "faktor": {
+    "Trend": 20.0,
+    "Hacim": 13.3,
+    "Para": 8.3,
+    "Teknik": 20.0
+   }
+  }
+ ],
+ "karne": {
+  "adet": 6,
+  "isabet": 0.0,
+  "ort_getiri": -4.05
+ },
+ "gecmis": [
+  {
+   "date": "2026-07-21",
+   "sym": "AEFES",
+   "skor": "84.0",
+   "ret3": "-4.68",
+   "sonuc": "ISKA"
+  },
+  {
+   "date": "2026-07-21",
+   "sym": "CIMSA",
+   "skor": "81.8",
+   "ret3": "-2.15",
+   "sonuc": "ISKA"
+  },
+  {
+   "date": "2026-07-21",
+   "sym": "GESAN",
+   "skor": "81.6",
+   "ret3": "-5.69",
+   "sonuc": "ISKA"
+  },
+  {
+   "date": "2026-07-21",
+   "sym": "CCOLA",
+   "skor": "79.7",
+   "ret3": "-2.11",
+   "sonuc": "ISKA"
+  },
+  {
+   "date": "2026-07-21",
+   "sym": "OYAKC",
+   "skor": "79.4",
+   "ret3": "-1.9",
+   "sonuc": "ISKA"
+  },
+  {
+   "date": "2026-07-21",
+   "sym": "TCELL",
+   "skor": "78.2",
+   "ret3": "-7.8",
+   "sonuc": "ISKA"
+  }
+ ]
+}
