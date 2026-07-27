@@ -16,7 +16,14 @@ import numpy as np
 S = ("THYAO ASELS EREGL SISE TUPRS FROTO GARAN AKBNK BIMAS KCHOL SAHOL PETKM TCELL "
      "ISCTR YKBNK TOASO SASA HEKTS KRDMD ARCLK ASTOR KONTR ENKAI PGSUS TAVHL MGROS "
      "SOKM ULKER AEFES CCOLA OYAKC CIMSA AKSEN ZOREN ALARK DOAS VESTL TTKOM TTRAK "
-     "OTKAR GUBRF EKGYO ISGYO AKSA BRSAN SMRTG GESAN EUPWR YEOTK").split()
+     "OTKAR GUBRF EKGYO ISGYO AKSA BRSAN SMRTG GESAN EUPWR YEOTK TUKAS "
+     "HALKB VAKBN TSKB ISDMR AYGAZ ALKIM BAGFS DEVA ECILC SELEC LOGO KAREL INDES "
+     "MAVI BIZIM ENJSA AYDEM GWIND ODAS KARSN EGEEN TKFEN KORDS VESBE DOHOL AGHOL "
+     "TATGD PNSUT BRISA GOODY BUCIM KONYA GOLTS ANHYT AGESA TURSG AKGRT JANTS "
+     "TMSN NETAS ALCTL YATAS MPARK CLEBI CWENE "
+     "ADEL AGROT AHGAZ AKCNS ALBRK ALTNY ANSGR BERA BFREN BINHO BRYAT BTCIM "
+     "CANTE ENERY FENER GLYHO IZENR KCAER KLSER LMKDC MAGEN MIATK PASEU PEKGY "
+     "QUAGR REEDR SAYAS SDTTR SKBNK TABGD TUREX VAKKO ISMEN").split()
 ESIK = 72
 GUVEN_ESIK = 88   # "ciddiye al" cizgisi
 LEDGER = "signals.csv"
@@ -85,8 +92,10 @@ def skor(r):
 
 
 def telegram(msg):
-    tok = os.environ.get("TELEGRAM_TOKEN", "").strip()
-    cid = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
+    # Anahtarlardaki gorunmez bosluk/satir sonu karakterlerini temizle
+    tok = os.environ.get("TELEGRAM_TOKEN", "").strip().replace("\n", "").replace("\r", "")
+    cid = os.environ.get("TELEGRAM_CHAT_ID", "").strip().replace("\n", "").replace("\r", "")
+    print(f"Tani: token {len(tok)} karakter, chat_id {len(cid)} karakter")
     if not tok or not cid:
         print("Telegram ayarli degil, mesaj konsola yazildi:\n" + msg)
         return
@@ -114,7 +123,6 @@ def main():
         ENR[sym] = enrich(df, ic)
     bugun = max(e["date"].iloc[-1] for e in ENR.values()).date()
 
-    # ── 1) Gunun radari ────────────────────────────────────
     son = []
     for sym, e in ENR.items():
         r = e.iloc[-1]
@@ -125,7 +133,6 @@ def main():
     son.sort(reverse=True)
     sec = [x for x in son if x[0] >= ESIK][:6]
 
-    # ── 2) Karne defteri: yeni sinyalleri ekle ─────────────
     rows = []
     if os.path.exists(LEDGER):
         with open(LEDGER, newline="") as fh:
@@ -138,7 +145,6 @@ def main():
                          "giris": round(float(r["close"]), 2),
                          "ret3": "", "sonuc": ""})
 
-    # ── 3) 3+ is gunu onceki bekleyen sinyalleri degerlendir ─
     for row in rows:
         if row["ret3"] != "":
             continue
@@ -161,7 +167,6 @@ def main():
         w.writeheader()
         w.writerows(rows)
 
-    # ── 4) Karne ozeti ─────────────────────────────────────
     biten = [r for r in rows if r["ret3"] != ""]
     karne = ""
     if biten:
@@ -173,7 +178,6 @@ def main():
             i88 = sum(1 for r in g88 if r["sonuc"] == "ISABET") / len(g88) * 100
             karne += f"88+ dilimi: {len(g88)} sinyal, isabet %{i88:.1f}\n"
 
-    # ── 5) Telegram mesaji ─────────────────────────────────
     msg = f"📡 BIST RADAR | {bugun}\nTaranan: {len(son)} → Secilen: {len(sec)}\n\n"
     if not sec:
         msg += "🛑 BUGUN ISLEM YAPMA — esik gecilmedi.\n"
@@ -189,6 +193,35 @@ def main():
     msg += "\n⚠️ Yatirim tavsiyesi degildir. Kagit-uzerinde izleme modu."
     print(msg)
     telegram(msg)
+
+    radar_list = []
+    for s_, sym, f, r in sec:
+        risk = "Dusuk" if r["atr"] < 2.5 else ("Orta" if r["atr"] < 4.5 else "Yuksek")
+        radar_list.append({
+            "sym": sym, "skor": s_, "risk": risk,
+            "fiyat": round(float(r["close"]), 2),
+            "guven": bool(s_ >= GUVEN_ESIK),
+            "faktor": {"Trend": f["T"], "Hacim": f["H"], "Para": f["P"], "Teknik": f["K"]},
+        })
+    karne_obj = None
+    if biten:
+        karne_obj = {
+            "adet": len(biten),
+            "isabet": round(sum(1 for r in biten if r["sonuc"] == "ISABET") / len(biten) * 100, 1),
+            "ort_getiri": round(sum(float(r["ret3"]) for r in biten) / len(biten), 2),
+        }
+    gecmis = [r for r in rows if r["ret3"] != ""][-10:]
+    web = {
+        "tarih": str(bugun),
+        "taranan": len(son),
+        "radar": radar_list,
+        "karne": karne_obj,
+        "gecmis": [{"date": r["date"], "sym": r["sym"], "skor": r["skor"],
+                    "ret3": r["ret3"], "sonuc": r["sonuc"]} for r in gecmis],
+    }
+    with open("../data.json", "w", encoding="utf-8") as fh:
+        json.dump(web, fh, ensure_ascii=False, indent=1)
+    print("data.json yazildi (repo koku).")
 
 
 if __name__ == "__main__":
