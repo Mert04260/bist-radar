@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fafbfd">
+<title>MERT RADAR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fafbfd;
+    --panel:#ffffff;
+    --panel-2:#f2f5f9;
+    --line:#e3e8f0;
+    --ink:#1a2233;
+    --dim:#5d6b85;
+    --faint:#98a3b8;
+    --phos:#d97e00;
+    --phos-soft:#d97e0018;
+    --up:#0e9f6e;
+    --down:#e02424;
+    --risk-d:#0e9f6e;
+    --risk-o:#d97e00;
+    --risk-y:#e02424;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Space Grotesk',system-ui,sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    padding-bottom:48px;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 18px}
+  header{
+    position:relative;
+    padding:28px 18px 22px;
+    max-width:760px;margin:0 auto;
+    border-bottom:1px solid var(--line);
+    overflow:hidden;
+  }
+  .sweep{
+    position:absolute;top:-60px;right:-60px;width:200px;height:200px;
+    background:radial-gradient(circle at center, var(--phos-soft) 0%, transparent 70%);
+    pointer-events:none;
+  }
+  .brand{display:flex;align-items:center;gap:11px}
+  .dish{width:30px;height:30px;flex:none;display:flex;align-items:center;justify-content:center;color:var(--phos)}
+  .brand h1{font-size:19px;font-weight:700;letter-spacing:.14em}
+  .brand .sub{font-family:'Space Mono',monospace;font-size:10.5px;color:var(--dim);letter-spacing:.05em;margin-top:1px}
+  .meta{display:flex;gap:18px;margin-top:18px;font-family:'Space Mono',monospace;font-size:11px;color:var(--dim)}
+  .meta b{color:var(--phos);font-weight:700}
+  .eyebrow{display:flex;align-items:baseline;gap:10px;margin:30px 0 14px}
+  .eyebrow .no{font-family:'Space Mono',monospace;font-size:11px;color:var(--faint)}
+  .eyebrow h2{font-size:12.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+  .eyebrow .rule{flex:1;height:1px;background:var(--line)}
+  .signal{
+    background:var(--panel);
+    border:1px solid var(--line);
+    box-shadow:0 1px 3px #1a223308;
+    border-radius:13px;
+    padding:15px 16px;
+    margin-bottom:9px;
+    display:grid;
+    grid-template-columns:auto 1fr auto;
+    gap:14px;align-items:center;
+    position:relative;
+    transition:border-color .2s;
+  }
+  .signal:hover{border-color:#c7d0e0}
+  .signal.star{border-color:var(--phos);box-shadow:0 0 0 1px var(--phos-soft)}
+  .score{font-family:'Space Mono',monospace;font-size:25px;font-weight:700;width:52px;text-align:center;line-height:1}
+  .score .max{display:block;font-size:9px;color:var(--faint);font-weight:400;margin-top:3px;letter-spacing:.05em}
+  .sig-main{min-width:0}
+  .sig-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .ticker{font-size:16px;font-weight:700;letter-spacing:.03em}
+  .star-badge{color:var(--phos);font-size:13px}
+  .bars{display:flex;gap:3px;margin-top:9px}
+  .bar{height:4px;border-radius:2px;flex:1;background:var(--line);position:relative;overflow:hidden}
+  .bar span{position:absolute;inset:0;transform-origin:left;border-radius:2px}
+  .bar-label{font-family:'Space Mono',monospace;font-size:8.5px;color:var(--faint);margin-top:5px;display:flex;justify-content:space-between}
+  .sig-right{text-align:right;flex:none}
+  .price{font-family:'Space Mono',monospace;font-size:14px;font-weight:700}
+  .price .cur{font-size:10px;color:var(--dim);font-weight:400}
+  .risk{font-size:10px;font-weight:600;letter-spacing:.05em;padding:2px 8px;border-radius:20px;margin-top:6px;display:inline-block}
+  .risk.Dusuk{background:#0e9f6e18;color:var(--risk-d)}
+  .risk.Orta{background:#d97e0018;color:var(--risk-o)}
+  .risk.Yuksek{background:#e0242415;color:var(--risk-y)}
+  .empty{background:var(--panel);border:1px solid #eabf80;border-radius:13px;padding:26px 20px;text-align:center}
+  .empty .big{font-size:15px;font-weight:700;color:var(--phos);margin-bottom:6px}
+  .empty p{font-size:13px;color:var(--dim);max-width:400px;margin:0 auto}
+  .karne{
+    background:linear-gradient(180deg,var(--panel) 0%,#fdf9f2 100%);box-shadow:0 1px 4px #1a22330a;
+    border:1px solid var(--line);border-radius:15px;
+    padding:20px 18px;
+  }
+  .karne .k-head{font-family:'Space Mono',monospace;font-size:11px;color:var(--dim);letter-spacing:.05em;margin-bottom:16px}
+  .k-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .k-cell{background:var(--panel-2);border:1px solid var(--line);border-radius:11px;padding:14px}
+  .k-num{font-family:'Space Mono',monospace;font-size:27px;font-weight:700;line-height:1}
+  .k-cap{font-size:11px;color:var(--dim);margin-top:6px}
+  .k-note{font-size:12px;color:var(--dim);line-height:1.6;margin-top:14px;padding:12px 13px;background:var(--phos-soft);border-left:2px solid var(--phos);border-radius:6px}
+  .hist{width:100%;border-collapse:collapse;font-family:'Space Mono',monospace;font-size:12px}
+  .hist th{text-align:left;color:var(--faint);font-weight:400;font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:8px 6px;border-bottom:1px solid var(--line)}
+  .hist td{padding:10px 6px;border-bottom:1px solid var(--panel-2)}
+  .hist .win{color:var(--up)}
+  .hist .loss{color:var(--down)}
+  .hist tr:last-child td{border-bottom:none}
+  .disclaimer{margin-top:34px;padding:16px 18px;background:var(--panel-2);border:1px solid var(--line);border-radius:11px;font-size:11.5px;color:var(--faint);line-height:1.7;text-align:center}
+  .loading{text-align:center;color:var(--dim);padding:60px 20px;font-family:'Space Mono',monospace;font-size:13px}
+  .updated{font-family:'Space Mono',monospace;font-size:10px;color:var(--faint);text-align:center;margin-top:20px}
+  @media (max-width:480px){
+    .signal{grid-template-columns:auto 1fr;gap:12px}
+    .sig-right{grid-column:2;text-align:left;display:flex;align-items:center;gap:12px;margin-top:2px}
+    .risk{margin-top:0}
+  }
+  @media (prefers-reduced-motion:no-preference){
+    .signal{animation:rise .4s ease backwards}
+  }
+  @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="sweep"></div>
+  <div class="brand">
+    <div class="dish">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 20l6-6"/><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/>
+        <path d="M12 12l7-7"/><path d="M9 5a9 9 0 0 1 10 10" opacity=".55"/><path d="M7 8a5.5 5.5 0 0 1 9 9" opacity=".8"/>
+      </svg>
+    </div>
+    <div>
+      <h1>MERT RADAR</h1>
+      <div class="sub" id="sub">BIST tarayıcı · son sürüm</div>
+    </div>
+  </div>
+  <div class="meta">
+    <span>TARANAN <b id="m-tar">—</b></span>
+    <span>SEÇİLEN <b id="m-sec">—</b></span>
+    <span>MOD <b>KAĞIT-ÜZERİNDE</b></span>
+  </div>
+</header>
+
+<div class="wrap">
+  <div id="app">
+    <div class="loading">◍ radar verisi çekiliyor…</div>
+  </div>
+
+  <div class="disclaimer" id="disc" style="display:none">
+    Bu ekrandaki hiçbir bilgi yatırım tavsiyesi değildir. Skorlar gün sonu (EOD) fiyatlarına dayanır
+    ve sistem şu an kağıt-üzerinde izleme modundadır — gerçek işlem yapılmamaktadır.
+  </div>
+  <div class="updated" id="upd"></div>
+</div>
+
+<script>
+const RISK_TR = {Dusuk:"Düşük", Orta:"Orta", Yuksek:"Yüksek"};
+const barColor = v => v>=15 ? "var(--up)" : v>=10 ? "var(--phos)" : "var(--faint)";
+
+function signalRow(d){
+  const bars = Object.entries(d.faktor).map(([k,v])=>`
+    <div style="flex:1">
+      <div class="bar"><span style="width:${(v/20*100).toFixed(0)}%;background:${barColor(v)}"></span></div>
+    </div>`).join("");
+  const labels = Object.keys(d.faktor).map(k=>`<span>${k[0]}</span>`).join("");
+  const scoreColor = d.skor>=85?"var(--up)":d.skor>=75?"var(--phos)":"var(--dim)";
+  return `
+  <div class="signal ${d.guven?'star':''}">
+    <div class="score" style="color:${scoreColor}">${d.skor.toFixed(1)}<span class="max">/100</span></div>
+    <div class="sig-main">
+      <div class="sig-top">
+        <span class="ticker">${d.sym}</span>
+        ${d.guven?'<span class="star-badge">★</span>':''}
+      </div>
+      <div class="bars">${bars}</div>
+      <div class="bar-label">${labels}</div>
+    </div>
+    <div class="sig-right">
+      <div class="price"><span class="cur">₺</span>${d.fiyat.toFixed(2)}</div>
+      <span class="risk ${d.risk}">${RISK_TR[d.risk]||d.risk}</span>
+    </div>
+  </div>`;
+}
+
+function render(x){
+  document.getElementById('sub').textContent = x.tarih + " · günlük tarama";
+  document.getElementById('m-tar').textContent = x.taranan;
+  document.getElementById('m-sec').textContent = x.radar.length;
+  const app = document.getElementById('app');
+  let html = "";
+
+  html += `<div class="eyebrow"><span class="no">01</span><h2>Bugünün Radarı</h2><span class="rule"></span></div>`;
+  if(!x.radar.length){
+    html += `<div class="empty"><div class="big">Bugün işlem yapma</div>
+      <p>Hiçbir hisse eşik skorunu geçemedi. Net bir fırsat görünmüyor — beklemek de bir karardır.</p></div>`;
+  } else {
+    html += x.radar.map(signalRow).join("");
+    html += `<div class="bar-label" style="margin-top:10px;justify-content:flex-start;gap:6px;color:var(--faint)">
+      <span style="color:var(--phos)">★</span> 88+ güven dilimi — geçmiş testte en isabetli grup. Harf kısaltmalar: Trend · Hacim · Para · Teknik.</div>`;
+  }
+
+  html += `<div class="eyebrow"><span class="no">02</span><h2>Karne — Geçmiş İsabet</h2><span class="rule"></span></div>`;
+  if(x.karne){
+    const k = x.karne;
+    const isabetC = k.isabet>=50?"var(--up)":k.isabet>=35?"var(--phos)":"var(--down)";
+    const getC = k.ort_getiri>0?"var(--up)":"var(--down)";
+    html += `<div class="karne">
+      <div class="k-head">${k.adet} kapanan sinyal · 3 günlük ufuk</div>
+      <div class="k-grid">
+        <div class="k-cell"><div class="k-num" style="color:${isabetC}">%${k.isabet.toFixed(1)}</div><div class="k-cap">İsabet oranı</div></div>
+        <div class="k-cell"><div class="k-num" style="color:${getC}">%${k.ort_getiri>0?'+':''}${k.ort_getiri.toFixed(2)}</div><div class="k-cap">Ort. 3 günlük getiri</div></div>
+      </div>
+      <div class="k-note">Bu sistemin gerçek değeri buradadır — parlak radar listesi değil, tahminlerin tutup tutmadığı. Karar vermek için birkaç haftalık veri birikmesi gerekir; birkaç sinyal anlamlı bir sonuç değildir.</div>
+    </div>`;
+  } else {
+    html += `<div class="empty"><div class="big">Karne henüz oluşmadı</div>
+      <p>İlk sinyaller değerlendirilmeyi bekliyor. Sistem her sinyali 3 iş günü sonra kontrol edip buraya not düşecek.</p></div>`;
+  }
+
+  if(x.gecmis && x.gecmis.length){
+    html += `<div class="eyebrow"><span class="no">03</span><h2>Son Kapanan Sinyaller</h2><span class="rule"></span></div>`;
+    html += `<table class="hist"><thead><tr><th>Tarih</th><th>Hisse</th><th>Skor</th><th>3g %</th><th>Sonuç</th></tr></thead><tbody>`;
+    html += x.gecmis.slice().reverse().map(g=>{
+      const win = g.sonuc==="ISABET";
+      const ret = parseFloat(g.ret3);
+      return `<tr>
+        <td style="color:var(--dim)">${g.date.slice(5)}</td>
+        <td>${g.sym}</td>
+        <td style="color:var(--dim)">${g.skor}</td>
+        <td class="${win?'win':'loss'}">${ret>0?'+':''}${ret.toFixed(2)}</td>
+        <td class="${win?'win':'loss'}">${win?'İSABET':'ıska'}</td>
+      </tr>`;
+    }).join("");
+    html += `</tbody></table>`;
+  }
+
+  app.innerHTML = html;
+  document.getElementById('disc').style.display = "block";
+  document.getElementById('upd').textContent = "son güncelleme: " + x.tarih;
+}
+
+fetch('data.json?v=' + Date.now())
+  .then(r => { if(!r.ok) throw 0; return r.json(); })
+  .then(render)
+  .catch(()=>{
+    document.getElementById('app').innerHTML =
+      `<div class="empty" style="border-color:var(--line)"><div class="big" style="color:var(--dim)">Veri henüz hazır değil</div>
+       <p>Radar ilk kez çalıştığında sonuçlar burada görünecek. Sistem her hafta içi sabah otomatik güncellenir.</p></div>`;
+    document.getElementById('sub').textContent = "veri bekleniyor";
+  });
+</script>
+</body>
+</html>
