@@ -1,12 +1,5 @@
 # -*- coding: utf-8 -*-
-"""BIST RADAR — Canli Izleme (paper trading) sistemi.
-Her sabah GitHub Actions tarafindan calistirilir:
-1) Gun sonu verisini indirir, skorlari hesaplar
-2) Gunun radarini uretir ve signals.csv'ye kaydeder
-3) 3+ is gunu onceki sinyalleri degerlendirir (karne)
-4) Sonucu Telegram'a gonderir
-Yatirim tavsiyesi degildir.
-"""
+"""MERT RADAR — Canli Izleme (paper trading) sistemi."""
 import os, csv, datetime, urllib.request, urllib.parse, json, warnings
 warnings.filterwarnings("ignore")
 import yfinance as yf
@@ -25,7 +18,7 @@ S = ("THYAO ASELS EREGL SISE TUPRS FROTO GARAN AKBNK BIMAS KCHOL SAHOL PETKM TCE
      "CANTE ENERY FENER GLYHO IZENR KCAER KLSER LMKDC MAGEN MIATK PASEU PEKGY "
      "QUAGR REEDR SAYAS SDTTR SKBNK TABGD TUREX VAKKO ISMEN").split()
 ESIK = 72
-GUVEN_ESIK = 88   # "ciddiye al" cizgisi
+GUVEN_ESIK = 88
 LEDGER = "signals.csv"
 
 
@@ -91,13 +84,61 @@ def skor(r):
             "S": round((T+H+P+K)/4*5, 1)}
 
 
+def sebepler(r, sim):
+    s = []
+    vr = r["vr"] if pd.notna(r["vr"]) else 1
+    if vr >= 2:
+        s.append(f"Hacim 20 gunluk ortalamanin %{vr*100:.0f}'i")
+    if r.get("bm", 0) == 1:
+        s.append("Olagan disi hacim + guclu kapanis: buyuk oyuncu izi")
+    if r["macd"] > r["macd_sig"] and r["mh"] > 0:
+        s.append("MACD al sinyali aktif")
+    rs_v = r["rsi"] if pd.notna(r["rsi"]) else 50
+    if 50 <= rs_v <= 70:
+        s.append(f"RSI saglikli momentum bolgesinde ({rs_v:.0f})")
+    if pd.notna(r["rs"]) and r["rs"] > 0.02:
+        s.append(f"Endeksin %{r['rs']*100:.1f} uzerinde goreceli guc")
+    if r["close"] > r["s20"] > r["s50"]:
+        s.append("Fiyat > SMA20 > SMA50: yukselen trend dizilimi")
+    mf = r["mfi"] if pd.notna(r["mfi"]) else 50
+    if mf >= 65:
+        s.append(f"Para girisi guclu (MFI {mf:.0f})")
+    if sim and sim.get("count", 0) >= 10:
+        s.append(f"Benzer {sim['count']} gunun %{sim['up']}'i yukselisle sonuclandi")
+    return s[:6]
+
+
+def benzer_gun(e, i):
+    r = e.iloc[i]
+    h = e.iloc[:i]
+    if len(h) < 60 or pd.isna(r["rsi"]) or pd.isna(r["vr"]):
+        return None
+    m = (
+        (h["rsi"].sub(r["rsi"]).abs() < 8)
+        & (h["vr"].sub(r["vr"]).abs() < 0.8)
+        & ((h["close"] > h["s20"]) == (r["close"] > r["s20"]))
+    )
+    idxs = h.index[m.fillna(False)]
+    fwd = []
+    for j in idxs:
+        p = e.index.get_loc(j)
+        if p + 3 < len(e):
+            fwd.append(e["close"].iloc[p+3] / e["close"].iloc[p] - 1)
+    if len(fwd) < 10:
+        return None
+    fwd = np.array(fwd)
+    ups = fwd[fwd > 0]; dns = fwd[fwd <= 0]
+    return {"count": int(len(fwd)),
+            "up": round(float((fwd > 0).mean() * 100), 1),
+            "avg_up": round(float(ups.mean() * 100), 2) if len(ups) else 0.0,
+            "avg_dn": round(float(abs(dns.mean()) * 100), 2) if len(dns) else 0.0}
+
+
 def telegram(msg):
-    # Anahtarlardaki gorunmez bosluk/satir sonu karakterlerini temizle
     tok = os.environ.get("TELEGRAM_TOKEN", "").strip().replace("\n", "").replace("\r", "")
     cid = os.environ.get("TELEGRAM_CHAT_ID", "").strip().replace("\n", "").replace("\r", "")
-    print(f"Tani: token {len(tok)} karakter, chat_id {len(cid)} karakter")
     if not tok or not cid:
-        print("Telegram ayarli degil, mesaj konsola yazildi:\n" + msg)
+        print("Telegram ayarli degil:\n" + msg)
         return
     url = f"https://api.telegram.org/bot{tok}/sendMessage"
     data = urllib.parse.urlencode({"chat_id": cid, "text": msg}).encode()
@@ -123,7 +164,6 @@ def main():
         ENR[sym] = enrich(df, ic)
     bugun = max(e["date"].iloc[-1] for e in ENR.values()).date()
 
-    # ── 1) Gunun radari ────────────────────────────────────
     son = []
     for sym, e in ENR.items():
         r = e.iloc[-1]
@@ -134,20 +174,16 @@ def main():
     son.sort(reverse=True)
     sec = [x for x in son if x[0] >= ESIK][:6]
 
-    # ── 2) Karne defteri: yeni sinyalleri ekle ─────────────
     rows = []
     if os.path.exists(LEDGER):
         with open(LEDGER, newline="") as fh:
             rows = list(csv.DictReader(fh))
     mevcut = {(r["date"], r["sym"]) for r in rows}
     for s_, sym, f, r in sec:
-        key = (str(bugun), sym)
-        if key not in mevcut:
+        if (str(bugun), sym) not in mevcut:
             rows.append({"date": str(bugun), "sym": sym, "skor": s_,
-                         "giris": round(float(r["close"]), 2),
-                         "ret3": "", "sonuc": ""})
+                         "giris": round(float(r["close"]), 2), "ret3": "", "sonuc": ""})
 
-    # ── 3) 3+ is gunu onceki bekleyen sinyalleri degerlendir ─
     for row in rows:
         if row["ret3"] != "":
             continue
@@ -155,8 +191,7 @@ def main():
         if sym not in ENR:
             continue
         e = ENR[sym]
-        tarih = pd.Timestamp(row["date"])
-        pos = e.index[e["date"] == tarih]
+        pos = e.index[e["date"] == pd.Timestamp(row["date"])]
         if len(pos) == 0:
             continue
         pi = pos[0]
@@ -170,20 +205,14 @@ def main():
         w.writeheader()
         w.writerows(rows)
 
-    # ── 4) Karne ozeti ─────────────────────────────────────
     biten = [r for r in rows if r["ret3"] != ""]
     karne = ""
     if biten:
         isabet = sum(1 for r in biten if r["sonuc"] == "ISABET") / len(biten) * 100
         ort = sum(float(r["ret3"]) for r in biten) / len(biten)
         karne = f"\n📒 KARNE ({len(biten)} kapanan sinyal)\nIsabet: %{isabet:.1f} | Ort. 3g getiri: %{ort:+.2f}\n"
-        g88 = [r for r in biten if float(r["skor"]) >= GUVEN_ESIK]
-        if g88:
-            i88 = sum(1 for r in g88 if r["sonuc"] == "ISABET") / len(g88) * 100
-            karne += f"88+ dilimi: {len(g88)} sinyal, isabet %{i88:.1f}\n"
 
-    # ── 5) Telegram mesaji ─────────────────────────────────
-    msg = f"📡 BIST RADAR | {bugun}\nTaranan: {len(son)} → Secilen: {len(sec)}\n\n"
+    msg = f"📡 MERT RADAR | {bugun}\nTaranan: {len(son)} → Secilen: {len(sec)}\n\n"
     if not sec:
         msg += "🛑 BUGUN ISLEM YAPMA — esik gecilmedi.\n"
         if son:
@@ -193,43 +222,52 @@ def main():
             risk = "Dusuk" if r["atr"] < 2.5 else ("Orta" if r["atr"] < 4.5 else "Yuksek")
             g = "⭐" if s_ >= GUVEN_ESIK else "•"
             msg += f"{g} {sym} {s_}/100 | {risk} | {r['close']:.2f}\n"
-        msg += f"\n⭐ = {GUVEN_ESIK}+ guven dilimi (backtest'te en isabetli)\n"
+        msg += f"\n⭐ = {GUVEN_ESIK}+ guven dilimi\n"
     msg += karne
     msg += "\n⚠️ Yatirim tavsiyesi degildir. Kagit-uzerinde izleme modu."
     print(msg)
     telegram(msg)
 
-    # ── 6) Web sayfasi icin data.json yaz ──────────────────
     radar_list = []
     for s_, sym, f, r in sec:
+        e = ENR[sym]
         risk = "Dusuk" if r["atr"] < 2.5 else ("Orta" if r["atr"] < 4.5 else "Yuksek")
+        sim = benzer_gun(e, len(e) - 1)
+        beklenen = f"+%{sim['avg_up']:.1f} / -%{sim['avg_dn']:.1f}" if sim else None
         radar_list.append({
             "sym": sym, "skor": s_, "risk": risk,
             "fiyat": round(float(r["close"]), 2),
             "guven": bool(s_ >= GUVEN_ESIK),
             "faktor": {"Trend": f["T"], "Hacim": f["H"], "Para": f["P"], "Teknik": f["K"]},
+            "sebep": sebepler(r, sim),
+            "benzer": sim,
+            "beklenen": beklenen,
+            "seri": [round(float(x), 2) for x in e["close"].tail(30).tolist()],
         })
     karne_obj = None
     if biten:
-        karne_obj = {
-            "adet": len(biten),
-            "isabet": round(sum(1 for r in biten if r["sonuc"] == "ISABET") / len(biten) * 100, 1),
-            "ort_getiri": round(sum(float(r["ret3"]) for r in biten) / len(biten), 2),
-        }
-    # son 10 kapanan sinyal (gecmis)
-    gecmis = [r for r in rows if r["ret3"] != ""][-10:]
-    web = {
-        "tarih": str(bugun),
-        "taranan": len(son),
-        "radar": radar_list,
-        "karne": karne_obj,
-        "gecmis": [{"date": r["date"], "sym": r["sym"], "skor": r["skor"],
-                    "ret3": r["ret3"], "sonuc": r["sonuc"]} for r in gecmis],
-    }
-    os.makedirs("../docs", exist_ok=True)
-    with open("../docs/data.json", "w", encoding="utf-8") as fh:
+        karne_obj = {"adet": len(biten),
+                     "isabet": round(sum(1 for r in biten if r["sonuc"] == "ISABET") / len(biten) * 100, 1),
+                     "ort_getiri": round(sum(float(r["ret3"]) for r in biten) / len(biten), 2)}
+    karne_seri = []
+    dogru = 0
+    for n, row in enumerate(sorted(biten, key=lambda x: x["date"]), 1):
+        if row["sonuc"] == "ISABET":
+            dogru += 1
+        karne_seri.append({"date": row["date"], "isabet": round(dogru / n * 100, 1), "adet": n})
+    endeks = None
+    if IDX is not None and len(IDX.dropna()) > 31:
+        iv = IDX.dropna()
+        endeks = {"degisim": round(float(iv.iloc[-1] / iv.iloc[-2] - 1) * 100, 2),
+                  "seri": [round(float(x), 1) for x in iv.tail(30).tolist()]}
+    gecmis = [r for r in rows if r["ret3"] != ""][-15:]
+    web = {"tarih": str(bugun), "taranan": len(son), "endeks": endeks,
+           "radar": radar_list, "karne": karne_obj, "karne_seri": karne_seri,
+           "gecmis": [{"date": r["date"], "sym": r["sym"], "skor": r["skor"],
+                       "ret3": r["ret3"], "sonuc": r["sonuc"]} for r in gecmis]}
+    with open("../data.json", "w", encoding="utf-8") as fh:
         json.dump(web, fh, ensure_ascii=False, indent=1)
-    print("data.json yazildi (../docs/).")
+    print("data.json yazildi (tam surum).")
 
 
 if __name__ == "__main__":
