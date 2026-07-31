@@ -1,10 +1,9 @@
 {
- "tarih": "2026-07-30",
+ "tarih": "2026-07-31",
  "taranan": 128,
  "endeks": {
-  "degisim": -0.81,
+  "degisim": -0.19,
   "seri": [
-   14827.4,
    14734.5,
    14729.7,
    14539.6,
@@ -33,99 +32,218 @@
    13774.8,
    13687.9,
    13501.6,
-   13391.8
+   13292.9,
+   13267.7
   ]
  },
  "radar": [
   {
-   "sym": "CCOLA",
-   "skor": 80.0,
-   "risk": "Orta",
-   "fiyat": 91.7,
+   "sym": "ALCTL",
+   "skor": 81.8,
+   "risk": "Yuksek",
+   "fiyat": 161.6,
    "guven": false,
    "faktor": {
     "Trend": 20.0,
-    "Hacim": 4.0,
-    "Para": 20.0,
+    "Hacim": 7.8,
+    "Para": 17.6,
     "Teknik": 20.0
    },
    "sebep": [
     "MACD al sinyali aktif",
-    "RSI saglikli momentum bolgesinde (61)",
-    "Endeksin %7.9 uzerinde goreceli guc",
+    "RSI saglikli momentum bolgesinde (51)",
+    "Endeksin %12.7 uzerinde goreceli guc",
     "Fiyat > SMA20 > SMA50: yukselen trend dizilimi",
-    "Para girisi guclu (MFI 75)",
-    "Benzer 95 gunun %49.5'i yukselisle sonuclandi"
+    "Para girisi guclu (MFI 74)",
+    "Benzer 114 gunun %57.9'i yukselisle sonuclandi"
    ],
    "benzer": {
-    "count": 95,
-    "up": 49.5,
-    "avg_up": 3.82,
-    "avg_dn": 2.71
+    "count": 114,
+    "up": 57.9,
+    "avg_up": 4.3,
+    "avg_dn": 3.68
    },
-   "beklenen": "+%3.8 / -%2.7",
+   "beklenen": "+%4.3 / -%3.7",
    "seri": [
-    80.15,
-    80.1,
-    77.15,
-    77.6,
-    76.95,
-    79.15,
-    81.25,
-    82.95,
-    83.05,
-    81.95,
-    82.65,
-    85.8,
-    82.4,
-    85.35,
-    84.0,
-    82.4,
-    84.45,
-    82.4,
-    84.05,
-    90.0,
-    87.55,
-    90.85,
-    92.35,
-    92.0,
-    91.1,
-    91.15,
-    89.1,
-    91.9,
-    91.45,
-    91.7
+    157.5,
+    158.5,
+    169.6,
+    168.8,
+    166.0,
+    163.8,
+    168.5,
+    167.5,
+    159.9,
+    156.0,
+    153.2,
+    145.7,
+    146.3,
+    138.0,
+    139.9,
+    141.2,
+    141.0,
+    148.8,
+    150.7,
+    150.2,
+    158.3,
+    163.4,
+    168.4,
+    172.3,
+    174.5,
+    165.7,
+    175.5,
+    180.8,
+    178.7,
+    161.6
+   ]
+  },
+  {
+   "sym": "AKSA",
+   "skor": 79.9,
+   "risk": "Orta",
+   "fiyat": 12.83,
+   "guven": false,
+   "faktor": {
+    "Trend": 20.0,
+    "Hacim": 10.8,
+    "Para": 13.1,
+    "Teknik": 20.0
+   },
+   "sebep": [
+    "MACD al sinyali aktif",
+    "RSI saglikli momentum bolgesinde (63)",
+    "Endeksin %8.8 uzerinde goreceli guc",
+    "Fiyat > SMA20 > SMA50: yukselen trend dizilimi",
+    "Benzer 145 gunun %46.2'i yukselisle sonuclandi"
+   ],
+   "benzer": {
+    "count": 145,
+    "up": 46.2,
+    "avg_up": 2.73,
+    "avg_dn": 2.82
+   },
+   "beklenen": "+%2.7 / -%2.8",
+   "seri": [
+    11.79,
+    12.33,
+    11.86,
+    11.61,
+    11.5,
+    11.63,
+    11.79,
+    12.1,
+    11.91,
+    11.81,
+    12.15,
+    11.84,
+    11.99,
+    11.4,
+    11.68,
+    11.76,
+    11.58,
+    11.89,
+    12.13,
+    12.37,
+    12.59,
+    12.01,
+    11.97,
+    12.01,
+    12.05,
+    12.44,
+    12.44,
+    12.15,
+    12.32,
+    12.83
+   ]
+  },
+  {
+   "sym": "TKFEN",
+   "skor": 76.6,
+   "risk": "Orta",
+   "fiyat": 151.4,
+   "guven": false,
+   "faktor": {
+    "Trend": 20.0,
+    "Hacim": 4.0,
+    "Para": 17.3,
+    "Teknik": 20.0
+   },
+   "sebep": [
+    "MACD al sinyali aktif",
+    "RSI saglikli momentum bolgesinde (62)",
+    "Endeksin %9.5 uzerinde goreceli guc",
+    "Fiyat > SMA20 > SMA50: yukselen trend dizilimi",
+    "Para girisi guclu (MFI 77)",
+    "Benzer 106 gunun %54.7'i yukselisle sonuclandi"
+   ],
+   "benzer": {
+    "count": 106,
+    "up": 54.7,
+    "avg_up": 4.95,
+    "avg_dn": 4.36
+   },
+   "beklenen": "+%5.0 / -%4.4",
+   "seri": [
+    136.2,
+    131.5,
+    129.8,
+    127.4,
+    132.8,
+    141.7,
+    141.4,
+    134.8,
+    141.9,
+    140.0,
+    140.5,
+    134.5,
+    132.7,
+    131.0,
+    130.0,
+    137.3,
+    141.8,
+    141.8,
+    143.0,
+    145.0,
+    145.7,
+    145.8,
+    146.3,
+    145.9,
+    150.0,
+    149.4,
+    150.8,
+    149.0,
+    152.7,
+    151.4
    ]
   },
   {
    "sym": "SOKM",
-   "skor": 78.9,
-   "risk": "Orta",
-   "fiyat": 52.5,
+   "skor": 76.3,
+   "risk": "Yuksek",
+   "fiyat": 50.75,
    "guven": false,
    "faktor": {
-    "Trend": 20.0,
+    "Trend": 17.5,
     "Hacim": 4.0,
-    "Para": 19.1,
+    "Para": 19.6,
     "Teknik": 20.0
    },
    "sebep": [
     "MACD al sinyali aktif",
-    "RSI saglikli momentum bolgesinde (57)",
-    "Endeksin %8.5 uzerinde goreceli guc",
+    "RSI saglikli momentum bolgesinde (51)",
+    "Endeksin %3.5 uzerinde goreceli guc",
     "Fiyat > SMA20 > SMA50: yukselen trend dizilimi",
-    "Para girisi guclu (MFI 85)",
-    "Benzer 96 gunun %52.1'i yukselisle sonuclandi"
+    "Para girisi guclu (MFI 81)",
+    "Benzer 88 gunun %51.1'i yukselisle sonuclandi"
    ],
    "benzer": {
-    "count": 96,
-    "up": 52.1,
-    "avg_up": 2.45,
-    "avg_dn": 3.31
+    "count": 88,
+    "up": 51.1,
+    "avg_up": 2.67,
+    "avg_dn": 2.65
    },
-   "beklenen": "+%2.5 / -%3.3",
+   "beklenen": "+%2.7 / -%2.6",
    "seri": [
-    49.4,
     48.2,
     48.26,
     48.06,
@@ -154,246 +272,133 @@
     52.0,
     53.35,
     52.55,
-    52.5
+    52.6,
+    50.75
    ]
   },
   {
-   "sym": "AYGAZ",
-   "skor": 78.8,
+   "sym": "ANHYT",
+   "skor": 75.0,
    "risk": "Orta",
-   "fiyat": 266.0,
+   "fiyat": 111.0,
    "guven": false,
    "faktor": {
     "Trend": 20.0,
     "Hacim": 4.0,
-    "Para": 19.0,
-    "Teknik": 20.0
-   },
-   "sebep": [
-    "MACD al sinyali aktif",
-    "RSI saglikli momentum bolgesinde (61)",
-    "Endeksin %10.4 uzerinde goreceli guc",
-    "Fiyat > SMA20 > SMA50: yukselen trend dizilimi",
-    "Para girisi guclu (MFI 79)",
-    "Benzer 132 gunun %67.4'i yukselisle sonuclandi"
-   ],
-   "benzer": {
-    "count": 132,
-    "up": 67.4,
-    "avg_up": 3.03,
-    "avg_dn": 2.31
-   },
-   "beklenen": "+%3.0 / -%2.3",
-   "seri": [
-    222.9,
-    225.4,
-    221.5,
-    214.4,
-    213.1,
-    211.0,
-    209.5,
-    208.8,
-    213.5,
-    215.1,
-    214.1,
-    220.5,
-    220.8,
-    230.0,
-    227.9,
-    231.8,
-    246.0,
-    245.5,
-    247.9,
-    254.75,
-    267.0,
-    277.75,
-    275.25,
-    282.25,
-    286.75,
-    270.25,
-    270.0,
-    266.5,
-    266.5,
-    266.0
-   ]
-  },
-  {
-   "sym": "BAGFS",
-   "skor": 78.1,
-   "risk": "Orta",
-   "fiyat": 25.06,
-   "guven": false,
-   "faktor": {
-    "Trend": 10.9,
-    "Hacim": 20.0,
-    "Para": 15.6,
+    "Para": 20.0,
     "Teknik": 16.0
    },
    "sebep": [
-    "Hacim 20 gunluk ortalamanin %445'i",
-    "Olagan disi hacim + guclu kapanis: buyuk oyuncu izi",
     "MACD al sinyali aktif",
-    "Endeksin %4.9 uzerinde goreceli guc"
-   ],
-   "benzer": null,
-   "beklenen": null,
-   "seri": [
-    26.78,
-    27.3,
-    27.56,
-    27.6,
-    27.4,
-    26.88,
-    26.6,
-    25.88,
-    25.38,
-    25.2,
-    26.16,
-    25.6,
-    25.54,
-    25.24,
-    24.78,
-    24.56,
-    24.8,
-    24.38,
-    25.16,
-    25.34,
-    24.94,
-    24.9,
-    25.16,
-    25.04,
-    25.14,
-    24.56,
-    24.22,
-    23.82,
-    23.36,
-    25.06
-   ]
-  },
-  {
-   "sym": "DOHOL",
-   "skor": 76.3,
-   "risk": "Orta",
-   "fiyat": 21.66,
-   "guven": false,
-   "faktor": {
-    "Trend": 12.0,
-    "Hacim": 11.5,
-    "Para": 17.5,
-    "Teknik": 20.0
-   },
-   "sebep": [
-    "MACD al sinyali aktif",
-    "RSI saglikli momentum bolgesinde (55)",
-    "Endeksin %6.8 uzerinde goreceli guc",
-    "Para girisi guclu (MFI 76)",
-    "Benzer 109 gunun %59.6'i yukselisle sonuclandi"
+    "Endeksin %13.2 uzerinde goreceli guc",
+    "Fiyat > SMA20 > SMA50: yukselen trend dizilimi",
+    "Para girisi guclu (MFI 83)",
+    "Benzer 45 gunun %40.0'i yukselisle sonuclandi"
    ],
    "benzer": {
-    "count": 109,
-    "up": 59.6,
-    "avg_up": 3.02,
-    "avg_dn": 2.92
+    "count": 45,
+    "up": 40.0,
+    "avg_up": 2.27,
+    "avg_dn": 4.55
    },
-   "beklenen": "+%3.0 / -%2.9",
+   "beklenen": "+%2.3 / -%4.5",
    "seri": [
-    22.4,
-    21.4,
-    21.28,
-    20.88,
-    20.84,
-    20.88,
-    21.14,
-    21.02,
-    20.5,
-    20.38,
-    20.56,
-    20.48,
-    20.66,
-    20.6,
-    20.32,
-    20.4,
-    21.18,
-    21.24,
-    21.36,
-    21.5,
-    21.3,
-    21.68,
-    20.54,
-    21.32,
-    21.4,
-    21.18,
-    21.04,
-    21.2,
-    21.22,
-    21.66
+    107.7,
+    104.7,
+    102.3,
+    102.3,
+    102.5,
+    102.6,
+    102.3,
+    102.9,
+    102.4,
+    102.5,
+    101.6,
+    101.5,
+    101.5,
+    99.35,
+    97.55,
+    98.55,
+    97.45,
+    97.75,
+    102.0,
+    102.7,
+    102.8,
+    102.3,
+    104.7,
+    104.0,
+    105.9,
+    106.0,
+    107.1,
+    109.3,
+    109.4,
+    111.0
    ]
   },
   {
-   "sym": "BIMAS",
-   "skor": 76.2,
+   "sym": "AEFES",
+   "skor": 73.8,
    "risk": "Orta",
-   "fiyat": 389.75,
+   "fiyat": 21.5,
    "guven": false,
    "faktor": {
-    "Trend": 18.4,
+    "Trend": 20.0,
     "Hacim": 4.0,
-    "Para": 18.6,
+    "Para": 15.0,
     "Teknik": 20.0
    },
    "sebep": [
     "MACD al sinyali aktif",
     "RSI saglikli momentum bolgesinde (54)",
-    "Endeksin %4.4 uzerinde goreceli guc",
+    "Endeksin %8.5 uzerinde goreceli guc",
     "Fiyat > SMA20 > SMA50: yukselen trend dizilimi",
-    "Para girisi guclu (MFI 67)",
-    "Benzer 171 gunun %46.8'i yukselisle sonuclandi"
+    "Benzer 138 gunun %55.8'i yukselisle sonuclandi"
    ],
    "benzer": {
-    "count": 171,
-    "up": 46.8,
-    "avg_up": 2.86,
-    "avg_dn": 2.74
+    "count": 138,
+    "up": 55.8,
+    "avg_up": 3.65,
+    "avg_dn": 2.93
    },
-   "beklenen": "+%2.9 / -%2.7",
+   "beklenen": "+%3.6 / -%2.9",
    "seri": [
-    391.75,
-    383.25,
-    379.0,
-    382.75,
-    374.0,
-    375.5,
-    374.5,
-    371.0,
-    365.25,
-    364.5,
-    357.5,
-    357.0,
-    371.0,
-    374.25,
-    375.75,
-    365.0,
-    372.5,
-    374.25,
-    384.5,
-    396.25,
-    386.0,
-    400.0,
-    393.0,
-    399.75,
-    390.5,
-    380.25,
-    383.25,
-    389.5,
-    386.5,
-    389.75
+    21.02,
+    21.06,
+    20.54,
+    20.64,
+    20.72,
+    21.26,
+    21.34,
+    21.04,
+    20.86,
+    20.5,
+    20.5,
+    20.22,
+    20.52,
+    20.14,
+    19.71,
+    20.46,
+    20.08,
+    20.02,
+    20.76,
+    20.8,
+    21.16,
+    22.24,
+    22.12,
+    21.54,
+    20.96,
+    20.92,
+    21.8,
+    21.48,
+    22.08,
+    21.5
    ]
   }
  ],
  "karne": {
-  "adet": 30,
-  "isabet": 26.7,
-  "ort_getiri": -2.86
+  "adet": 36,
+  "isabet": 25.0,
+  "ort_getiri": -2.65
  },
  "karne_seri": [
   {
@@ -545,84 +550,72 @@
    "date": "2026-07-27",
    "isabet": 26.7,
    "adet": 30
+  },
+  {
+   "date": "2026-07-28",
+   "isabet": 29.0,
+   "adet": 31
+  },
+  {
+   "date": "2026-07-28",
+   "isabet": 28.1,
+   "adet": 32
+  },
+  {
+   "date": "2026-07-28",
+   "isabet": 27.3,
+   "adet": 33
+  },
+  {
+   "date": "2026-07-28",
+   "isabet": 26.5,
+   "adet": 34
+  },
+  {
+   "date": "2026-07-28",
+   "isabet": 25.7,
+   "adet": 35
+  },
+  {
+   "date": "2026-07-28",
+   "isabet": 25.0,
+   "adet": 36
   }
  ],
  "gecmis": [
   {
-   "date": "2026-07-24",
-   "sym": "CCOLA",
-   "skor": "78.8",
-   "ret3": "0.72",
-   "sonuc": "ISABET"
-  },
-  {
-   "date": "2026-07-24",
-   "sym": "EREGL",
-   "skor": "78.4",
-   "ret3": "-0.5",
-   "sonuc": "ISKA"
-  },
-  {
-   "date": "2026-07-24",
-   "sym": "AKSEN",
-   "skor": "76.8",
-   "ret3": "-2.8",
-   "sonuc": "ISKA"
-  },
-  {
-   "date": "2026-07-24",
-   "sym": "KRDMD",
-   "skor": "76.1",
-   "ret3": "-0.99",
-   "sonuc": "ISKA"
-  },
-  {
-   "date": "2026-07-24",
-   "sym": "BIMAS",
-   "skor": "72.9",
-   "ret3": "0.84",
-   "sonuc": "ISABET"
-  },
-  {
-   "date": "2026-07-27",
-   "sym": "CCOLA",
-   "skor": "79.6",
-   "ret3": 2.92,
-   "sonuc": "ISABET"
-  },
-  {
    "date": "2026-07-27",
    "sym": "TUPRS",
    "skor": "79.4",
-   "ret3": -0.51,
+   "ret3": "-0.51",
    "sonuc": "ISKA"
   },
   {
    "date": "2026-07-27",
    "sym": "SOKM",
    "skor": "78.5",
-   "ret3": 0.77,
+   "ret3": "0.77",
    "sonuc": "ISABET"
   },
   {
    "date": "2026-07-27",
    "sym": "YEOTK",
    "skor": "78.0",
-   "ret3": -11.54,
+   "ret3": "-11.54",
    "sonuc": "ISKA"
   },
   {
    "date": "2026-07-27",
    "sym": "AKSEN",
    "skor": "74.0",
-   "ret3": -8.72,
+   "ret3": "-8.72",
    "sonuc": "ISKA"
   },
   {
    "date": "2026-07-27",
    "sym": "KRDMD",
    "skor": "72.2",
-   "ret3": -2.73,
+   "ret3": "-2.73",
    "sonuc": "ISKA"
   },
   {
@@ -652,6 +645,48 @@
    "skor": "77.0",
    "ret3": "1.93",
    "sonuc": "ISABET"
+  },
+  {
+   "date": "2026-07-28",
+   "sym": "ANHYT",
+   "skor": "85.5",
+   "ret3": 4.13,
+   "sonuc": "ISABET"
+  },
+  {
+   "date": "2026-07-28",
+   "sym": "TUPRS",
+   "skor": "79.7",
+   "ret3": -1.18,
+   "sonuc": "ISKA"
+  },
+  {
+   "date": "2026-07-28",
+   "sym": "AYGAZ",
+   "skor": "78.9",
+   "ret3": -1.76,
+   "sonuc": "ISKA"
+  },
+  {
+   "date": "2026-07-28",
+   "sym": "CCOLA",
+   "skor": "78.7",
+   "ret3": -1.64,
+   "sonuc": "ISKA"
+  },
+  {
+   "date": "2026-07-28",
+   "sym": "SOKM",
+   "skor": "78.2",
+   "ret3": -4.43,
+   "sonuc": "ISKA"
+  },
+  {
+   "date": "2026-07-28",
+   "sym": "KCAER",
+   "skor": "77.5",
+   "ret3": -4.92,
+   "sonuc": "ISKA"
   }
  ]
 }
