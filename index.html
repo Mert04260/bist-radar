@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -11,15 +12,17 @@
   *{box-sizing:border-box;margin:0;padding:0}
   body{background:var(--bg);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;padding-bottom:48px}
   .wrap{max-width:760px;margin:0 auto;padding:0 18px}
-  header{position:relative;padding:28px 18px 22px;max-width:760px;margin:0 auto;border-bottom:1px solid var(--line);overflow:hidden}
+  header{position:relative;padding:26px 18px 20px;max-width:760px;margin:0 auto;border-bottom:1px solid var(--line);overflow:hidden}
   .sweep{position:absolute;top:-60px;right:-60px;width:200px;height:200px;background:radial-gradient(circle at center,var(--phos-soft) 0%,transparent 70%);pointer-events:none}
   .brand{display:flex;align-items:center;gap:11px}
   .dish{width:30px;height:30px;flex:none;display:flex;align-items:center;justify-content:center;color:var(--phos)}
   .brand h1{font-size:19px;font-weight:700;letter-spacing:.14em}
   .brand .sub{font-family:'Space Mono',monospace;font-size:10.5px;color:var(--dim);letter-spacing:.05em;margin-top:1px}
-  .meta{display:flex;gap:18px;margin-top:18px;font-family:'Space Mono',monospace;font-size:11px;color:var(--dim)}
+  .meta{display:flex;gap:16px;margin-top:16px;font-family:'Space Mono',monospace;font-size:11px;color:var(--dim);flex-wrap:wrap}
   .meta b{color:var(--phos);font-weight:700}
-  .eyebrow{display:flex;align-items:baseline;gap:10px;margin:30px 0 14px}
+  .uyari{margin-top:12px;padding:9px 12px;border-radius:9px;background:#e0242410;border-left:2px solid var(--down);font-size:11.5px;color:var(--dim);line-height:1.6}
+  .uyari.bilgi{background:var(--phos-soft);border-left-color:var(--phos)}
+  .eyebrow{display:flex;align-items:baseline;gap:10px;margin:28px 0 13px}
   .eyebrow .no{font-family:'Space Mono',monospace;font-size:11px;color:var(--faint)}
   .eyebrow h2{font-size:12.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
   .eyebrow .rule{flex:1;height:1px;background:var(--line)}
@@ -44,19 +47,25 @@
   .risk.Yuksek{background:#e0242415;color:var(--down)}
   .spark{width:96px;height:34px;flex:none}
   .spark polyline{fill:none;stroke-width:2}
-  .sebep{margin-top:10px;padding-left:2px}
+  .plan{grid-column:1/-1;display:flex;gap:8px;margin-top:11px;flex-wrap:wrap}
+  .plan div{flex:1;min-width:88px;background:var(--panel-2);border:1px solid var(--line);border-radius:9px;padding:8px 10px}
+  .plan .et{font-family:'Space Mono',monospace;font-size:9px;color:var(--faint);letter-spacing:.06em;text-transform:uppercase}
+  .plan .dg{font-family:'Space Mono',monospace;font-size:13.5px;font-weight:700;margin-top:2px}
+  .sebep{margin-top:11px;padding-left:2px;grid-column:1/-1}
   .sebep li{font-size:11.5px;color:var(--dim);line-height:1.55;list-style:none;position:relative;padding-left:14px}
   .sebep li::before{content:"›";position:absolute;left:0;color:var(--phos);font-weight:700}
-  .benzer{margin-top:8px;font-family:'Space Mono',monospace;font-size:10.5px;color:var(--faint)}
+  .sebep li.dikkat{color:var(--down)}
+  .sebep li.dikkat::before{content:"!";color:var(--down)}
+  .benzer{margin-top:8px;font-family:'Space Mono',monospace;font-size:10.5px;color:var(--faint);grid-column:1/-1}
   .benzer b{color:var(--ink);font-weight:700}
-  .endeks{display:flex;align-items:center;gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:12px 16px;margin-top:18px}
+  .endeks{display:flex;align-items:center;gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:12px 16px;margin-top:16px}
   .endeks .e-name{font-family:'Space Mono',monospace;font-size:11px;color:var(--dim)}
   .endeks .e-chg{font-family:'Space Mono',monospace;font-size:16px;font-weight:700}
   .chart-box{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:16px;margin-top:12px}
   .chart-box .c-title{font-family:'Space Mono',monospace;font-size:10px;color:var(--faint);margin-bottom:8px;text-transform:uppercase}
   .empty{background:var(--panel);border:1px solid #eabf80;border-radius:13px;padding:26px 20px;text-align:center}
   .empty .big{font-size:15px;font-weight:700;color:var(--phos);margin-bottom:6px}
-  .empty p{font-size:13px;color:var(--dim);max-width:400px;margin:0 auto}
+  .empty p{font-size:13px;color:var(--dim);max-width:420px;margin:0 auto}
   .karne{background:linear-gradient(180deg,var(--panel) 0%,#fdf9f2 100%);border:1px solid var(--line);border-radius:15px;padding:20px 18px}
   .karne .k-head{font-family:'Space Mono',monospace;font-size:11px;color:var(--dim);margin-bottom:16px}
   .k-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
@@ -65,13 +74,13 @@
   .k-cap{font-size:11px;color:var(--dim);margin-top:6px}
   .k-note{font-size:12px;color:var(--dim);line-height:1.6;margin-top:14px;padding:12px 13px;background:var(--phos-soft);border-left:2px solid var(--phos);border-radius:6px}
   .hist{width:100%;border-collapse:collapse;font-family:'Space Mono',monospace;font-size:12px}
-  .hist th{text-align:left;color:var(--faint);font-weight:400;font-size:10px;text-transform:uppercase;padding:8px 6px;border-bottom:1px solid var(--line)}
-  .hist td{padding:10px 6px;border-bottom:1px solid var(--panel-2)}
+  .hist th{text-align:left;color:var(--faint);font-weight:400;font-size:10px;text-transform:uppercase;padding:8px 5px;border-bottom:1px solid var(--line)}
+  .hist td{padding:10px 5px;border-bottom:1px solid var(--panel-2)}
   .hist .win{color:var(--up)}
   .hist .loss{color:var(--down)}
-  .disclaimer{margin-top:34px;padding:16px 18px;background:var(--panel-2);border:1px solid var(--line);border-radius:11px;font-size:11.5px;color:var(--faint);line-height:1.7;text-align:center}
+  .disclaimer{margin-top:32px;padding:16px 18px;background:var(--panel-2);border:1px solid var(--line);border-radius:11px;font-size:11.5px;color:var(--faint);line-height:1.7;text-align:center}
   .loading{text-align:center;color:var(--dim);padding:60px 20px;font-family:'Space Mono',monospace;font-size:13px}
-  .updated{font-family:'Space Mono',monospace;font-size:10px;color:var(--faint);text-align:center;margin-top:20px}
+  .updated{font-family:'Space Mono',monospace;font-size:10px;color:var(--faint);text-align:center;margin-top:18px}
   @media (max-width:480px){
     .signal{grid-template-columns:auto 1fr;gap:12px}
     .sig-right{grid-column:2;text-align:left;display:flex;align-items:center;gap:12px;margin-top:2px}
@@ -97,20 +106,24 @@
   <div class="meta">
     <span>TARANAN <b id="m-tar">—</b></span>
     <span>SEÇİLEN <b id="m-sec">—</b></span>
+    <span>UFUK <b id="m-ufuk">—</b></span>
     <span>MOD <b>KAĞIT-ÜZERİNDE</b></span>
   </div>
+  <div id="uyari-alani"></div>
 </header>
 <div class="wrap">
   <div id="app"><div class="loading">◍ radar verisi çekiliyor…</div></div>
   <div class="disclaimer" id="disc" style="display:none">
-    Bu ekrandaki hiçbir bilgi yatırım tavsiyesi değildir. Skorlar gün sonu (EOD) fiyatlarına dayanır
-    ve sistem şu an kağıt-üzerinde izleme modundadır — gerçek işlem yapılmamaktadır.
+    Bu ekrandaki hiçbir bilgi yatırım tavsiyesi değildir. Skorlar gün sonu (EOD) fiyatlarına dayanır.
+    Giriş fiyatı <b>ertesi seansın açılışı</b> varsayılarak ölçülür; sistem kağıt-üzerinde izleme modundadır.
   </div>
   <div class="updated" id="upd"></div>
 </div>
 <script>
 const RISK_TR={Dusuk:"Düşük",Orta:"Orta",Yuksek:"Yüksek"};
 const barColor=v=>v>=15?"var(--up)":v>=10?"var(--phos)":"var(--faint)";
+const f2=v=>Number(v).toFixed(2);
+
 function spark(seri,w,h,renk){
   if(!seri||seri.length<2)return"";
   const mn=Math.min(...seri),mx=Math.max(...seri),rg=(mx-mn)||1;
@@ -118,57 +131,85 @@ function spark(seri,w,h,renk){
   const c=renk||(seri[seri.length-1]>=seri[0]?"var(--up)":"var(--down)");
   return `<svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none"><polyline points="${pts}" style="stroke:${c}"/></svg>`;
 }
+
 function signalRow(d){
   const bars=Object.entries(d.faktor).map(([k,v])=>`<div style="flex:1"><div class="bar"><span style="width:${(v/20*100).toFixed(0)}%;background:${barColor(v)}"></span></div></div>`).join("");
   const labels=Object.keys(d.faktor).map(k=>`<span>${k[0]}</span>`).join("");
   const sc=d.skor>=85?"var(--up)":d.skor>=75?"var(--phos)":"var(--dim)";
+  const plan=(d.hedef!=null&&d.stop!=null)?`
+    <div class="plan">
+      <div><div class="et">Sinyal fiyatı</div><div class="dg">₺${f2(d.fiyat)}</div></div>
+      <div><div class="et">Hedef</div><div class="dg" style="color:var(--up)">₺${f2(d.hedef)}</div></div>
+      <div><div class="et">Zarar kes</div><div class="dg" style="color:var(--down)">₺${f2(d.stop)}</div></div>
+    </div>`:"";
+  const sebep=(d.sebep&&d.sebep.length)?`<ul class="sebep">${d.sebep.map(s=>{
+      const dikkat=s.startsWith("UYARI");
+      return `<li class="${dikkat?'dikkat':''}">${s}</li>`;
+    }).join("")}</ul>`:"";
+  const benzer=d.benzer?`<div class="benzer">BENZER GÜN: <b>${d.benzer.epizot}</b> bağımsız epizot (${d.benzer.ham} ham eşleşme), <b>%${d.benzer.up}</b> yükselişle bitmiş · ort. <b>+%${d.benzer.avg_up}</b> / <b>-%${d.benzer.avg_dn}</b></div>`:"";
   return `<div class="signal ${d.guven?'star':''}">
-    <div class="score" style="color:${sc}">${d.skor.toFixed(1)}<span class="max">/100</span></div>
+    <div class="score" style="color:${sc}">${Number(d.skor).toFixed(1)}<span class="max">/100</span></div>
     <div class="sig-main">
       <div class="sig-top"><span class="ticker">${d.sym}</span>${d.guven?'<span class="star-badge">★</span>':''}</div>
       <div class="bars">${bars}</div><div class="bar-label">${labels}</div>
     </div>
     <div class="sig-right">
       ${spark(d.seri,96,34)}
-      <div class="price"><span class="cur">₺</span>${d.fiyat.toFixed(2)}</div>
+      <div class="price"><span class="cur">₺</span>${f2(d.fiyat)}</div>
       <span class="risk ${d.risk}">${RISK_TR[d.risk]||d.risk}</span>
     </div>
-    ${d.sebep&&d.sebep.length?`<ul class="sebep" style="grid-column:1/-1">${d.sebep.map(s=>`<li>${s}</li>`).join("")}</ul>`:""}
-    ${d.benzer?`<div class="benzer" style="grid-column:1/-1">BENZER GÜN: geçmişte <b>${d.benzer.count}</b> kez oluştu, <b>%${d.benzer.up}</b> yükseldi${d.beklenen?` · beklenen 3g: <b>${d.beklenen}</b>`:""}</div>`:""}
+    ${plan}${sebep}${benzer}
   </div>`;
 }
+
+function uyarilar(x){
+  const u=x.uyarilar||{}; let h="";
+  if(u.endeks_yok) h+=`<div class="uyari">⚠️ Endeks (BIST100) verisi alınamadı — bu koşuda göreceli güç hesaplanmadı, skorlar eksik bilgiyle üretildi.</div>`;
+  if(u.defter_arsivlendi) h+=`<div class="uyari bilgi">ℹ️ Eski karne defteri arşivlendi. Önceki sürümde giriş fiyatı kapanış olarak alınıyordu ve o fiyata girilemezdi — karne sıfırdan, gerçekçi girişle başlıyor.</div>`;
+  if(u.bayat>0||u.alinamayan>0||u.likit_disi>0){
+    const p=[];
+    if(u.bayat>0)p.push(`${u.bayat} hisse bayat veri (elendi)`);
+    if(u.likit_disi>0)p.push(`${u.likit_disi} hisse likidite altı`);
+    if(u.alinamayan>0)p.push(`${u.alinamayan} sembol indirilemedi`);
+    h+=`<div class="uyari bilgi">Tarama notu: ${p.join(" · ")}.</div>`;
+  }
+  return h;
+}
+
 function render(x){
-  document.getElementById('sub').textContent=x.tarih+" · günlük tarama";
+  document.getElementById('sub').textContent=(x.tarih||"")+" · günlük tarama"+(x.surum?" · "+x.surum:"");
   document.getElementById('m-tar').textContent=x.taranan;
-  document.getElementById('m-sec').textContent=x.radar.length;
+  document.getElementById('m-sec').textContent=(x.radar||[]).length;
+  document.getElementById('m-ufuk').textContent=(x.ufuk||3)+" GÜN";
+  document.getElementById('uyari-alani').innerHTML=uyarilar(x);
   let html="";
   if(x.endeks){
     const ec=x.endeks.degisim>=0?"var(--up)":"var(--down)";
     html+=`<div class="endeks"><span class="e-name">BIST100</span>
-      <span class="e-chg" style="color:${ec}">${x.endeks.degisim>0?'+':''}${x.endeks.degisim.toFixed(2)}%</span>
+      <span class="e-chg" style="color:${ec}">${x.endeks.degisim>0?'+':''}${f2(x.endeks.degisim)}%</span>
       ${spark(x.endeks.seri,140,34)}
       <span style="font-size:10.5px;color:var(--faint);font-family:'Space Mono',monospace">son 30 gün</span></div>`;
   }
   html+=`<div class="eyebrow"><span class="no">01</span><h2>Bugünün Radarı</h2><span class="rule"></span></div>`;
-  if(!x.radar.length){
+  if(!x.radar||!x.radar.length){
     html+=`<div class="empty"><div class="big">Bugün işlem yapma</div><p>Hiçbir hisse eşik skorunu geçemedi. Net bir fırsat görünmüyor — beklemek de bir karardır.</p></div>`;
   }else{
     html+=x.radar.map(signalRow).join("");
-    html+=`<div class="bar-label" style="margin-top:10px;justify-content:flex-start;gap:6px;color:var(--faint)"><span style="color:var(--phos)">★</span> 88+ güven dilimi — geçmiş testte en isabetli grup. Harfler: Trend · Hacim · Para · Teknik.</div>`;
+    html+=`<div class="bar-label" style="margin-top:10px;justify-content:flex-start;gap:6px;color:var(--faint)"><span style="color:var(--phos)">★</span> 88+ güven dilimi. Harfler: Trend · Hacim · Para · Teknik. Hedef/stop, benzer epizotların ortalamasıdır — garanti değildir.</div>`;
   }
-  html+=`<div class="eyebrow"><span class="no">02</span><h2>Karne — Geçmiş İsabet</h2><span class="rule"></span></div>`;
+  html+=`<div class="eyebrow"><span class="no">02</span><h2>Karne — Gerçekleşen İsabet</h2><span class="rule"></span></div>`;
   if(x.karne){
     const k=x.karne;
     const ic=k.isabet>=50?"var(--up)":k.isabet>=35?"var(--phos)":"var(--down)";
     const gc=k.ort_getiri>0?"var(--up)":"var(--down)";
-    html+=`<div class="karne"><div class="k-head">${k.adet} kapanan sinyal · 3 günlük ufuk</div>
+    html+=`<div class="karne"><div class="k-head">${k.adet} kapanan sinyal${k.bekleyen?` · ${k.bekleyen} açık/bekleyen`:""} · ${x.ufuk||3} günlük ufuk</div>
       <div class="k-grid">
-        <div class="k-cell"><div class="k-num" style="color:${ic}">%${k.isabet.toFixed(1)}</div><div class="k-cap">İsabet oranı</div></div>
-        <div class="k-cell"><div class="k-num" style="color:${gc}">%${k.ort_getiri>0?'+':''}${k.ort_getiri.toFixed(2)}</div><div class="k-cap">Ort. 3 günlük getiri</div></div>
+        <div class="k-cell"><div class="k-num" style="color:${ic}">%${f2(k.isabet)}</div><div class="k-cap">İsabet oranı</div></div>
+        <div class="k-cell"><div class="k-num" style="color:${gc}">%${k.ort_getiri>0?'+':''}${f2(k.ort_getiri)}</div><div class="k-cap">Ort. getiri (açılış→kapanış)</div></div>
       </div>
-      <div class="k-note">Bu sistemin gerçek değeri buradadır — parlak radar listesi değil, tahminlerin tutup tutmadığı. Karar vermek için birkaç haftalık veri birikmesi gerekir.</div></div>`;
+      <div class="k-note">Bu rakamlar <b>ertesi seansın açılışından</b> girilmiş varsayımıyla hesaplanır — yani gerçekte elde edilebilecek sonuç. Karar vermek için en az 40–50 kapanan sinyal gerekir; birkaç sinyal anlamlı değildir.</div></div>`;
   }else{
-    html+=`<div class="empty"><div class="big">Karne henüz oluşmadı</div><p>İlk sinyaller değerlendirilmeyi bekliyor.</p></div>`;
+    html+=`<div class="empty"><div class="big">Karne henüz oluşmadı</div><p>İlk sinyaller giriş ve çıkış için bekliyor. Her sinyal, ertesi açılıştan girilip ${x.ufuk||3} seans sonra kapatılmış sayılarak notlanacak.</p></div>`;
   }
   if(x.karne_seri&&x.karne_seri.length>=3){
     const ks=x.karne_seri;
@@ -179,20 +220,22 @@ function render(x){
   }
   if(x.gecmis&&x.gecmis.length){
     html+=`<div class="eyebrow"><span class="no">03</span><h2>Son Kapanan Sinyaller</h2><span class="rule"></span></div>`;
-    html+=`<table class="hist"><thead><tr><th>Tarih</th><th>Hisse</th><th>Skor</th><th>3g %</th><th>Sonuç</th></tr></thead><tbody>`;
+    html+=`<table class="hist"><thead><tr><th>Tarih</th><th>Hisse</th><th>Skor</th><th>Giriş</th><th>Getiri</th><th>Sonuç</th></tr></thead><tbody>`;
     html+=x.gecmis.slice().reverse().map(g=>{
-      const w=g.sonuc==="ISABET",r=parseFloat(g.ret3);
+      const w=g.sonuc==="ISABET",r=parseFloat(g.getiri);
       return `<tr><td style="color:var(--dim)">${g.date.slice(5)}</td><td>${g.sym}</td>
         <td style="color:var(--dim)">${g.skor}</td>
-        <td class="${w?'win':'loss'}">${r>0?'+':''}${r.toFixed(2)}</td>
+        <td style="color:var(--dim)">${g.giris?"₺"+g.giris:"—"}</td>
+        <td class="${w?'win':'loss'}">${r>0?'+':''}${f2(r)}%</td>
         <td class="${w?'win':'loss'}">${w?'İSABET':'ıska'}</td></tr>`;
     }).join("");
     html+=`</tbody></table>`;
   }
   document.getElementById('app').innerHTML=html;
   document.getElementById('disc').style.display="block";
-  document.getElementById('upd').textContent="son güncelleme: "+x.tarih;
+  document.getElementById('upd').textContent="son güncelleme: "+(x.tarih||"—");
 }
+
 fetch('data.json?v='+Date.now())
   .then(r=>{if(!r.ok)throw 0;return r.json();})
   .then(render)
