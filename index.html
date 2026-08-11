@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -12,7 +11,7 @@
   *{box-sizing:border-box;margin:0;padding:0}
   body{background:var(--bg);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;padding-bottom:48px}
   .wrap{max-width:760px;margin:0 auto;padding:0 18px}
-  header{position:relative;padding:26px 18px 20px;max-width:760px;margin:0 auto;border-bottom:1px solid var(--line);overflow:hidden}
+  header{position:relative;padding:26px 18px 0;max-width:760px;margin:0 auto;overflow:hidden}
   .sweep{position:absolute;top:-60px;right:-60px;width:200px;height:200px;background:radial-gradient(circle at center,var(--phos-soft) 0%,transparent 70%);pointer-events:none}
   .brand{display:flex;align-items:center;gap:11px}
   .dish{width:30px;height:30px;flex:none;display:flex;align-items:center;justify-content:center;color:var(--phos)}
@@ -20,6 +19,31 @@
   .brand .sub{font-family:'Space Mono',monospace;font-size:10.5px;color:var(--dim);letter-spacing:.05em;margin-top:1px}
   .meta{display:flex;gap:16px;margin-top:16px;font-family:'Space Mono',monospace;font-size:11px;color:var(--dim);flex-wrap:wrap}
   .meta b{color:var(--phos);font-weight:700}
+  .serit{display:flex;align-items:center;gap:9px;margin-top:14px;padding:8px 12px;background:var(--panel);border:1px solid var(--line);border-radius:9px;font-family:'Space Mono',monospace;font-size:10.5px;color:var(--dim);flex-wrap:wrap}
+  .serit .nokta{width:7px;height:7px;border-radius:50%;background:var(--up);flex:none}
+  .serit .nokta.eski{background:var(--phos)}
+  .serit .nokta.cok-eski{background:var(--faint)}
+  .serit b{color:var(--ink);font-weight:700}
+  .sekmeler{display:flex;gap:4px;margin-top:16px;border-bottom:1px solid var(--line)}
+  .sekme{padding:9px 15px;font-size:12.5px;font-weight:600;color:var(--faint);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;font-family:inherit;letter-spacing:.02em}
+  .sekme.aktif{color:var(--phos);border-bottom-color:var(--phos)}
+  .sekme .rozet{display:inline-block;margin-left:6px;padding:1px 6px;border-radius:9px;background:var(--phos-soft);color:var(--phos);font-size:10px;font-family:'Space Mono',monospace}
+  .anom{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-bottom:8px;display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center}
+  .anom .ikon{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:15px;flex:none}
+  .anom .ikon.hacim{background:#d97e0018}
+  .anom .ikon.hareket{background:#0e9f6e18}
+  .anom .ikon.gap{background:#e0242412}
+  .anom .ikon.gunluk{background:#e0242412}
+  .anom .ikon.birikim{background:#5d6b8515}
+  .anom .a-sym{font-size:15px;font-weight:700}
+  .anom .a-bas{font-size:12px;color:var(--ink);font-weight:600;margin-top:1px}
+  .anom .a-det{font-size:11.5px;color:var(--dim);margin-top:2px;line-height:1.45}
+  .anom .a-sag{text-align:right;font-family:'Space Mono',monospace;flex:none}
+  .anom .a-fiyat{font-size:13.5px;font-weight:700}
+  .anom .a-saat{font-size:10px;color:var(--faint);margin-top:3px}
+  .siddet{display:flex;gap:2px;margin-top:5px;justify-content:flex-end}
+  .siddet i{width:5px;height:5px;border-radius:50%;background:var(--line);display:block}
+  .siddet i.dolu{background:var(--phos)}
   .uyari{margin-top:12px;padding:9px 12px;border-radius:9px;background:#e0242410;border-left:2px solid var(--down);font-size:11.5px;color:var(--dim);line-height:1.6}
   .uyari.bilgi{background:var(--phos-soft);border-left-color:var(--phos)}
   .eyebrow{display:flex;align-items:baseline;gap:10px;margin:28px 0 13px}
@@ -85,6 +109,7 @@
     .signal{grid-template-columns:auto 1fr;gap:12px}
     .sig-right{grid-column:2;text-align:left;display:flex;align-items:center;gap:12px;margin-top:2px}
     .risk{margin-top:0}
+    .sekme{padding:9px 10px;font-size:11.5px}
   }
 </style>
 </head>
@@ -109,20 +134,27 @@
     <span>UFUK <b id="m-ufuk">—</b></span>
     <span>MOD <b>KAĞIT-ÜZERİNDE</b></span>
   </div>
+  <div id="serit-alani"></div>
   <div id="uyari-alani"></div>
+  <div class="sekmeler">
+    <button class="sekme aktif" id="sekme-gs" onclick="sekmeSec('gs')">Gün Sonu Radarı</button>
+    <button class="sekme" id="sekme-gi" onclick="sekmeSec('gi')">Gün İçi Anomaliler<span class="rozet" id="gi-rozet">—</span></button>
+  </div>
 </header>
 <div class="wrap">
-  <div id="app"><div class="loading">◍ radar verisi çekiliyor…</div></div>
+  <div id="app"><div class="loading">◍ veri yükleniyor…</div></div>
   <div class="disclaimer" id="disc" style="display:none">
-    Bu ekrandaki hiçbir bilgi yatırım tavsiyesi değildir. Skorlar gün sonu (EOD) fiyatlarına dayanır.
-    Giriş fiyatı <b>ertesi seansın açılışı</b> varsayılarak ölçülür; sistem kağıt-üzerinde izleme modundadır.
+    Bu ekrandaki hiçbir bilgi yatırım tavsiyesi değildir. Gün sonu skorları kapanış fiyatlarına dayanır ve giriş
+    <b>ertesi seansın açılışı</b> varsayılarak ölçülür. Gün içi veriler gecikmelidir; sistem kağıt-üzerinde izleme modundadır.
   </div>
   <div class="updated" id="upd"></div>
 </div>
 <script>
 const RISK_TR={Dusuk:"Düşük",Orta:"Orta",Yuksek:"Yüksek"};
+const IKON={hacim:"◉",hareket:"↗",gap:"⤒",gunluk:"⇅",birikim:"▤"};
 const barColor=v=>v>=15?"var(--up)":v>=10?"var(--phos)":"var(--faint)";
 const f2=v=>Number(v).toFixed(2);
+let GS=null, GI=null, AKTIF='gs';
 
 function spark(seri,w,h,renk){
   if(!seri||seri.length<2)return"";
@@ -130,6 +162,45 @@ function spark(seri,w,h,renk){
   const pts=seri.map((v,i)=>`${(i/(seri.length-1)*w).toFixed(1)},${(h-3-(v-mn)/rg*(h-6)).toFixed(1)}`).join(" ");
   const c=renk||(seri[seri.length-1]>=seri[0]?"var(--up)":"var(--down)");
   return `<svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none"><polyline points="${pts}" style="stroke:${c}"/></svg>`;
+}
+
+function sekmeSec(k){
+  AKTIF=k;
+  document.getElementById('sekme-gs').classList.toggle('aktif',k==='gs');
+  document.getElementById('sekme-gi').classList.toggle('aktif',k==='gi');
+  ciz();
+}
+
+function serit(){
+  const el=document.getElementById('serit-alani');
+  if(AKTIF==='gs'){
+    if(!GS){el.innerHTML="";return;}
+    el.innerHTML=`<div class="serit"><span class="nokta"></span>
+      <b>GÜN SONU</b> · kapanış verisi · <b>${GS.tarih||"—"}</b>
+      ${GS.guncelleme?` · tarama: ${GS.guncelleme}`:""} · ufuk <b>${GS.ufuk||3} gün</b></div>`;
+  }else{
+    if(!GI){el.innerHTML=`<div class="serit"><span class="nokta cok-eski"></span>Gün içi verisi henüz üretilmedi.</div>`;return;}
+    const g=GI.gecikme_dk;
+    const sinif=g==null?"cok-eski":(g<=20?"":(g<=60?"eski":"cok-eski"));
+    const gtxt=g==null?"bilinmiyor":(g<60?`${g} dk önce`:`${Math.floor(g/60)} sa ${g%60} dk önce`);
+    el.innerHTML=`<div class="serit"><span class="nokta ${sinif}"></span>
+      <b>GÜN İÇİ</b> · ${GI.bar} bar · son veri <b>${GI.veri_saat||"—"}</b>
+      · <b>${gtxt}</b> · tarama: ${GI.guncelleme||"—"}</div>`;
+  }
+}
+
+function uyarilar(x){
+  const u=(x&&x.uyarilar)||{}; let h="";
+  if(u.endeks_yok) h+=`<div class="uyari">⚠️ Endeks (BIST100) verisi alınamadı — bu koşuda göreceli güç hesaplanmadı.</div>`;
+  if(u.defter_arsivlendi) h+=`<div class="uyari bilgi">ℹ️ Eski karne defteri arşivlendi. Önceki sürümde giriş fiyatı kapanış olarak alınıyordu ve o fiyata girilemezdi — karne sıfırdan, gerçekçi girişle başlıyor.</div>`;
+  if(u.bayat>0||u.alinamayan>0||u.likit_disi>0){
+    const p=[];
+    if(u.bayat>0)p.push(`${u.bayat} hisse bayat veri`);
+    if(u.likit_disi>0)p.push(`${u.likit_disi} hisse likidite altı`);
+    if(u.alinamayan>0)p.push(`${u.alinamayan} sembol indirilemedi`);
+    h+=`<div class="uyari bilgi">Tarama notu: ${p.join(" · ")}.</div>`;
+  }
+  return h;
 }
 
 function signalRow(d){
@@ -142,10 +213,7 @@ function signalRow(d){
       <div><div class="et">Hedef</div><div class="dg" style="color:var(--up)">₺${f2(d.hedef)}</div></div>
       <div><div class="et">Zarar kes</div><div class="dg" style="color:var(--down)">₺${f2(d.stop)}</div></div>
     </div>`:"";
-  const sebep=(d.sebep&&d.sebep.length)?`<ul class="sebep">${d.sebep.map(s=>{
-      const dikkat=s.startsWith("UYARI");
-      return `<li class="${dikkat?'dikkat':''}">${s}</li>`;
-    }).join("")}</ul>`:"";
+  const sebep=(d.sebep&&d.sebep.length)?`<ul class="sebep">${d.sebep.map(s=>`<li class="${s.startsWith("UYARI")?'dikkat':''}">${s}</li>`).join("")}</ul>`:"";
   const benzer=d.benzer?`<div class="benzer">BENZER GÜN: <b>${d.benzer.epizot}</b> bağımsız epizot (${d.benzer.ham} ham eşleşme), <b>%${d.benzer.up}</b> yükselişle bitmiş · ort. <b>+%${d.benzer.avg_up}</b> / <b>-%${d.benzer.avg_dn}</b></div>`:"";
   return `<div class="signal ${d.guven?'star':''}">
     <div class="score" style="color:${sc}">${Number(d.skor).toFixed(1)}<span class="max">/100</span></div>
@@ -162,22 +230,25 @@ function signalRow(d){
   </div>`;
 }
 
-function uyarilar(x){
-  const u=x.uyarilar||{}; let h="";
-  if(u.endeks_yok) h+=`<div class="uyari">⚠️ Endeks (BIST100) verisi alınamadı — bu koşuda göreceli güç hesaplanmadı, skorlar eksik bilgiyle üretildi.</div>`;
-  if(u.defter_arsivlendi) h+=`<div class="uyari bilgi">ℹ️ Eski karne defteri arşivlendi. Önceki sürümde giriş fiyatı kapanış olarak alınıyordu ve o fiyata girilemezdi — karne sıfırdan, gerçekçi girişle başlıyor.</div>`;
-  if(u.bayat>0||u.alinamayan>0||u.likit_disi>0){
-    const p=[];
-    if(u.bayat>0)p.push(`${u.bayat} hisse bayat veri (elendi)`);
-    if(u.likit_disi>0)p.push(`${u.likit_disi} hisse likidite altı`);
-    if(u.alinamayan>0)p.push(`${u.alinamayan} sembol indirilemedi`);
-    h+=`<div class="uyari bilgi">Tarama notu: ${p.join(" · ")}.</div>`;
-  }
-  return h;
+function anomRow(a){
+  const dolu=Math.min(Math.round(a.siddet),3);
+  const noktalar=[1,2,3].map(i=>`<i class="${i<=dolu?'dolu':''}"></i>`).join("");
+  return `<div class="anom">
+    <div class="ikon ${a.tip}">${IKON[a.tip]||"•"}</div>
+    <div>
+      <div class="a-sym">${a.sym}</div>
+      <div class="a-bas">${a.baslik}</div>
+      <div class="a-det">${a.detay}</div>
+    </div>
+    <div class="a-sag">
+      <div class="a-fiyat">₺${f2(a.fiyat)}</div>
+      <div class="a-saat">${a.saat||""}</div>
+      <div class="siddet">${noktalar}</div>
+    </div>
+  </div>`;
 }
 
-function render(x){
-  document.getElementById('sub').textContent=(x.tarih||"")+" · günlük tarama"+(x.surum?" · "+x.surum:"");
+function gunSonuCiz(x){
   document.getElementById('m-tar').textContent=x.taranan;
   document.getElementById('m-sec').textContent=(x.radar||[]).length;
   document.getElementById('m-ufuk').textContent=(x.ufuk||3)+" GÜN";
@@ -207,7 +278,7 @@ function render(x){
         <div class="k-cell"><div class="k-num" style="color:${ic}">%${f2(k.isabet)}</div><div class="k-cap">İsabet oranı</div></div>
         <div class="k-cell"><div class="k-num" style="color:${gc}">%${k.ort_getiri>0?'+':''}${f2(k.ort_getiri)}</div><div class="k-cap">Ort. getiri (açılış→kapanış)</div></div>
       </div>
-      <div class="k-note">Bu rakamlar <b>ertesi seansın açılışından</b> girilmiş varsayımıyla hesaplanır — yani gerçekte elde edilebilecek sonuç. Karar vermek için en az 40–50 kapanan sinyal gerekir; birkaç sinyal anlamlı değildir.</div></div>`;
+      <div class="k-note">Bu rakamlar <b>ertesi seansın açılışından</b> girilmiş varsayımıyla hesaplanır — yani gerçekte elde edilebilecek sonuç. Karar vermek için en az 40–50 kapanan sinyal gerekir.</div></div>`;
   }else{
     html+=`<div class="empty"><div class="big">Karne henüz oluşmadı</div><p>İlk sinyaller giriş ve çıkış için bekliyor. Her sinyal, ertesi açılıştan girilip ${x.ufuk||3} seans sonra kapatılmış sayılarak notlanacak.</p></div>`;
   }
@@ -232,17 +303,62 @@ function render(x){
     html+=`</tbody></table>`;
   }
   document.getElementById('app').innerHTML=html;
-  document.getElementById('disc').style.display="block";
-  document.getElementById('upd').textContent="son güncelleme: "+(x.tarih||"—");
+  document.getElementById('upd').textContent="gün sonu tarama: "+(x.guncelleme||x.tarih||"—");
 }
 
-fetch('data.json?v='+Date.now())
-  .then(r=>{if(!r.ok)throw 0;return r.json();})
-  .then(render)
-  .catch(()=>{
-    document.getElementById('app').innerHTML=`<div class="empty" style="border-color:var(--line)"><div class="big" style="color:var(--dim)">Veri henüz hazır değil</div><p>Radar çalıştığında sonuçlar burada görünecek.</p></div>`;
-    document.getElementById('sub').textContent="veri bekleniyor";
-  });
+function gunIciCiz(){
+  const app=document.getElementById('app');
+  document.getElementById('uyari-alani').innerHTML="";
+  if(!GI){
+    app.innerHTML=`<div class="empty"><div class="big">Gün içi taraması henüz çalışmadı</div>
+      <p>Bu sekme piyasa saatlerinde 20–30 dakikada bir güncellenir. Hacim patlamaları, ani fiyat hareketleri ve açılış boşlukları burada listelenir.</p></div>`;
+    document.getElementById('upd').textContent="";
+    return;
+  }
+  let h=`<div class="eyebrow"><span class="no">01</span><h2>Tespit Edilen Anomaliler</h2><span class="rule"></span></div>`;
+  if(!GI.anomali||!GI.anomali.length){
+    h+=`<div class="empty"><div class="big">Olağan dışı bir hareket yok</div><p>${GI.taranan||0} hisse tarandı, eşiği aşan anomali bulunamadı. Piyasa sakin görünüyor.</p></div>`;
+  }else{
+    h+=GI.anomali.map(anomRow).join("");
+    h+=`<div class="bar-label" style="margin-top:10px;justify-content:flex-start;gap:6px;color:var(--faint)">
+      Şiddet: ● eşik üstü · ●● belirgin · ●●● çok güçlü. Tipler: ◉ hacim · ↗ hareket · ⤒ gap · ⇅ günlük · ▤ birikim.</div>`;
+  }
+  h+=`<div class="eyebrow"><span class="no">02</span><h2>Bu Veri Ne Kadar Taze?</h2><span class="rule"></span></div>
+    <div class="karne"><div class="k-head">gecikme ölçümü</div>
+    <div class="k-grid">
+      <div class="k-cell"><div class="k-num" style="color:${GI.gecikme_dk!=null&&GI.gecikme_dk<=20?'var(--up)':'var(--phos)'}">${GI.gecikme_dk!=null?GI.gecikme_dk+" dk":"—"}</div><div class="k-cap">Son veriden bu yana</div></div>
+      <div class="k-cell"><div class="k-num" style="font-size:19px">${GI.veri_saat||"—"}</div><div class="k-cap">Son bar zamanı</div></div>
+    </div>
+    <div class="k-note">Ücretsiz veri kaynağı gerçek zamanlı değildir; borsa fiyatları tipik olarak <b>15 dakika gecikmeli</b> yayınlanır. Yukarıdaki süre, son verinin üzerinden geçen gerçek ölçülmüş zamandır. Bu sekme <b>karneye işlenmez</b> — sadece farkındalık amaçlıdır.</div></div>`;
+  app.innerHTML=h;
+  document.getElementById('upd').textContent="gün içi tarama: "+(GI.guncelleme||"—");
+}
+
+function ciz(){
+  serit();
+  document.getElementById('disc').style.display="block";
+  if(AKTIF==='gs'){
+    if(!GS){
+      document.getElementById('app').innerHTML=`<div class="empty" style="border-color:var(--line)"><div class="big" style="color:var(--dim)">Veri henüz hazır değil</div><p>Radar çalıştığında sonuçlar burada görünecek.</p></div>`;
+      return;
+    }
+    gunSonuCiz(GS);
+  }else{
+    gunIciCiz();
+  }
+}
+
+Promise.allSettled([
+  fetch('data.json?v='+Date.now()).then(r=>r.ok?r.json():null),
+  fetch('intraday.json?v='+Date.now()).then(r=>r.ok?r.json():null)
+]).then(([a,b])=>{
+  GS = a.status==='fulfilled'?a.value:null;
+  GI = b.status==='fulfilled'?b.value:null;
+  const rz=document.getElementById('gi-rozet');
+  rz.textContent=(GI&&GI.anomali)?GI.anomali.length:"—";
+  document.getElementById('sub').textContent = GS ? (GS.tarih+" · "+(GS.surum||"")) : "veri bekleniyor";
+  ciz();
+});
 </script>
 </body>
 </html>
