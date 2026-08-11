@@ -1,6 +1,5 @@
-
 # -*- coding: utf-8 -*-
-"""MERT RADAR v3 - BIST tarama ve kagit-uzerinde izleme sistemi."""
+"""MERT RADAR v4 - BIST tarama, kagit-uzerinde izleme ve gun ici anomali sistemi."""
 import os, sys, csv, json, time, warnings
 warnings.filterwarnings("ignore")
 import urllib.request, urllib.parse
@@ -20,6 +19,14 @@ MAX_SECIM = 6
 MIN_ISLEM_TL = 5_000_000
 PARCA_BOYU = 25
 GECMIS_GUN = "2y"
+
+GI_ARALIK = "15m"
+GI_GECMIS = "5d"
+GI_MIN_HACIM_KAT = 2.5
+GI_MIN_HAREKET = 2.0
+GI_GAP_ESIK = 3.0
+GI_MAX_LISTE = 12
+GI_JSON_AD = "intraday.json"
 
 SEMBOLLER = (
  "THYAO ASELS EREGL SISE TUPRS FROTO GARAN AKBNK BIMAS KCHOL SAHOL PETKM TCELL "
@@ -307,6 +314,178 @@ def sebepler(r, sim, f):
     return s[:7]
 
 
+def gi_indir(semboller):
+    veri = {}
+    for i in range(0, len(semboller), PARCA_BOYU):
+        parca = semboller[i:i + PARCA_BOYU]
+        tickers = [s + ".IS" for s in parca]
+        toplu = None
+        try:
+            toplu = yf.download(" ".join(tickers), period=GI_GECMIS, interval=GI_ARALIK,
+                                auto_adjust=True, progress=False, group_by="ticker",
+                                threads=True, prepost=False)
+        except Exception:
+            toplu = None
+        if toplu is None or len(toplu) == 0:
+            continue
+        for s, tic in zip(parca, tickers):
+            try:
+                if isinstance(toplu.columns, pd.MultiIndex):
+                    if tic not in toplu.columns.get_level_values(0):
+                        continue
+                    d = toplu[tic].copy()
+                else:
+                    d = toplu.copy()
+            except Exception:
+                continue
+            d.columns = [str(c).lower() for c in d.columns]
+            d = d.reset_index()
+            d.columns = [str(c).lower() for c in d.columns]
+            zaman_kol = None
+            for k in ("datetime", "date", "index"):
+                if k in d.columns:
+                    zaman_kol = k
+                    break
+            if zaman_kol is None:
+                continue
+            d = d.rename(columns={zaman_kol: "ts"})
+            if not all(k in d.columns for k in ("ts", "open", "high", "low", "close", "volume")):
+                continue
+            d = d[["ts", "open", "high", "low", "close", "volume"]].dropna()
+            if len(d) < 12:
+                continue
+            d["ts"] = pd.to_datetime(d["ts"], utc=True, errors="coerce")
+            d = d.dropna(subset=["ts"])
+            if len(d) < 12:
+                continue
+            veri[s] = d.sort_values("ts").reset_index(drop=True)
+        time.sleep(0.4)
+    return veri
+
+
+def gi_anomali(sym, d, gs_kapanis=None):
+    sonuc = []
+    son = d.iloc[-1]
+    fiyat = float(son["close"])
+    if fiyat <= 0:
+        return sonuc
+    son_gun = son["ts"].date()
+    bugun_df = d[d["ts"].dt.date == son_gun]
+    onceki_df = d[d["ts"].dt.date < son_gun]
+    gec_hacim = d["volume"].iloc[:-1].tail(60)
+    ort_hacim = float(gec_hacim.mean()) if len(gec_hacim) else 0.0
+    if ort_hacim > 0:
+        kat = float(son["volume"]) / ort_hacim
+        if kat >= GI_MIN_HACIM_KAT:
+            sonuc.append({"tip": "hacim", "baslik": "Hacim patlamasi",
+                          "detay": f"Son {GI_ARALIK} barinda hacim ortalamanin {kat:.1f} kati",
+                          "siddet": round(min(kat / GI_MIN_HACIM_KAT, 3.0), 2)})
+    if len(d) >= 5:
+        onceki = float(d["close"].iloc[-5])
+        if onceki > 0:
+            hareket = (fiyat / onceki - 1) * 100
+            if abs(hareket) >= GI_MIN_HAREKET:
+                yon = "yukari" if hareket > 0 else "asagi"
+                sonuc.append({"tip": "hareket", "baslik": f"Ani fiyat hareketi ({yon})",
+                              "detay": f"Son ~1 saatte %{hareket:+.2f}",
+                              "siddet": round(min(abs(hareket) / GI_MIN_HAREKET, 3.0), 2)})
+    if len(bugun_df) and len(onceki_df):
+        acilis = float(bugun_df["open"].iloc[0])
+        dun_kapanis = float(onceki_df["close"].iloc[-1])
+        if dun_kapanis > 0:
+            gap = (acilis / dun_kapanis - 1) * 100
+            if abs(gap) >= GI_GAP_ESIK:
+                yon = "yukari" if gap > 0 else "asagi"
+                sonuc.append({"tip": "gap", "baslik": f"Acilis boslugu ({yon})",
+                              "detay": f"Acilis dunku kapanisa gore %{gap:+.2f}",
+                              "siddet": round(min(abs(gap) / GI_GAP_ESIK, 3.0), 2)})
+    if gs_kapanis and gs_kapanis > 0:
+        gun_deg = (fiyat / gs_kapanis - 1) * 100
+        if abs(gun_deg) >= 4.0:
+            yon = "yukari" if gun_deg > 0 else "asagi"
+            sonuc.append({"tip": "gunluk", "baslik": f"Gunluk sert hareket ({yon})",
+                          "detay": f"Onceki kapanisa gore %{gun_deg:+.2f}",
+                          "siddet": round(min(abs(gun_deg) / 4.0, 3.0), 2)})
+    if len(bugun_df) >= 6 and ort_hacim > 0:
+        bugun_hacim = float(bugun_df["volume"].sum())
+        bar_ort = bugun_hacim / max(len(bugun_df), 1)
+        yuksek = float(bugun_df["high"].max())
+        dusuk = float(bugun_df["low"].min())
+        if dusuk > 0:
+            bant = (yuksek / dusuk - 1) * 100
+            if bar_ort >= ort_hacim * 1.8 and bant <= 1.5:
+                sonuc.append({"tip": "birikim", "baslik": "Sessiz birikim",
+                              "detay": f"Hacim ortalamanin {bar_ort/ort_hacim:.1f} kati, fiyat bandi sadece %{bant:.1f}",
+                              "siddet": round(min(bar_ort / ort_hacim / 1.8, 3.0), 2)})
+    for a in sonuc:
+        a["sym"] = sym
+        a["fiyat"] = round(fiyat, 2)
+        a["saat"] = son["ts"].tz_convert("Europe/Istanbul").strftime("%H:%M")
+    return sonuc
+
+
+def gun_ici_calistir(sembol_limit=None, test_modu=False):
+    sem = SEMBOLLER if not sembol_limit else SEMBOLLER[:sembol_limit]
+    print(f"GUN ICI tarama ({len(sem)} sembol, {GI_ARALIK} bar)...")
+    veri = gi_indir(sem)
+    print(f"  gun ici veri alinan: {len(veri)}")
+    if not veri:
+        print("HATA: gun ici veri alinamadi.")
+        return 1
+    gs_kapanis = {}
+    try:
+        with open(CIKTI_JSON, encoding="utf-8") as fh:
+            gs = json.load(fh)
+        for r in gs.get("radar", []):
+            gs_kapanis[r["sym"]] = r.get("fiyat")
+    except Exception:
+        pass
+    anomaliler = []
+    en_yeni_ts = None
+    for s, d in veri.items():
+        try:
+            a = gi_anomali(s, d, gs_kapanis.get(s))
+        except Exception:
+            continue
+        anomaliler.extend(a)
+        ts = d["ts"].iloc[-1]
+        if en_yeni_ts is None or ts > en_yeni_ts:
+            en_yeni_ts = ts
+    anomaliler.sort(key=lambda x: (-x["siddet"], x["sym"]))
+    anomaliler = anomaliler[:GI_MAX_LISTE]
+    simdi = pd.Timestamp.now(tz="UTC")
+    gecikme_dk = None
+    veri_saat = None
+    if en_yeni_ts is not None:
+        gecikme_dk = int((simdi - en_yeni_ts).total_seconds() // 60)
+        veri_saat = en_yeni_ts.tz_convert("Europe/Istanbul").strftime("%d.%m %H:%M")
+    cikti = {
+        "surum": "v4",
+        "mod": "gun-ici",
+        "guncelleme": simdi.tz_convert("Europe/Istanbul").strftime("%d.%m.%Y %H:%M"),
+        "veri_saat": veri_saat,
+        "gecikme_dk": gecikme_dk,
+        "bar": GI_ARALIK,
+        "taranan": len(veri),
+        "anomali": anomaliler,
+    }
+    yol = os.path.join(KOK, GI_JSON_AD)
+    gecici = yol + ".tmp"
+    with open(gecici, "w", encoding="utf-8") as fh:
+        json.dump(cikti, fh, ensure_ascii=False, indent=1)
+    os.replace(gecici, yol)
+    print(f"{GI_JSON_AD} yazildi | anomali: {len(anomaliler)} | gecikme: {gecikme_dk} dk")
+    guclu = [a for a in anomaliler if a["siddet"] >= 1.5]
+    if guclu and not test_modu:
+        msg = f"GUN ICI ANOMALI | {cikti['guncelleme']}\n"
+        msg += f"Veri: {veri_saat} ({gecikme_dk} dk once)\n\n"
+        for a in guclu[:6]:
+            msg += f"- {a['sym']} {a['fiyat']} | {a['baslik']}\n   {a['detay']}\n"
+        msg += "\nVeri gecikmelidir. Yatirim tavsiyesi degildir."
+        telegram(msg)
+    return 0
+
+
 def telegram(mesaj):
     tok = os.environ.get("TELEGRAM_TOKEN", "").strip().replace("\n", "").replace("\r", "")
     cid = os.environ.get("TELEGRAM_CHAT_ID", "").strip().replace("\n", "").replace("\r", "")
@@ -482,8 +661,11 @@ def main(test_modu=False, sembol_limit=None):
     gecmis = [{"date": x["date"], "sym": x["sym"], "skor": x["skor"],
                "giris": x.get("giris", ""), "getiri": x["getiri"], "sonuc": x["sonuc"]}
               for x in biten][-15:]
+    simdi_tr = pd.Timestamp.now(tz="UTC").tz_convert("Europe/Istanbul")
     web = {
-        "surum": "v3",
+        "surum": "v4",
+        "mod": "gun-sonu",
+        "guncelleme": simdi_tr.strftime("%d.%m.%Y %H:%M"),
         "tarih": str(bugun),
         "ufuk": UFUK,
         "taranan": len(adaylar),
@@ -517,4 +699,6 @@ if __name__ == "__main__":
             limit = int(sys.argv[sys.argv.index("--sembol") + 1])
         except (IndexError, ValueError):
             limit = None
+    if "--gun-ici" in sys.argv:
+        sys.exit(gun_ici_calistir(sembol_limit=limit, test_modu=test))
     sys.exit(main(test_modu=test, sembol_limit=limit))
