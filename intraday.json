@@ -1,29 +1,65 @@
 {
  "surum": "v4",
  "mod": "gun-ici",
- "guncelleme": "13.08.2026 17:43",
- "veri_saat": "13.08 17:15",
- "gecikme_dk": 28,
+ "guncelleme": "13.08.2026 21:09",
+ "veri_saat": "13.08 17:45",
+ "gecikme_dk": 204,
  "bar": "15m",
  "taranan": 128,
  "anomali": [
   {
-   "tip": "hareket",
-   "baslik": "Ani fiyat hareketi (yukari)",
-   "detay": "Son ~1 saatte %+5.08",
-   "siddet": 2.54,
-   "sym": "GOODY",
-   "fiyat": 2.69,
-   "saat": "17:15"
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "Son 15m barinda hacim ortalamanin 7.7 kati",
+   "siddet": 3.0,
+   "sym": "ANSGR",
+   "fiyat": 28.7,
+   "saat": "17:45"
   },
   {
    "tip": "hacim",
    "baslik": "Hacim patlamasi",
-   "detay": "Son 15m barinda hacim ortalamanin 6.3 kati",
-   "siddet": 2.51,
-   "sym": "SISE",
-   "fiyat": 41.74,
-   "saat": "17:15"
+   "detay": "Son 15m barinda hacim ortalamanin 11.7 kati",
+   "siddet": 3.0,
+   "sym": "GOODY",
+   "fiyat": 2.73,
+   "saat": "17:45"
+  },
+  {
+   "tip": "hareket",
+   "baslik": "Ani fiyat hareketi (yukari)",
+   "detay": "Son ~1 saatte %+6.60",
+   "siddet": 3.0,
+   "sym": "MAGEN",
+   "fiyat": 34.58,
+   "saat": "17:45"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "Son 15m barinda hacim ortalamanin 14.7 kati",
+   "siddet": 3.0,
+   "sym": "ODAS",
+   "fiyat": 7.5,
+   "saat": "17:45"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "Son 15m barinda hacim ortalamanin 14.4 kati",
+   "siddet": 3.0,
+   "sym": "YATAS",
+   "fiyat": 33.6,
+   "saat": "17:45"
+  },
+  {
+   "tip": "hareket",
+   "baslik": "Ani fiyat hareketi (yukari)",
+   "detay": "Son ~1 saatte %+5.30",
+   "siddet": 2.65,
+   "sym": "PASEU",
+   "fiyat": 153.0,
+   "saat": "17:45"
   },
   {
    "tip": "gap",
@@ -31,8 +67,17 @@
    "detay": "Acilis dunku kapanisa gore %-7.46",
    "siddet": 2.49,
    "sym": "DOAS",
-   "fiyat": 175.0,
-   "saat": "17:15"
+   "fiyat": 174.5,
+   "saat": "17:45"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "Son 15m barinda hacim ortalamanin 5.7 kati",
+   "siddet": 2.29,
+   "sym": "PASEU",
+   "fiyat": 153.0,
+   "saat": "17:45"
   },
   {
    "tip": "gap",
@@ -41,79 +86,34 @@
    "siddet": 2.19,
    "sym": "AYDEM",
    "fiyat": 25.74,
-   "saat": "17:15"
+   "saat": "17:45"
   },
   {
-   "tip": "hareket",
-   "baslik": "Ani fiyat hareketi (yukari)",
-   "detay": "Son ~1 saatte %+3.64",
-   "siddet": 1.82,
-   "sym": "MAGEN",
-   "fiyat": 33.56,
-   "saat": "17:15"
-  },
-  {
-   "tip": "hareket",
-   "baslik": "Ani fiyat hareketi (yukari)",
-   "detay": "Son ~1 saatte %+2.95",
-   "siddet": 1.48,
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "Son 15m barinda hacim ortalamanin 5.3 kati",
+   "siddet": 2.11,
    "sym": "KAREL",
-   "fiyat": 9.76,
-   "saat": "17:15"
+   "fiyat": 9.86,
+   "saat": "17:45"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "Son 15m barinda hacim ortalamanin 4.4 kati",
+   "siddet": 1.75,
+   "sym": "BERA",
+   "fiyat": 13.29,
+   "saat": "17:45"
   },
   {
    "tip": "hareket",
    "baslik": "Ani fiyat hareketi (yukari)",
-   "detay": "Son ~1 saatte %+2.86",
-   "siddet": 1.43,
-   "sym": "PASEU",
-   "fiyat": 147.4,
-   "saat": "17:15"
-  },
-  {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "Son 15m barinda hacim ortalamanin 3.4 kati",
-   "siddet": 1.37,
-   "sym": "GLYHO",
-   "fiyat": 17.25,
-   "saat": "17:15"
-  },
-  {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "Son 15m barinda hacim ortalamanin 3.4 kati",
-   "siddet": 1.35,
-   "sym": "KAREL",
-   "fiyat": 9.76,
-   "saat": "17:15"
-  },
-  {
-   "tip": "gap",
-   "baslik": "Acilis boslugu (yukari)",
-   "detay": "Acilis dunku kapanisa gore %+3.62",
-   "siddet": 1.21,
-   "sym": "KORDS",
-   "fiyat": 83.45,
-   "saat": "17:15"
-  },
-  {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "Son 15m barinda hacim ortalamanin 2.8 kati",
-   "siddet": 1.12,
-   "sym": "ZOREN",
-   "fiyat": 2.27,
-   "saat": "17:15"
-  },
-  {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "Son 15m barinda hacim ortalamanin 2.7 kati",
-   "siddet": 1.09,
-   "sym": "MAGEN",
-   "fiyat": 33.56,
-   "saat": "17:15"
+   "detay": "Son ~1 saatte %+3.45",
+   "siddet": 1.72,
+   "sym": "ODAS",
+   "fiyat": 7.5,
+   "saat": "17:45"
   }
  ]
 }
