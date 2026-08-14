@@ -1,119 +1,92 @@
 {
  "surum": "v4",
  "mod": "gun-ici",
- "guncelleme": "13.08.2026 21:09",
- "veri_saat": "13.08 17:45",
- "gecikme_dk": 204,
+ "guncelleme": "14.08.2026 13:37",
+ "veri_saat": "14.08 13:15",
+ "gecikme_dk": 22,
  "bar": "15m",
  "taranan": 128,
  "anomali": [
   {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "Son 15m barinda hacim ortalamanin 7.7 kati",
-   "siddet": 3.0,
-   "sym": "ANSGR",
-   "fiyat": 28.7,
-   "saat": "17:45"
-  },
-  {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "Son 15m barinda hacim ortalamanin 11.7 kati",
-   "siddet": 3.0,
+   "tip": "hareket",
+   "baslik": "Ani fiyat hareketi (yukari)",
+   "detay": "Son ~1 saatte %+4.81",
+   "siddet": 2.41,
    "sym": "GOODY",
-   "fiyat": 2.73,
-   "saat": "17:45"
+   "fiyat": 2.83,
+   "saat": "13:15"
   },
   {
    "tip": "hareket",
    "baslik": "Ani fiyat hareketi (yukari)",
-   "detay": "Son ~1 saatte %+6.60",
-   "siddet": 3.0,
+   "detay": "Son ~1 saatte %+4.70",
+   "siddet": 2.35,
+   "sym": "KONTR",
+   "fiyat": 4.01,
+   "saat": "12:45"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "Son 15m barinda hacim ortalamanin 5.6 kati",
+   "siddet": 2.24,
    "sym": "MAGEN",
-   "fiyat": 34.58,
-   "saat": "17:45"
+   "fiyat": 35.2,
+   "saat": "13:15"
   },
   {
    "tip": "hacim",
    "baslik": "Hacim patlamasi",
-   "detay": "Son 15m barinda hacim ortalamanin 14.7 kati",
-   "siddet": 3.0,
-   "sym": "ODAS",
-   "fiyat": 7.5,
-   "saat": "17:45"
-  },
-  {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "Son 15m barinda hacim ortalamanin 14.4 kati",
-   "siddet": 3.0,
-   "sym": "YATAS",
-   "fiyat": 33.6,
-   "saat": "17:45"
-  },
-  {
-   "tip": "hareket",
-   "baslik": "Ani fiyat hareketi (yukari)",
-   "detay": "Son ~1 saatte %+5.30",
-   "siddet": 2.65,
-   "sym": "PASEU",
-   "fiyat": 153.0,
-   "saat": "17:45"
-  },
-  {
-   "tip": "gap",
-   "baslik": "Acilis boslugu (asagi)",
-   "detay": "Acilis dunku kapanisa gore %-7.46",
-   "siddet": 2.49,
-   "sym": "DOAS",
-   "fiyat": 174.5,
-   "saat": "17:45"
-  },
-  {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "Son 15m barinda hacim ortalamanin 5.7 kati",
-   "siddet": 2.29,
-   "sym": "PASEU",
-   "fiyat": 153.0,
-   "saat": "17:45"
+   "detay": "Son 15m barinda hacim ortalamanin 4.5 kati",
+   "siddet": 1.8,
+   "sym": "GOODY",
+   "fiyat": 2.83,
+   "saat": "13:15"
   },
   {
    "tip": "gap",
    "baslik": "Acilis boslugu (yukari)",
-   "detay": "Acilis dunku kapanisa gore %+6.58",
-   "siddet": 2.19,
-   "sym": "AYDEM",
-   "fiyat": 25.74,
-   "saat": "17:45"
+   "detay": "Acilis dunku kapanisa gore %+4.67",
+   "siddet": 1.56,
+   "sym": "KORDS",
+   "fiyat": 91.75,
+   "saat": "13:15"
   },
   {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "Son 15m barinda hacim ortalamanin 5.3 kati",
-   "siddet": 2.11,
-   "sym": "KAREL",
-   "fiyat": 9.86,
-   "saat": "17:45"
-  },
-  {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "Son 15m barinda hacim ortalamanin 4.4 kati",
-   "siddet": 1.75,
-   "sym": "BERA",
-   "fiyat": 13.29,
-   "saat": "17:45"
+   "tip": "gap",
+   "baslik": "Acilis boslugu (yukari)",
+   "detay": "Acilis dunku kapanisa gore %+3.66",
+   "siddet": 1.22,
+   "sym": "KONTR",
+   "fiyat": 4.01,
+   "saat": "12:45"
   },
   {
    "tip": "hareket",
    "baslik": "Ani fiyat hareketi (yukari)",
-   "detay": "Son ~1 saatte %+3.45",
-   "siddet": 1.72,
-   "sym": "ODAS",
-   "fiyat": 7.5,
-   "saat": "17:45"
+   "detay": "Son ~1 saatte %+2.34",
+   "siddet": 1.17,
+   "sym": "YEOTK",
+   "fiyat": 40.24,
+   "saat": "13:15"
+  },
+  {
+   "tip": "gap",
+   "baslik": "Acilis boslugu (yukari)",
+   "detay": "Acilis dunku kapanisa gore %+3.26",
+   "siddet": 1.09,
+   "sym": "AYDEM",
+   "fiyat": 25.42,
+   "saat": "13:15"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "Son 15m barinda hacim ortalamanin 2.7 kati",
+   "siddet": 1.09,
+   "sym": "BAGFS",
+   "fiyat": 24.46,
+   "saat": "13:15"
   }
  ]
 }
