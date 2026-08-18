@@ -1,119 +1,119 @@
 {
  "surum": "v4",
  "mod": "gun-ici",
- "guncelleme": "17.08.2026 18:55",
- "veri_saat": "17.08 17:45",
- "gecikme_dk": 70,
+ "guncelleme": "18.08.2026 12:00",
+ "veri_saat": "18.08 11:45",
+ "gecikme_dk": 15,
  "bar": "15m",
  "taranan": 128,
  "anomali": [
   {
    "tip": "gap",
    "baslik": "Acilis boslugu (yukari)",
-   "detay": "Acilis dunku kapanisa gore %+9.32",
+   "detay": "Acilis dunku kapanisa gore %+10.04",
    "siddet": 3.0,
-   "sym": "DEVA",
-   "fiyat": 79.8,
-   "saat": "17:45"
-  },
-  {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "Son 15m barinda hacim ortalamanin 10.6 kati",
-   "siddet": 3.0,
-   "sym": "GLYHO",
-   "fiyat": 17.01,
-   "saat": "17:45"
+   "sym": "GOLTS",
+   "fiyat": 321.5,
+   "saat": "11:45"
   },
   {
    "tip": "gap",
    "baslik": "Acilis boslugu (yukari)",
-   "detay": "Acilis dunku kapanisa gore %+9.63",
-   "siddet": 3.0,
+   "detay": "Acilis dunku kapanisa gore %+8.75",
+   "siddet": 2.92,
+   "sym": "BAGFS",
+   "fiyat": 26.84,
+   "saat": "11:45"
+  },
+  {
+   "tip": "gap",
+   "baslik": "Acilis boslugu (yukari)",
+   "detay": "Acilis dunku kapanisa gore %+8.35",
+   "siddet": 2.78,
    "sym": "NETAS",
-   "fiyat": 68.3,
-   "saat": "17:45"
-  },
-  {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "Son 15m barinda hacim ortalamanin 17.7 kati",
-   "siddet": 3.0,
-   "sym": "PEKGY",
-   "fiyat": 15.37,
-   "saat": "17:45"
-  },
-  {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "Son 15m barinda hacim ortalamanin 12.2 kati",
-   "siddet": 3.0,
-   "sym": "YATAS",
-   "fiyat": 35.0,
-   "saat": "17:45"
+   "fiyat": 75.1,
+   "saat": "11:30"
   },
   {
    "tip": "hareket",
    "baslik": "Ani fiyat hareketi (asagi)",
-   "detay": "Son ~1 saatte %-5.92",
-   "siddet": 2.96,
+   "detay": "Son ~1 saatte %-4.77",
+   "siddet": 2.39,
    "sym": "KONTR",
-   "fiyat": 3.97,
-   "saat": "17:45"
+   "fiyat": 3.99,
+   "saat": "09:45"
+  },
+  {
+   "tip": "gap",
+   "baslik": "Acilis boslugu (yukari)",
+   "detay": "Acilis dunku kapanisa gore %+6.52",
+   "siddet": 2.17,
+   "sym": "DEVA",
+   "fiyat": 84.1,
+   "saat": "11:45"
   },
   {
    "tip": "hacim",
    "baslik": "Hacim patlamasi",
-   "detay": "Son 15m barinda hacim ortalamanin 7.4 kati",
-   "siddet": 2.95,
-   "sym": "SELEC",
-   "fiyat": 258.5,
-   "saat": "17:45"
+   "detay": "Son 15m barinda hacim ortalamanin 5.2 kati",
+   "siddet": 2.1,
+   "sym": "BIZIM",
+   "fiyat": 23.12,
+   "saat": "11:30"
   },
   {
    "tip": "hacim",
    "baslik": "Hacim patlamasi",
-   "detay": "Son 15m barinda hacim ortalamanin 6.7 kati",
-   "siddet": 2.69,
-   "sym": "YKBNK",
-   "fiyat": 34.92,
-   "saat": "17:45"
+   "detay": "Son 15m barinda hacim ortalamanin 3.3 kati",
+   "siddet": 1.31,
+   "sym": "ALKIM",
+   "fiyat": 15.85,
+   "saat": "11:30"
   },
   {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "Son 15m barinda hacim ortalamanin 6.6 kati",
-   "siddet": 2.65,
-   "sym": "INDES",
-   "fiyat": 10.85,
-   "saat": "17:45"
+   "tip": "gunluk",
+   "baslik": "Gunluk sert hareket (asagi)",
+   "detay": "Onceki kapanisa gore %-5.23",
+   "siddet": 1.31,
+   "sym": "TABGD",
+   "fiyat": 248.3,
+   "saat": "11:45"
+  },
+  {
+   "tip": "gap",
+   "baslik": "Acilis boslugu (asagi)",
+   "detay": "Acilis dunku kapanisa gore %-3.93",
+   "siddet": 1.31,
+   "sym": "VAKKO",
+   "fiyat": 66.3,
+   "saat": "11:30"
   },
   {
    "tip": "hareket",
    "baslik": "Ani fiyat hareketi (yukari)",
-   "detay": "Son ~1 saatte %+4.53",
-   "siddet": 2.26,
-   "sym": "SELEC",
-   "fiyat": 258.5,
-   "saat": "17:45"
-  },
-  {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "Son 15m barinda hacim ortalamanin 5.5 kati",
-   "siddet": 2.21,
-   "sym": "ARCLK",
-   "fiyat": 94.1,
-   "saat": "17:45"
+   "detay": "Son ~1 saatte %+2.58",
+   "siddet": 1.29,
+   "sym": "SOKM",
+   "fiyat": 53.65,
+   "saat": "11:45"
   },
   {
    "tip": "hareket",
    "baslik": "Ani fiyat hareketi (asagi)",
-   "detay": "Son ~1 saatte %-4.37",
-   "siddet": 2.19,
-   "sym": "PASEU",
-   "fiyat": 161.9,
-   "saat": "17:45"
+   "detay": "Son ~1 saatte %-2.24",
+   "siddet": 1.12,
+   "sym": "AYDEM",
+   "fiyat": 27.1,
+   "saat": "11:45"
+  },
+  {
+   "tip": "gap",
+   "baslik": "Acilis boslugu (yukari)",
+   "detay": "Acilis dunku kapanisa gore %+3.21",
+   "siddet": 1.07,
+   "sym": "BIMAS",
+   "fiyat": 405.75,
+   "saat": "11:45"
   }
  ]
 }
