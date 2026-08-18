@@ -1,9 +1,9 @@
 {
  "surum": "v4",
  "mod": "gun-ici",
- "guncelleme": "18.08.2026 14:57",
- "veri_saat": "18.08 14:30",
- "gecikme_dk": 27,
+ "guncelleme": "18.08.2026 17:07",
+ "veri_saat": "18.08 16:45",
+ "gecikme_dk": 22,
  "bar": "15m",
  "taranan": 128,
  "anomali": [
@@ -13,8 +13,8 @@
    "detay": "Acilis dunku kapanisa gore %+10.04",
    "siddet": 3.0,
    "sym": "GOLTS",
-   "fiyat": 315.0,
-   "saat": "14:30"
+   "fiyat": 316.0,
+   "saat": "16:45"
   },
   {
    "tip": "gap",
@@ -22,8 +22,8 @@
    "detay": "Acilis dunku kapanisa gore %+8.75",
    "siddet": 2.92,
    "sym": "BAGFS",
-   "fiyat": 26.7,
-   "saat": "14:30"
+   "fiyat": 26.9,
+   "saat": "16:45"
   },
   {
    "tip": "gap",
@@ -32,16 +32,7 @@
    "siddet": 2.78,
    "sym": "NETAS",
    "fiyat": 75.1,
-   "saat": "14:30"
-  },
-  {
-   "tip": "hareket",
-   "baslik": "Ani fiyat hareketi (yukari)",
-   "detay": "Son ~1 saatte %+4.85",
-   "siddet": 2.43,
-   "sym": "GOODY",
-   "fiyat": 3.24,
-   "saat": "14:30"
+   "saat": "16:45"
   },
   {
    "tip": "gap",
@@ -49,26 +40,17 @@
    "detay": "Acilis dunku kapanisa gore %+6.52",
    "siddet": 2.17,
    "sym": "DEVA",
-   "fiyat": 85.5,
-   "saat": "14:30"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+7.28",
-   "siddet": 1.82,
-   "sym": "GOODY",
-   "fiyat": 3.24,
-   "saat": "14:30"
+   "fiyat": 86.25,
+   "saat": "16:45"
   },
   {
    "tip": "gunluk",
    "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-5.46",
-   "siddet": 1.36,
+   "detay": "Onceki kapanisa gore %-5.69",
+   "siddet": 1.42,
    "sym": "TABGD",
-   "fiyat": 247.7,
-   "saat": "14:30"
+   "fiyat": 247.1,
+   "saat": "16:45"
   },
   {
    "tip": "gap",
@@ -76,17 +58,26 @@
    "detay": "Acilis dunku kapanisa gore %-3.93",
    "siddet": 1.31,
    "sym": "VAKKO",
-   "fiyat": 65.75,
-   "saat": "14:30"
+   "fiyat": 65.25,
+   "saat": "16:45"
   },
   {
    "tip": "hacim",
    "baslik": "Hacim patlamasi",
-   "detay": "Son 15m barinda hacim ortalamanin 3.1 kati",
-   "siddet": 1.24,
-   "sym": "CWENE",
-   "fiyat": 37.86,
-   "saat": "14:30"
+   "detay": "Son 15m barinda hacim ortalamanin 3.0 kati",
+   "siddet": 1.21,
+   "sym": "PEKGY",
+   "fiyat": 15.16,
+   "saat": "16:45"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "Son 15m barinda hacim ortalamanin 2.8 kati",
+   "siddet": 1.11,
+   "sym": "ZOREN",
+   "fiyat": 2.24,
+   "saat": "16:45"
   },
   {
    "tip": "gap",
@@ -94,8 +85,17 @@
    "detay": "Acilis dunku kapanisa gore %+3.21",
    "siddet": 1.07,
    "sym": "BIMAS",
-   "fiyat": 405.0,
-   "saat": "14:30"
+   "fiyat": 402.0,
+   "saat": "16:45"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "Son 15m barinda hacim ortalamanin 2.6 kati",
+   "siddet": 1.04,
+   "sym": "MAVI",
+   "fiyat": 37.64,
+   "saat": "16:45"
   },
   {
    "tip": "gap",
@@ -103,8 +103,8 @@
    "detay": "Acilis dunku kapanisa gore %+3.03",
    "siddet": 1.01,
    "sym": "AYDEM",
-   "fiyat": 27.44,
-   "saat": "14:30"
+   "fiyat": 26.96,
+   "saat": "16:45"
   }
  ]
 }
