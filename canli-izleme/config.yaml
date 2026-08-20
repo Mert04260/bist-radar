@@ -1,0 +1,55 @@
+# MERT RADAR ayarlari
+# Bu dosyadaki her anahtar radar/ayar.py icindeki varsayilani ezer.
+# Bir bolumu silersen varsayilan deger kullanilir - dosyanin tam olmasi gerekmez.
+
+veri:
+  gecmis: "2y"              # ilk indirmede cekilen gecmis
+  artimli_pencere: "3mo"    # onbellek tazelenirken cekilen pencere
+  onbellek_aktif: true
+  # Onbellekteki fiyat ile yeni inen fiyat bu orandan fazla ayrilirsa
+  # (temettu/bolunme sonrasi yeniden duzeltme) tum gecmis yeniden indirilir.
+  yeniden_duzeltme_tolerans: 0.005
+
+skor:
+  esik: 72                  # sinyal esigi
+  guven_esik: 88            # yildizli dilim
+  max_secim: 6              # gunde en fazla kac sinyal
+  min_islem_tl: 5000000     # likidite filtresi
+  ufuk: 3                   # degerlendirme ufku (islem gunu)
+  min_epizot: 10            # benzer_gun icin gereken bagimsiz ornek
+  stop_hedef_aktif: true    # false -> sabit ufuk cikisi (eski v4 davranisi)
+  veri_yok_gun: 10          # bu kadar gun veri gelmezse sinyal iptal
+
+rejim:
+  aktif: true
+  bastirma_esigi: 25        # piyasa puani bunun altinda ise hic sinyal uretme
+  ceza:                     # rejime gore skordan dusulen puan
+    OLUMLU: 0
+    NOTR: 3
+    RISKLI: 8
+
+sektor:
+  aktif: true
+  yogunlasma_uyari: 3       # ayni sektorden bu kadar sinyal cikarsa uyar
+  rs_pencere: 10
+
+gunici:
+  aralik: "15m"
+  gecmis: "10d"
+  min_hacim_kat: 2.5
+  min_hareket: 2.0
+  gap_esik: 3.0
+  gun_esik: 4.0
+  max_gecikme_dk: 45        # veri bundan bayatsa bildirim gonderme
+  alarm_siddet: 1.5
+  arsiv_aktif: true         # anomalileri loga yaz (anomali karnesi icin sart)
+
+backtest:
+  isinma_bar: 260           # ilk bu kadar bar skorlanmaz
+  baslangic: null           # "2024-01-01" gibi verilebilir
+  sermaye: 100000
+  komisyon_bps: 8           # tek yon, baz puan
+  kayma_bps: 10             # slipaj varsayimi
+
+bildirim:
+  telegram_aktif: true
