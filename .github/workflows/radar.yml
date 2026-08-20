@@ -2,8 +2,8 @@ name: MERT RADAR
 
 on:
   schedule:
-    - cron: "20 15 * * 1-5"          # gun sonu (18:20 TRT)
-    - cron: "*/20 7-15 * * 1-5"      # gun ici (10:00-18:00 TRT arasi 20 dk)
+    - cron: "20 15 * * 1-5"
+    - cron: "*/20 7-15 * * 1-5"
   workflow_dispatch:
     inputs:
       mod:
@@ -26,7 +26,6 @@ jobs:
 
       - run: pip install -r canli-izleme/requirements.txt
 
-      # Fiyat onbellegi: kaybolursa sistem calisir, sadece ilk kosu yavaslar
       - uses: actions/cache@v4
         with:
           path: canli-izleme/onbellek
@@ -50,15 +49,18 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python canli-izleme/mert_radar.py ${{ steps.mod.outputs.mod }}
 
-      # signals.csv ve anomali_arsiv.csv kalici olmali - sistemin hafizasi bunlar
-      - name: Sonuclari commit'le
+      - name: Sonuclari commitle
         run: |
           git config user.name "radar-bot"
           git config user.email "radar-bot@users.noreply.github.com"
-          git add -A data.json intraday.json backtest.json \
-                     canli-izleme/signals.csv \
-                     canli-izleme/anomali_arsiv.csv \
-                     canli-izleme/intraday_state.json 2>/dev/null || true
-          git diff --staged --quiet || git commit -m "radar: ${{ steps.mod.outputs.mod }} $(date -u +%F\ %H:%M)"
-          git pull --rebase --autostash || true
-          git push || true
+          for f in data.json intraday.json backtest.json \
+                   canli-izleme/signals.csv \
+                   canli-izleme/anomali_arsiv.csv \
+                   canli-izleme/intraday_state.json; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
+          git status --short
+          git diff --staged --quiet && echo "degisiklik yok" && exit 0
+          git commit -m "radar: ${{ steps.mod.outputs.mod }}"
+          git pull --rebase --autostash
+          git push
