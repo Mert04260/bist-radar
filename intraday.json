@@ -1,9 +1,9 @@
 {
  "surum": "v4",
  "mod": "gun-ici",
- "guncelleme": "20.08.2026 12:06",
- "veri_saat": "20.08 11:45",
- "gecikme_dk": 21,
+ "guncelleme": "20.08.2026 14:00",
+ "veri_saat": "20.08 13:45",
+ "gecikme_dk": 15,
  "bar": "15m",
  "taranan": 128,
  "anomali": [
@@ -14,43 +14,25 @@
    "siddet": 2.73,
    "sym": "JANTS",
    "fiyat": 16.52,
-   "saat": "11:45"
+   "saat": "13:30"
   },
   {
    "tip": "gunluk",
    "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+8.52",
-   "siddet": 2.13,
+   "detay": "Onceki kapanisa gore %+9.63",
+   "siddet": 2.41,
    "sym": "BRSAN",
-   "fiyat": 687.5,
-   "saat": "11:45"
+   "fiyat": 694.5,
+   "saat": "13:30"
   },
   {
    "tip": "gunluk",
    "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-6.80",
-   "siddet": 1.7,
+   "detay": "Onceki kapanisa gore %-7.14",
+   "siddet": 1.79,
    "sym": "GOODY",
-   "fiyat": 2.74,
-   "saat": "11:45"
-  },
-  {
-   "tip": "hareket",
-   "baslik": "Ani fiyat hareketi (yukari)",
-   "detay": "Son ~1 saatte %+3.31",
-   "siddet": 1.66,
-   "sym": "BINHO",
-   "fiyat": 10.92,
-   "saat": "11:45"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+6.04",
-   "siddet": 1.51,
-   "sym": "DEVA",
-   "fiyat": 89.6,
-   "saat": "11:45"
+   "fiyat": 2.73,
+   "saat": "13:45"
   },
   {
    "tip": "gap",
@@ -58,8 +40,8 @@
    "detay": "Acilis dunku kapanisa gore %+4.13",
    "siddet": 1.38,
    "sym": "BUCIM",
-   "fiyat": 5.2,
-   "saat": "11:45"
+   "fiyat": 5.18,
+   "saat": "13:30"
   },
   {
    "tip": "gap",
@@ -67,8 +49,17 @@
    "detay": "Acilis dunku kapanisa gore %+3.91",
    "siddet": 1.3,
    "sym": "ALTNY",
-   "fiyat": 18.19,
-   "saat": "11:45"
+   "fiyat": 18.24,
+   "saat": "13:45"
+  },
+  {
+   "tip": "gunluk",
+   "baslik": "Gunluk sert hareket (yukari)",
+   "detay": "Onceki kapanisa gore %+5.03",
+   "siddet": 1.26,
+   "sym": "DEVA",
+   "fiyat": 88.75,
+   "saat": "13:30"
   },
   {
    "tip": "gap",
@@ -76,35 +67,26 @@
    "detay": "Acilis dunku kapanisa gore %+3.69",
    "siddet": 1.23,
    "sym": "NETAS",
-   "fiyat": 89.1,
-   "saat": "11:45"
+   "fiyat": 89.2,
+   "saat": "13:45"
   },
   {
-   "tip": "hareket",
-   "baslik": "Ani fiyat hareketi (asagi)",
-   "detay": "Son ~1 saatte %-2.34",
-   "siddet": 1.17,
-   "sym": "BRSAN",
-   "fiyat": 687.5,
-   "saat": "11:45"
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "Son 15m barinda hacim ortalamanin 3.0 kati",
+   "siddet": 1.2,
+   "sym": "GESAN",
+   "fiyat": 85.9,
+   "saat": "13:30"
   },
   {
    "tip": "gunluk",
    "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+4.40",
-   "siddet": 1.1,
+   "detay": "Onceki kapanisa gore %+4.58",
+   "siddet": 1.14,
    "sym": "SOKM",
-   "fiyat": 57.0,
-   "saat": "11:45"
-  },
-  {
-   "tip": "birikim",
-   "baslik": "Sessiz birikim",
-   "detay": "Hacim ortalamanin 1.9 kati, fiyat bandi sadece %1.5",
-   "siddet": 1.04,
-   "sym": "ALKIM",
-   "fiyat": 15.75,
-   "saat": "11:45"
+   "fiyat": 57.1,
+   "saat": "13:30"
   }
  ]
 }
