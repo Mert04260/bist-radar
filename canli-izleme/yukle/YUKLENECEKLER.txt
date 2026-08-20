@@ -1,0 +1,21 @@
+Bu klasordeki yapi, deponun yapisiyla BIREBIR ayni.
+Ayni isimli klasorleri ust uste koyman yeterli.
+
+yukle/
+├─ index.html                    -> depo kokune (mevcut olanin USTUNE)
+├─ .github/workflows/radar.yml   -> mevcut workflow'un USTUNE
+└─ canli-izleme/
+    ├─ mert_radar.py             -> yeni
+    ├─ config.yaml               -> yeni
+    ├─ requirements.txt          -> yeni
+    ├─ README-v6.md              -> yeni
+    └─ radar/                    -> yeni klasor (15 dosya)
+
+DOKUNULMAYACAKLAR (zaten deponda duruyorlar, elleme):
+  canli-izleme/signals.csv
+  canli-izleme/README.md
+  data.json
+  intraday.json
+
+SILINECEK (yukleme bittikten SONRA):
+  canli-izleme/radar.py     <- eski tek parca betik
