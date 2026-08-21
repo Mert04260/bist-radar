@@ -1,0 +1,16 @@
+ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
+2026-08-21T08:45:00+00:00,2026-08-21,11:45,ALTNY,gunluk,Gunluk sert hareket (yukari),2.82,19.05,Onceki kapanisa gore %+11.27
+2026-08-21T08:45:00+00:00,2026-08-21,11:45,ALTNY,hacim,Hacim patlamasi,1.98,19.05,"11:45 barinda hacim, ayni saatin ortalamasinin 5.0 kati"
+2026-08-21T08:45:00+00:00,2026-08-21,11:45,ALTNY,hareket,Ani fiyat hareketi (yukari),1.85,19.05,Son 1 saatte %+3.70
+2026-08-21T08:45:00+00:00,2026-08-21,11:45,NETAS,gunluk,Gunluk sert hareket (yukari),1.66,96.9,Onceki kapanisa gore %+6.66
+2026-08-21T08:45:00+00:00,2026-08-21,11:45,KLSER,gunluk,Gunluk sert hareket (yukari),1.47,25.9,Onceki kapanisa gore %+5.89
+2026-08-21T08:45:00+00:00,2026-08-21,11:45,JANTS,hacim,Hacim patlamasi,1.41,16.24,"11:45 barinda hacim, ayni saatin ortalamasinin 3.5 kati"
+2026-08-21T08:45:00+00:00,2026-08-21,11:45,NETAS,gap,Acilis boslugu (yukari),1.34,96.9,Acilis dunku kapanisa gore %+4.02 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-08-21T08:45:00+00:00,2026-08-21,11:45,JANTS,gap,Acilis boslugu (yukari),1.33,16.24,Acilis dunku kapanisa gore %+4.00 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-08-21T08:45:00+00:00,2026-08-21,11:45,TKFEN,gunluk,Gunluk sert hareket (asagi),1.29,217.2,Onceki kapanisa gore %-5.15
+2026-08-21T08:45:00+00:00,2026-08-21,11:45,ULKER,gunluk,Gunluk sert hareket (asagi),1.21,93.0,Onceki kapanisa gore %-4.86
+2026-08-21T08:45:00+00:00,2026-08-21,11:45,TOASO,hacim,Hacim patlamasi,1.16,280.5,"11:45 barinda hacim, ayni saatin ortalamasinin 2.9 kati"
+2026-08-21T08:45:00+00:00,2026-08-21,11:45,LOGO,hacim,Hacim patlamasi,1.15,137.3,"11:45 barinda hacim, ayni saatin ortalamasinin 2.9 kati"
+2026-08-21T08:45:00+00:00,2026-08-21,11:45,ALARK,gunluk,Gunluk sert hareket (asagi),1.08,108.2,Onceki kapanisa gore %-4.33
+2026-08-21T08:45:00+00:00,2026-08-21,11:45,PASEU,gunluk,Gunluk sert hareket (yukari),1.08,205.0,Onceki kapanisa gore %+4.33
+2026-08-21T08:45:00+00:00,2026-08-21,11:45,AGROT,kilit,Olasi tavan/taban kilidi,1.0,2.52,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
