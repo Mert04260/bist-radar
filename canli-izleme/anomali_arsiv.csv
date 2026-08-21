@@ -14,3 +14,16 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-08-21T08:45:00+00:00,2026-08-21,11:45,ALARK,gunluk,Gunluk sert hareket (asagi),1.08,108.2,Onceki kapanisa gore %-4.33
 2026-08-21T08:45:00+00:00,2026-08-21,11:45,PASEU,gunluk,Gunluk sert hareket (yukari),1.08,205.0,Onceki kapanisa gore %+4.33
 2026-08-21T08:45:00+00:00,2026-08-21,11:45,AGROT,kilit,Olasi tavan/taban kilidi,1.0,2.52,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-08-21T10:30:00+00:00,2026-08-21,13:30,BUCIM,hacim,Hacim patlamasi,3.0,5.48,"13:30 barinda hacim, ayni saatin ortalamasinin 12.8 kati"
+2026-08-21T10:30:00+00:00,2026-08-21,13:30,BFREN,hacim,Hacim patlamasi,2.98,130.4,"13:30 barinda hacim, ayni saatin ortalamasinin 7.5 kati"
+2026-08-21T10:30:00+00:00,2026-08-21,13:30,KARSN,hacim,Hacim patlamasi,2.04,9.37,"13:30 barinda hacim, ayni saatin ortalamasinin 5.1 kati"
+2026-08-21T10:30:00+00:00,2026-08-21,13:30,BERA,gunluk,Gunluk sert hareket (yukari),1.88,14.28,Onceki kapanisa gore %+7.53
+2026-08-21T10:30:00+00:00,2026-08-21,13:30,BERA,hacim,Hacim patlamasi,1.72,14.28,"13:30 barinda hacim, ayni saatin ortalamasinin 4.3 kati"
+2026-08-21T10:30:00+00:00,2026-08-21,13:30,AGROT,hacim,Hacim patlamasi,1.6,2.52,"13:30 barinda hacim, ayni saatin ortalamasinin 4.0 kati"
+2026-08-21T10:30:00+00:00,2026-08-21,13:30,BUCIM,hareket,Ani fiyat hareketi (yukari),1.5,5.48,Son 1 saatte %+3.01
+2026-08-21T10:30:00+00:00,2026-08-21,13:30,VAKKO,hacim,Hacim patlamasi,1.48,68.3,"13:30 barinda hacim, ayni saatin ortalamasinin 3.7 kati"
+2026-08-21T10:30:00+00:00,2026-08-21,13:30,DEVA,gunluk,Gunluk sert hareket (asagi),1.1,85.1,Onceki kapanisa gore %-4.38
+2026-08-21T10:30:00+00:00,2026-08-21,13:30,TKFEN,hareket,Ani fiyat hareketi (asagi),1.08,218.2,Son 1 saatte %-2.15
+2026-08-21T10:30:00+00:00,2026-08-21,13:30,BUCIM,gunluk,Gunluk sert hareket (yukari),1.05,5.48,Onceki kapanisa gore %+4.18
+2026-08-21T10:30:00+00:00,2026-08-21,13:30,BERA,hareket,Ani fiyat hareketi (yukari),1.04,14.28,Son 1 saatte %+2.07
+2026-08-21T10:30:00+00:00,2026-08-21,13:30,TOASO,gunluk,Gunluk sert hareket (yukari),1.04,282.25,Onceki kapanisa gore %+4.15
