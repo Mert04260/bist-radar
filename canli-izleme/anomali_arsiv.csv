@@ -33,3 +33,9 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-08-21T11:30:00+00:00,2026-08-21,14:30,BINHO,hacim,Hacim patlamasi,1.44,11.27,"14:30 barinda hacim, ayni saatin ortalamasinin 3.6 kati"
 2026-08-21T11:30:00+00:00,2026-08-21,14:30,ALARK,hacim,Hacim patlamasi,1.22,106.9,"14:30 barinda hacim, ayni saatin ortalamasinin 3.0 kati"
 2026-08-21T11:30:00+00:00,2026-08-21,14:30,GOLTS,hacim,Hacim patlamasi,1.17,322.25,"14:30 barinda hacim, ayni saatin ortalamasinin 2.9 kati"
+2026-08-21T13:45:00+00:00,2026-08-21,16:45,KAREL,hacim,Hacim patlamasi,3.0,9.03,"16:45 barinda hacim, ayni saatin ortalamasinin 24.2 kati"
+2026-08-21T13:45:00+00:00,2026-08-21,16:45,NETAS,hacim,Hacim patlamasi,2.84,99.8,"16:45 barinda hacim, ayni saatin ortalamasinin 7.1 kati"
+2026-08-21T13:45:00+00:00,2026-08-21,16:45,KAREL,hareket,Ani fiyat hareketi (asagi),1.45,9.03,Son 1 saatte %-2.90
+2026-08-21T13:45:00+00:00,2026-08-21,16:45,QUAGR,gunluk,Gunluk sert hareket (asagi),1.12,3.41,Onceki kapanisa gore %-4.48
+2026-08-21T13:45:00+00:00,2026-08-21,16:45,TAVHL,hacim,Hacim patlamasi,1.06,279.5,"16:45 barinda hacim, ayni saatin ortalamasinin 2.6 kati"
+2026-08-21T13:45:00+00:00,2026-08-21,16:45,YEOTK,hareket,Ani fiyat hareketi (asagi),1.04,34.8,Son 1 saatte %-2.08
