@@ -1,7 +1,7 @@
 {
  "surum": "v6",
  "mod": "gun-sonu",
- "guncelleme": "21.08.2026 20:02",
+ "guncelleme": "24.08.2026 00:52",
  "tarih": "2026-08-21",
  "ufuk": 3,
  "esik": 72.0,
@@ -323,20 +323,20 @@
   {
    "sym": "GUBRF",
    "sektor": "GUBRE",
-   "skor": 80.1,
-   "ham_skor": 80.1,
+   "skor": 80.3,
+   "ham_skor": 80.3,
    "ceza": 0.0,
    "risk": "Yuksek",
    "fiyat": 475.75,
    "guven": false,
    "faktor": {
     "Trend": 8.4,
-    "Hacim": 18.4,
-    "Para": 17.3,
+    "Hacim": 18.5,
+    "Para": 17.4,
     "Teknik": 20.0
    },
    "sebep": [
-    "Hacim 20 gunluk ortalamanin %264'i",
+    "Hacim 20 gunluk ortalamanin %268'i",
     "MACD al sinyali aktif",
     "RSI saglikli momentum bolgesinde (61)"
    ],
@@ -2192,7 +2192,7 @@
     1023271.0,
     1902922.0,
     1554642.0,
-    1282713.0
+    1312713.0
    ],
    "s20": [
     220.82,
@@ -2263,16 +2263,16 @@
     "mfi": 86.3,
     "cmf": 0.268,
     "atr": 4.45,
-    "vr": 0.85,
+    "vr": 0.87,
     "rs": 13.12,
     "rs_sektor": -3.64
    },
    "benzer": {
     "epizot": 27,
-    "ham": 70,
+    "ham": 71,
     "up": 48.1,
     "avg_up": 2.51,
-    "avg_dn": 2.87,
+    "avg_dn": 2.68,
     "medyan": -0.43,
     "dagilim": [
      3.02,
@@ -2299,7 +2299,7 @@
      2.17,
      -6.84,
      7.1,
-     -7.14,
+     -4.42,
      -1.77,
      4.65
     ]
@@ -3837,7 +3837,7 @@
     2871334.0,
     4238913.0,
     4747256.0,
-    7294124.0
+    7394124.0
    ],
    "s20": [
     472.94,
@@ -3905,10 +3905,10 @@
    ],
    "gosterge": {
     "rsi": 61.5,
-    "mfi": 64.1,
+    "mfi": 64.2,
     "cmf": 0.134,
     "atr": 4.57,
-    "vr": 2.64,
+    "vr": 2.68,
     "rs": 1.27,
     "rs_sektor": -1.92
    },
@@ -6968,9 +6968,9 @@
  ],
  "saglik": {
   "onbellek": 0,
-  "artimli": 127,
-  "tam_indirme": 1,
-  "yeniden_duzeltme": 1,
+  "artimli": 128,
+  "tam_indirme": 0,
+  "yeniden_duzeltme": 0,
   "alinamayan": 0,
   "alinamayan_liste": [],
   "bayat_sembol": 0,
