@@ -1,9 +1,9 @@
 {
  "surum": "v6",
  "mod": "gun-ici",
- "guncelleme": "24.08.2026 12:31",
- "veri_saat": "24.08 12:15",
- "gecikme_dk": 16,
+ "guncelleme": "24.08.2026 13:20",
+ "veri_saat": "24.08 13:00",
+ "gecikme_dk": 20,
  "bayat": false,
  "bar": "15m",
  "taranan": 128,
@@ -15,54 +15,65 @@
    "detay": "Acilis dunku kapanisa gore %+7.67 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
    "siddet": 2.56,
    "sym": "ALBRK",
-   "fiyat": 8.98,
-   "saat": "12:15",
+   "fiyat": 9.17,
+   "saat": "13:00",
    "gun": "2026-08-24",
-   "ts": "2026-08-24T09:15:00+00:00"
+   "ts": "2026-08-24T10:00:00+00:00"
   },
   {
    "tip": "gunluk",
    "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-8.33",
-   "siddet": 2.08,
+   "detay": "Onceki kapanisa gore %-9.92",
+   "siddet": 2.48,
    "sym": "AGROT",
-   "fiyat": 2.31,
-   "saat": "12:15",
+   "fiyat": 2.27,
+   "saat": "13:00",
    "gun": "2026-08-24",
-   "ts": "2026-08-24T09:15:00+00:00"
+   "ts": "2026-08-24T10:00:00+00:00"
   },
   {
    "tip": "gunluk",
    "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+8.06",
-   "siddet": 2.02,
+   "detay": "Onceki kapanisa gore %+9.66",
+   "siddet": 2.41,
    "sym": "BRSAN",
-   "fiyat": 744.0,
-   "saat": "12:15",
+   "fiyat": 755.0,
+   "saat": "13:00",
    "gun": "2026-08-24",
-   "ts": "2026-08-24T09:15:00+00:00"
+   "ts": "2026-08-24T10:00:00+00:00"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "13:00 barinda hacim, ayni saatin ortalamasinin 5.0 kati",
+   "siddet": 1.99,
+   "sym": "ALBRK",
+   "fiyat": 9.17,
+   "saat": "13:00",
+   "gun": "2026-08-24",
+   "ts": "2026-08-24T10:00:00+00:00"
   },
   {
    "tip": "gunluk",
    "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+7.63",
-   "siddet": 1.91,
+   "detay": "Onceki kapanisa gore %+7.45",
+   "siddet": 1.86,
    "sym": "ADEL",
-   "fiyat": 35.82,
-   "saat": "12:15",
+   "fiyat": 35.76,
+   "saat": "13:00",
    "gun": "2026-08-24",
-   "ts": "2026-08-24T09:15:00+00:00"
+   "ts": "2026-08-24T10:00:00+00:00"
   },
   {
-   "tip": "birikim",
-   "baslik": "Sessiz birikim",
-   "detay": "Hacim ortalamanin 3.0 kati, fiyat bandi sadece %1.5",
-   "siddet": 1.67,
-   "sym": "BTCIM",
-   "fiyat": 4.74,
-   "saat": "12:15",
+   "tip": "gunluk",
+   "baslik": "Gunluk sert hareket (yukari)",
+   "detay": "Onceki kapanisa gore %+6.75",
+   "siddet": 1.69,
+   "sym": "BRYAT",
+   "fiyat": 1819.0,
+   "saat": "13:00",
    "gun": "2026-08-24",
-   "ts": "2026-08-24T09:15:00+00:00"
+   "ts": "2026-08-24T10:00:00+00:00"
   },
   {
    "tip": "gap",
@@ -70,21 +81,32 @@
    "detay": "Acilis dunku kapanisa gore %+4.94 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
    "siddet": 1.65,
    "sym": "BRSAN",
-   "fiyat": 744.0,
-   "saat": "12:15",
+   "fiyat": 755.0,
+   "saat": "13:00",
    "gun": "2026-08-24",
-   "ts": "2026-08-24T09:15:00+00:00"
+   "ts": "2026-08-24T10:00:00+00:00"
   },
   {
    "tip": "gunluk",
    "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+6.39",
-   "siddet": 1.6,
+   "detay": "Onceki kapanisa gore %+6.28",
+   "siddet": 1.57,
    "sym": "EKGYO",
-   "fiyat": 20.66,
-   "saat": "12:15",
+   "fiyat": 20.64,
+   "saat": "13:00",
    "gun": "2026-08-24",
-   "ts": "2026-08-24T09:15:00+00:00"
+   "ts": "2026-08-24T10:00:00+00:00"
+  },
+  {
+   "tip": "birikim",
+   "baslik": "Sessiz birikim",
+   "detay": "Hacim ortalamanin 2.8 kati, fiyat bandi sadece %1.5",
+   "siddet": 1.53,
+   "sym": "BTCIM",
+   "fiyat": 4.72,
+   "saat": "13:00",
+   "gun": "2026-08-24",
+   "ts": "2026-08-24T10:00:00+00:00"
   },
   {
    "tip": "gap",
@@ -92,21 +114,10 @@
    "detay": "Acilis dunku kapanisa gore %+4.53 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
    "siddet": 1.51,
    "sym": "EKGYO",
-   "fiyat": 20.66,
-   "saat": "12:15",
+   "fiyat": 20.64,
+   "saat": "13:00",
    "gun": "2026-08-24",
-   "ts": "2026-08-24T09:15:00+00:00"
-  },
-  {
-   "tip": "hareket",
-   "baslik": "Ani fiyat hareketi (yukari)",
-   "detay": "Son 1 saatte %+3.02",
-   "siddet": 1.51,
-   "sym": "TMSN",
-   "fiyat": 76.8,
-   "saat": "12:15",
-   "gun": "2026-08-24",
-   "ts": "2026-08-24T09:15:00+00:00"
+   "ts": "2026-08-24T10:00:00+00:00"
   },
   {
    "tip": "gap",
@@ -114,21 +125,10 @@
    "detay": "Acilis dunku kapanisa gore %+4.39 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
    "siddet": 1.46,
    "sym": "AKBNK",
-   "fiyat": 73.2,
-   "saat": "12:15",
+   "fiyat": 72.7,
+   "saat": "13:00",
    "gun": "2026-08-24",
-   "ts": "2026-08-24T09:15:00+00:00"
-  },
-  {
-   "tip": "birikim",
-   "baslik": "Sessiz birikim",
-   "detay": "Hacim ortalamanin 2.6 kati, fiyat bandi sadece %1.0",
-   "siddet": 1.46,
-   "sym": "CLEBI",
-   "fiyat": 1501.0,
-   "saat": "12:15",
-   "gun": "2026-08-24",
-   "ts": "2026-08-24T09:15:00+00:00"
+   "ts": "2026-08-24T10:00:00+00:00"
   },
   {
    "tip": "gap",
@@ -136,10 +136,10 @@
    "detay": "Acilis dunku kapanisa gore %-4.25 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
    "siddet": 1.42,
    "sym": "CCOLA",
-   "fiyat": 80.05,
-   "saat": "12:15",
+   "fiyat": 80.15,
+   "saat": "13:00",
    "gun": "2026-08-24",
-   "ts": "2026-08-24T09:15:00+00:00"
+   "ts": "2026-08-24T10:00:00+00:00"
   }
  ]
 }

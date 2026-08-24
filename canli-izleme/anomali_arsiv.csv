@@ -73,3 +73,9 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-08-24T09:15:00+00:00,2026-08-24,12:15,ODAS,birikim,Sessiz birikim,1.03,7.18,"Hacim ortalamanin 1.8 kati, fiyat bandi sadece %1.3"
 2026-08-24T09:15:00+00:00,2026-08-24,12:15,ISCTR,gap,Acilis boslugu (yukari),1.02,12.8,Acilis dunku kapanisa gore %+3.06 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
 2026-08-24T09:15:00+00:00,2026-08-24,12:15,SAHOL,gap,Acilis boslugu (yukari),1.01,94.9,Acilis dunku kapanisa gore %+3.03 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-08-24T10:00:00+00:00,2026-08-24,13:00,ALBRK,hacim,Hacim patlamasi,1.99,9.17,"13:00 barinda hacim, ayni saatin ortalamasinin 5.0 kati"
+2026-08-24T10:00:00+00:00,2026-08-24,13:00,TKFEN,gunluk,Gunluk sert hareket (yukari),1.3,217.8,Onceki kapanisa gore %+5.22
+2026-08-24T10:00:00+00:00,2026-08-24,13:00,ALBRK,gunluk,Gunluk sert hareket (yukari),1.26,9.17,Onceki kapanisa gore %+5.04
+2026-08-24T10:00:00+00:00,2026-08-24,13:00,ALBRK,hareket,Ani fiyat hareketi (yukari),1.06,9.17,Son 1 saatte %+2.12
+2026-08-24T10:00:00+00:00,2026-08-24,13:00,ECILC,hareket,Ani fiyat hareketi (yukari),1.05,78.1,Son 1 saatte %+2.09
+2026-08-24T10:00:00+00:00,2026-08-24,13:00,DOAS,kilit,Olasi tavan/taban kilidi,1.0,170.2,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
