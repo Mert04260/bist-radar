@@ -108,3 +108,6 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-08-24T12:15:00+00:00,2026-08-24,15:15,PASEU,gunluk,Gunluk sert hareket (yukari),1.25,210.3,Onceki kapanisa gore %+4.99
 2026-08-24T12:15:00+00:00,2026-08-24,15:15,OTKAR,gunluk,Gunluk sert hareket (yukari),1.09,330.0,Onceki kapanisa gore %+4.35
 2026-08-24T12:15:00+00:00,2026-08-24,15:15,NETAS,hareket,Ani fiyat hareketi (yukari),1.03,99.25,Son 1 saatte %+2.06
+2026-08-24T13:15:00+00:00,2026-08-24,16:15,BINHO,hareket,Ani fiyat hareketi (yukari),1.73,11.06,Son 1 saatte %+3.46
+2026-08-24T13:15:00+00:00,2026-08-24,16:15,KONYA,hareket,Ani fiyat hareketi (yukari),1.69,4117.5,Son 1 saatte %+3.39
+2026-08-24T13:15:00+00:00,2026-08-24,16:15,KONYA,hacim,Hacim patlamasi,1.59,4117.5,"16:15 barinda hacim, ayni saatin ortalamasinin 4.0 kati"
