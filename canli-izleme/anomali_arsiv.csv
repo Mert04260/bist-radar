@@ -111,3 +111,11 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-08-24T13:15:00+00:00,2026-08-24,16:15,BINHO,hareket,Ani fiyat hareketi (yukari),1.73,11.06,Son 1 saatte %+3.46
 2026-08-24T13:15:00+00:00,2026-08-24,16:15,KONYA,hareket,Ani fiyat hareketi (yukari),1.69,4117.5,Son 1 saatte %+3.39
 2026-08-24T13:15:00+00:00,2026-08-24,16:15,KONYA,hacim,Hacim patlamasi,1.59,4117.5,"16:15 barinda hacim, ayni saatin ortalamasinin 4.0 kati"
+2026-08-24T14:00:00+00:00,2026-08-24,17:00,NETAS,gunluk,Gunluk sert hareket (yukari),2.58,106.9,Onceki kapanisa gore %+10.32
+2026-08-24T14:00:00+00:00,2026-08-24,17:00,ALKIM,hacim,Hacim patlamasi,1.63,15.93,"17:00 barinda hacim, ayni saatin ortalamasinin 4.1 kati"
+2026-08-24T14:00:00+00:00,2026-08-24,17:00,LMKDC,hacim,Hacim patlamasi,1.4,24.68,"17:00 barinda hacim, ayni saatin ortalamasinin 3.5 kati"
+2026-08-24T14:00:00+00:00,2026-08-24,17:00,AGROT,hareket,Ani fiyat hareketi (yukari),1.32,2.33,Son 1 saatte %+2.64
+2026-08-24T14:00:00+00:00,2026-08-24,17:00,SAYAS,gunluk,Gunluk sert hareket (yukari),1.25,62.05,Onceki kapanisa gore %+4.99
+2026-08-24T14:00:00+00:00,2026-08-24,17:00,AGROT,hacim,Hacim patlamasi,1.2,2.33,"17:00 barinda hacim, ayni saatin ortalamasinin 3.0 kati"
+2026-08-24T14:00:00+00:00,2026-08-24,17:00,BINHO,hacim,Hacim patlamasi,1.18,10.97,"17:00 barinda hacim, ayni saatin ortalamasinin 2.9 kati"
+2026-08-24T14:00:00+00:00,2026-08-24,17:00,GUBRF,hareket,Ani fiyat hareketi (yukari),1.07,490.75,Son 1 saatte %+2.13
