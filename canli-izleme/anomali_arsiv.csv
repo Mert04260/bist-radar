@@ -89,3 +89,12 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-08-24T11:00:00+00:00,2026-08-24,14:00,GLYHO,hacim,Hacim patlamasi,2.95,17.0,"14:00 barinda hacim, ayni saatin ortalamasinin 7.4 kati"
 2026-08-24T11:00:00+00:00,2026-08-24,14:00,TSKB,hacim,Hacim patlamasi,1.07,11.16,"14:00 barinda hacim, ayni saatin ortalamasinin 2.7 kati"
 2026-08-24T11:00:00+00:00,2026-08-24,14:00,KAREL,hareket,Ani fiyat hareketi (asagi),1.05,8.84,Son 1 saatte %-2.10
+2026-08-24T11:30:00+00:00,2026-08-24,14:30,CANTE,hacim,Hacim patlamasi,3.0,1.23,"14:30 barinda hacim, ayni saatin ortalamasinin 10.7 kati"
+2026-08-24T11:30:00+00:00,2026-08-24,14:30,DEVA,hacim,Hacim patlamasi,3.0,83.35,"14:30 barinda hacim, ayni saatin ortalamasinin 17.3 kati"
+2026-08-24T11:30:00+00:00,2026-08-24,14:30,ENKAI,hacim,Hacim patlamasi,3.0,83.25,"14:30 barinda hacim, ayni saatin ortalamasinin 16.9 kati"
+2026-08-24T11:30:00+00:00,2026-08-24,14:30,YATAS,hacim,Hacim patlamasi,3.0,31.64,"14:30 barinda hacim, ayni saatin ortalamasinin 9.2 kati"
+2026-08-24T11:30:00+00:00,2026-08-24,14:30,SAYAS,hareket,Ani fiyat hareketi (yukari),2.25,60.25,Son 1 saatte %+4.51
+2026-08-24T11:30:00+00:00,2026-08-24,14:30,BUCIM,hacim,Hacim patlamasi,2.2,5.69,"14:30 barinda hacim, ayni saatin ortalamasinin 5.5 kati"
+2026-08-24T11:30:00+00:00,2026-08-24,14:30,BIZIM,hacim,Hacim patlamasi,2.07,25.4,"14:30 barinda hacim, ayni saatin ortalamasinin 5.2 kati"
+2026-08-24T11:30:00+00:00,2026-08-24,14:30,PNSUT,hacim,Hacim patlamasi,1.92,10.7,"14:30 barinda hacim, ayni saatin ortalamasinin 4.8 kati"
+2026-08-24T11:30:00+00:00,2026-08-24,14:30,SMRTG,gunluk,Gunluk sert hareket (yukari),1.02,10.2,Onceki kapanisa gore %+4.08

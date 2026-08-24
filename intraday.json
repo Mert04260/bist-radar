@@ -1,9 +1,9 @@
 {
  "surum": "v6",
  "mod": "gun-ici",
- "guncelleme": "24.08.2026 14:21",
- "veri_saat": "24.08 14:00",
- "gecikme_dk": 21,
+ "guncelleme": "24.08.2026 14:57",
+ "veri_saat": "24.08 14:30",
+ "gecikme_dk": 27,
  "bayat": false,
  "bar": "15m",
  "taranan": 128,
@@ -12,13 +12,46 @@
   {
    "tip": "hacim",
    "baslik": "Hacim patlamasi",
-   "detay": "14:00 barinda hacim, ayni saatin ortalamasinin 7.4 kati",
-   "siddet": 2.95,
-   "sym": "GLYHO",
-   "fiyat": 17.0,
-   "saat": "14:00",
+   "detay": "14:30 barinda hacim, ayni saatin ortalamasinin 10.7 kati",
+   "siddet": 3.0,
+   "sym": "CANTE",
+   "fiyat": 1.23,
+   "saat": "14:30",
    "gun": "2026-08-24",
-   "ts": "2026-08-24T11:00:00+00:00"
+   "ts": "2026-08-24T11:30:00+00:00"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "14:30 barinda hacim, ayni saatin ortalamasinin 17.3 kati",
+   "siddet": 3.0,
+   "sym": "DEVA",
+   "fiyat": 83.35,
+   "saat": "14:30",
+   "gun": "2026-08-24",
+   "ts": "2026-08-24T11:30:00+00:00"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "14:30 barinda hacim, ayni saatin ortalamasinin 16.9 kati",
+   "siddet": 3.0,
+   "sym": "ENKAI",
+   "fiyat": 83.25,
+   "saat": "14:30",
+   "gun": "2026-08-24",
+   "ts": "2026-08-24T11:30:00+00:00"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "14:30 barinda hacim, ayni saatin ortalamasinin 9.2 kati",
+   "siddet": 3.0,
+   "sym": "YATAS",
+   "fiyat": 31.64,
+   "saat": "14:30",
+   "gun": "2026-08-24",
+   "ts": "2026-08-24T11:30:00+00:00"
   },
   {
    "tip": "gap",
@@ -26,10 +59,10 @@
    "detay": "Acilis dunku kapanisa gore %+7.67 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
    "siddet": 2.56,
    "sym": "ALBRK",
-   "fiyat": 9.0,
-   "saat": "14:00",
+   "fiyat": 9.04,
+   "saat": "14:30",
    "gun": "2026-08-24",
-   "ts": "2026-08-24T11:00:00+00:00"
+   "ts": "2026-08-24T11:30:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -38,108 +71,75 @@
    "siddet": 2.48,
    "sym": "AGROT",
    "fiyat": 2.27,
-   "saat": "14:00",
+   "saat": "14:30",
    "gun": "2026-08-24",
-   "ts": "2026-08-24T11:00:00+00:00"
+   "ts": "2026-08-24T11:30:00+00:00"
+  },
+  {
+   "tip": "hareket",
+   "baslik": "Ani fiyat hareketi (yukari)",
+   "detay": "Son 1 saatte %+4.51",
+   "siddet": 2.25,
+   "sym": "SAYAS",
+   "fiyat": 60.25,
+   "saat": "14:30",
+   "gun": "2026-08-24",
+   "ts": "2026-08-24T11:30:00+00:00"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "14:30 barinda hacim, ayni saatin ortalamasinin 5.5 kati",
+   "siddet": 2.2,
+   "sym": "BUCIM",
+   "fiyat": 5.69,
+   "saat": "14:30",
+   "gun": "2026-08-24",
+   "ts": "2026-08-24T11:30:00+00:00"
   },
   {
    "tip": "gunluk",
    "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+8.64",
-   "siddet": 2.16,
+   "detay": "Onceki kapanisa gore %+8.71",
+   "siddet": 2.18,
    "sym": "BRSAN",
-   "fiyat": 748.0,
-   "saat": "14:00",
+   "fiyat": 748.5,
+   "saat": "14:30",
    "gun": "2026-08-24",
-   "ts": "2026-08-24T11:00:00+00:00"
+   "ts": "2026-08-24T11:30:00+00:00"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "14:30 barinda hacim, ayni saatin ortalamasinin 5.2 kati",
+   "siddet": 2.07,
+   "sym": "BIZIM",
+   "fiyat": 25.4,
+   "saat": "14:30",
+   "gun": "2026-08-24",
+   "ts": "2026-08-24T11:30:00+00:00"
   },
   {
    "tip": "gunluk",
    "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+7.51",
-   "siddet": 1.88,
+   "detay": "Onceki kapanisa gore %+7.69",
+   "siddet": 1.92,
    "sym": "ADEL",
-   "fiyat": 35.78,
-   "saat": "14:00",
+   "fiyat": 35.84,
+   "saat": "14:30",
    "gun": "2026-08-24",
-   "ts": "2026-08-24T11:00:00+00:00"
+   "ts": "2026-08-24T11:30:00+00:00"
   },
   {
-   "tip": "gap",
-   "baslik": "Acilis boslugu (yukari)",
-   "detay": "Acilis dunku kapanisa gore %+4.94 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
-   "siddet": 1.65,
-   "sym": "BRSAN",
-   "fiyat": 748.0,
-   "saat": "14:00",
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "14:30 barinda hacim, ayni saatin ortalamasinin 4.8 kati",
+   "siddet": 1.92,
+   "sym": "PNSUT",
+   "fiyat": 10.7,
+   "saat": "14:30",
    "gun": "2026-08-24",
-   "ts": "2026-08-24T11:00:00+00:00"
-  },
-  {
-   "tip": "gap",
-   "baslik": "Acilis boslugu (yukari)",
-   "detay": "Acilis dunku kapanisa gore %+4.53 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
-   "siddet": 1.51,
-   "sym": "EKGYO",
-   "fiyat": 20.54,
-   "saat": "14:00",
-   "gun": "2026-08-24",
-   "ts": "2026-08-24T11:00:00+00:00"
-  },
-  {
-   "tip": "gap",
-   "baslik": "Acilis boslugu (yukari)",
-   "detay": "Acilis dunku kapanisa gore %+4.39 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
-   "siddet": 1.46,
-   "sym": "AKBNK",
-   "fiyat": 72.2,
-   "saat": "14:00",
-   "gun": "2026-08-24",
-   "ts": "2026-08-24T11:00:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+5.77",
-   "siddet": 1.44,
-   "sym": "EKGYO",
-   "fiyat": 20.54,
-   "saat": "14:00",
-   "gun": "2026-08-24",
-   "ts": "2026-08-24T11:00:00+00:00"
-  },
-  {
-   "tip": "gap",
-   "baslik": "Acilis boslugu (asagi)",
-   "detay": "Acilis dunku kapanisa gore %-4.25 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
-   "siddet": 1.42,
-   "sym": "CCOLA",
-   "fiyat": 79.9,
-   "saat": "14:00",
-   "gun": "2026-08-24",
-   "ts": "2026-08-24T11:00:00+00:00"
-  },
-  {
-   "tip": "gap",
-   "baslik": "Acilis boslugu (yukari)",
-   "detay": "Acilis dunku kapanisa gore %+4.10 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
-   "siddet": 1.37,
-   "sym": "YKBNK",
-   "fiyat": 36.38,
-   "saat": "14:00",
-   "gun": "2026-08-24",
-   "ts": "2026-08-24T11:00:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+5.34",
-   "siddet": 1.34,
-   "sym": "BRYAT",
-   "fiyat": 1795.0,
-   "saat": "14:00",
-   "gun": "2026-08-24",
-   "ts": "2026-08-24T11:00:00+00:00"
+   "ts": "2026-08-24T11:30:00+00:00"
   }
  ]
 }
