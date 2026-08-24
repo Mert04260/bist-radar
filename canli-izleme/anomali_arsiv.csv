@@ -119,3 +119,8 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-08-24T14:00:00+00:00,2026-08-24,17:00,AGROT,hacim,Hacim patlamasi,1.2,2.33,"17:00 barinda hacim, ayni saatin ortalamasinin 3.0 kati"
 2026-08-24T14:00:00+00:00,2026-08-24,17:00,BINHO,hacim,Hacim patlamasi,1.18,10.97,"17:00 barinda hacim, ayni saatin ortalamasinin 2.9 kati"
 2026-08-24T14:00:00+00:00,2026-08-24,17:00,GUBRF,hareket,Ani fiyat hareketi (yukari),1.07,490.75,Son 1 saatte %+2.13
+2026-08-24T14:45:00+00:00,2026-08-24,17:45,KARSN,hacim,Hacim patlamasi,2.39,9.37,"17:45 barinda hacim, ayni saatin ortalamasinin 6.0 kati"
+2026-08-24T14:45:00+00:00,2026-08-24,17:45,ALCTL,hareket,Ani fiyat hareketi (yukari),2.09,127.4,Son 1 saatte %+4.17
+2026-08-24T14:45:00+00:00,2026-08-24,17:45,VAKKO,hacim,Hacim patlamasi,2.05,67.05,"17:45 barinda hacim, ayni saatin ortalamasinin 5.1 kati"
+2026-08-24T14:45:00+00:00,2026-08-24,17:45,SELEC,hareket,Ani fiyat hareketi (yukari),1.33,288.5,Son 1 saatte %+2.67
+2026-08-24T14:45:00+00:00,2026-08-24,17:45,KCAER,hareket,Ani fiyat hareketi (asagi),1.15,16.18,Son 1 saatte %-2.29
