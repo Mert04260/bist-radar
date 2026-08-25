@@ -128,3 +128,10 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-08-25T07:15:00+00:00,2026-08-25,10:15,PASEU,gunluk,Gunluk sert hareket (yukari),1.19,224.2,Onceki kapanisa gore %+4.77
 2026-08-25T07:15:00+00:00,2026-08-25,10:15,ADEL,gunluk,Gunluk sert hareket (yukari),1.12,37.36,Onceki kapanisa gore %+4.47
 2026-08-25T07:15:00+00:00,2026-08-25,10:15,CANTE,hacim,Hacim patlamasi,1.09,1.23,"10:15 barinda hacim, ayni saatin ortalamasinin 2.7 kati"
+2026-08-25T08:00:00+00:00,2026-08-25,11:00,SISE,hacim,Hacim patlamasi,1.52,39.74,"11:00 barinda hacim, ayni saatin ortalamasinin 3.8 kati"
+2026-08-25T08:00:00+00:00,2026-08-25,11:00,SISE,birikim,Sessiz birikim,1.5,39.74,"Hacim ortalamanin 2.7 kati, fiyat bandi sadece %1.0"
+2026-08-25T08:00:00+00:00,2026-08-25,11:00,CWENE,hareket,Ani fiyat hareketi (yukari),1.19,36.96,Son 1 saatte %+2.38
+2026-08-25T08:00:00+00:00,2026-08-25,11:00,KRDMD,birikim,Sessiz birikim,1.19,45.3,"Hacim ortalamanin 2.1 kati, fiyat bandi sadece %1.4"
+2026-08-25T08:00:00+00:00,2026-08-25,11:00,TCELL,birikim,Sessiz birikim,1.15,103.3,"Hacim ortalamanin 2.1 kati, fiyat bandi sadece %1.2"
+2026-08-25T08:00:00+00:00,2026-08-25,11:00,AEFES,birikim,Sessiz birikim,1.08,18.97,"Hacim ortalamanin 1.9 kati, fiyat bandi sadece %1.0"
+2026-08-25T08:00:00+00:00,2026-08-25,11:00,BRSAN,hareket,Ani fiyat hareketi (asagi),1.03,733.5,Son 1 saatte %-2.07
