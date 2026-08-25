@@ -124,3 +124,7 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-08-24T14:45:00+00:00,2026-08-24,17:45,VAKKO,hacim,Hacim patlamasi,2.05,67.05,"17:45 barinda hacim, ayni saatin ortalamasinin 5.1 kati"
 2026-08-24T14:45:00+00:00,2026-08-24,17:45,SELEC,hareket,Ani fiyat hareketi (yukari),1.33,288.5,Son 1 saatte %+2.67
 2026-08-24T14:45:00+00:00,2026-08-24,17:45,KCAER,hareket,Ani fiyat hareketi (asagi),1.15,16.18,Son 1 saatte %-2.29
+2026-08-25T07:00:00+00:00,2026-08-25,10:00,NETAS,gunluk,Gunluk sert hareket (asagi),1.27,102.8,Onceki kapanisa gore %-5.08
+2026-08-25T07:15:00+00:00,2026-08-25,10:15,PASEU,gunluk,Gunluk sert hareket (yukari),1.19,224.2,Onceki kapanisa gore %+4.77
+2026-08-25T07:15:00+00:00,2026-08-25,10:15,ADEL,gunluk,Gunluk sert hareket (yukari),1.12,37.36,Onceki kapanisa gore %+4.47
+2026-08-25T07:15:00+00:00,2026-08-25,10:15,CANTE,hacim,Hacim patlamasi,1.09,1.23,"10:15 barinda hacim, ayni saatin ortalamasinin 2.7 kati"
