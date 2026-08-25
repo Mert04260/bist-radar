@@ -165,3 +165,8 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-08-25T13:15:00+00:00,2026-08-25,16:15,NETAS,kilit,Olasi tavan/taban kilidi,1.0,96.6,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
 2026-08-25T14:00:00+00:00,2026-08-25,17:00,TUPRS,hacim,Hacim patlamasi,3.0,376.5,"17:00 barinda hacim, ayni saatin ortalamasinin 45.1 kati"
 2026-08-25T14:00:00+00:00,2026-08-25,17:00,AKCNS,hacim,Hacim patlamasi,1.42,241.0,"17:00 barinda hacim, ayni saatin ortalamasinin 3.6 kati"
+2026-08-25T14:45:00+00:00,2026-08-25,17:45,SELEC,hacim,Hacim patlamasi,1.61,295.75,"17:45 barinda hacim, ayni saatin ortalamasinin 4.0 kati"
+2026-08-25T14:45:00+00:00,2026-08-25,17:45,SELEC,hareket,Ani fiyat hareketi (yukari),1.52,295.75,Son 1 saatte %+3.05
+2026-08-25T14:45:00+00:00,2026-08-25,17:45,AGROT,gunluk,Gunluk sert hareket (asagi),1.08,2.21,Onceki kapanisa gore %-4.33
+2026-08-25T14:45:00+00:00,2026-08-25,17:45,PASEU,hareket,Ani fiyat hareketi (yukari),1.07,229.0,Son 1 saatte %+2.14
+2026-08-25T14:45:00+00:00,2026-08-25,17:45,KONYA,gunluk,Gunluk sert hareket (asagi),1.06,3880.0,Onceki kapanisa gore %-4.26
