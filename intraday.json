@@ -1,10 +1,10 @@
 {
  "surum": "v6",
  "mod": "gun-ici",
- "guncelleme": "25.08.2026 18:25",
+ "guncelleme": "25.08.2026 19:10",
  "veri_saat": "25.08 17:45",
- "gecikme_dk": 40,
- "bayat": false,
+ "gecikme_dk": 85,
+ "bayat": true,
  "bar": "15m",
  "taranan": 128,
  "alinamayan": 0,
@@ -38,17 +38,6 @@
    "siddet": 1.61,
    "sym": "SELEC",
    "fiyat": 295.75,
-   "saat": "17:45",
-   "gun": "2026-08-25",
-   "ts": "2026-08-25T14:45:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-6.42",
-   "siddet": 1.61,
-   "sym": "TUPRS",
-   "fiyat": 375.25,
    "saat": "17:45",
    "gun": "2026-08-25",
    "ts": "2026-08-25T14:45:00+00:00"
@@ -88,17 +77,6 @@
   },
   {
    "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+4.96",
-   "siddet": 1.24,
-   "sym": "AHGAZ",
-   "fiyat": 35.12,
-   "saat": "17:45",
-   "gun": "2026-08-25",
-   "ts": "2026-08-25T14:45:00+00:00"
-  },
-  {
-   "tip": "gunluk",
    "baslik": "Gunluk sert hareket (asagi)",
    "detay": "Onceki kapanisa gore %-4.96",
    "siddet": 1.24,
@@ -111,8 +89,8 @@
   {
    "tip": "gunluk",
    "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+4.70",
-   "siddet": 1.17,
+   "detay": "Onceki kapanisa gore %+4.93",
+   "siddet": 1.23,
    "sym": "ADEL",
    "fiyat": 37.44,
    "saat": "17:45",
@@ -137,6 +115,28 @@
    "siddet": 1.08,
    "sym": "AGROT",
    "fiyat": 2.21,
+   "saat": "17:45",
+   "gun": "2026-08-25",
+   "ts": "2026-08-25T14:45:00+00:00"
+  },
+  {
+   "tip": "hareket",
+   "baslik": "Ani fiyat hareketi (yukari)",
+   "detay": "Son 1 saatte %+2.14",
+   "siddet": 1.07,
+   "sym": "PASEU",
+   "fiyat": 229.0,
+   "saat": "17:45",
+   "gun": "2026-08-25",
+   "ts": "2026-08-25T14:45:00+00:00"
+  },
+  {
+   "tip": "gunluk",
+   "baslik": "Gunluk sert hareket (asagi)",
+   "detay": "Onceki kapanisa gore %-4.26",
+   "siddet": 1.06,
+   "sym": "KONYA",
+   "fiyat": 3880.0,
    "saat": "17:45",
    "gun": "2026-08-25",
    "ts": "2026-08-25T14:45:00+00:00"
