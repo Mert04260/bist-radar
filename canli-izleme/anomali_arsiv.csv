@@ -153,3 +153,7 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-08-25T10:45:00+00:00,2026-08-25,13:45,SDTTR,gunluk,Gunluk sert hareket (asagi),1.24,257.75,Onceki kapanisa gore %-4.98
 2026-08-25T10:45:00+00:00,2026-08-25,13:45,PETKM,gunluk,Gunluk sert hareket (asagi),1.07,19.87,Onceki kapanisa gore %-4.29
 2026-08-25T11:15:00+00:00,2026-08-25,14:15,QUAGR,hacim,Hacim patlamasi,1.25,3.41,"14:15 barinda hacim, ayni saatin ortalamasinin 3.1 kati"
+2026-08-25T12:00:00+00:00,2026-08-25,15:00,NETAS,hacim,Hacim patlamasi,3.0,97.85,"15:00 barinda hacim, ayni saatin ortalamasinin 83.8 kati"
+2026-08-25T12:00:00+00:00,2026-08-25,15:00,AHGAZ,hacim,Hacim patlamasi,2.46,34.4,"15:00 barinda hacim, ayni saatin ortalamasinin 6.1 kati"
+2026-08-25T12:00:00+00:00,2026-08-25,15:00,DEVA,hacim,Hacim patlamasi,1.31,86.05,"15:00 barinda hacim, ayni saatin ortalamasinin 3.3 kati"
+2026-08-25T12:00:00+00:00,2026-08-25,15:00,KARSN,hacim,Hacim patlamasi,1.02,9.27,"15:00 barinda hacim, ayni saatin ortalamasinin 2.5 kati"
