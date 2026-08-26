@@ -185,3 +185,11 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-08-26T08:00:00+00:00,2026-08-26,11:00,SKBNK,birikim,Sessiz birikim,1.15,6.26,"Hacim ortalamanin 2.1 kati, fiyat bandi sadece %1.5"
 2026-08-26T08:00:00+00:00,2026-08-26,11:00,TKFEN,hareket,Ani fiyat hareketi (yukari),1.11,221.9,Son 1 saatte %+2.21
 2026-08-26T08:00:00+00:00,2026-08-26,11:00,HALKB,kilit,Olasi tavan/taban kilidi,1.0,38.12,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-08-26T09:00:00+00:00,2026-08-26,12:00,AGESA,hacim,Hacim patlamasi,1.63,249.8,"12:00 barinda hacim, ayni saatin ortalamasinin 4.1 kati"
+2026-08-26T09:00:00+00:00,2026-08-26,12:00,NETAS,hareket,Ani fiyat hareketi (asagi),1.37,92.55,Son 1 saatte %-2.73
+2026-08-26T09:00:00+00:00,2026-08-26,12:00,ISCTR,gunluk,Gunluk sert hareket (yukari),1.2,13.09,Onceki kapanisa gore %+4.80
+2026-08-26T09:00:00+00:00,2026-08-26,12:00,NETAS,hacim,Hacim patlamasi,1.19,92.55,"12:00 barinda hacim, ayni saatin ortalamasinin 3.0 kati"
+2026-08-26T09:00:00+00:00,2026-08-26,12:00,GARAN,hacim,Hacim patlamasi,1.16,135.8,"12:00 barinda hacim, ayni saatin ortalamasinin 2.9 kati"
+2026-08-26T09:00:00+00:00,2026-08-26,12:00,EKGYO,gunluk,Gunluk sert hareket (yukari),1.1,20.9,Onceki kapanisa gore %+4.40
+2026-08-26T09:00:00+00:00,2026-08-26,12:00,ISGYO,hareket,Ani fiyat hareketi (yukari),1.08,28.3,Son 1 saatte %+2.17
+2026-08-26T09:00:00+00:00,2026-08-26,12:00,NETAS,gunluk,Gunluk sert hareket (asagi),1.05,92.55,Onceki kapanisa gore %-4.19
