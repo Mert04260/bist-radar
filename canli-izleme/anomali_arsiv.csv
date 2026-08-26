@@ -170,3 +170,8 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-08-25T14:45:00+00:00,2026-08-25,17:45,AGROT,gunluk,Gunluk sert hareket (asagi),1.08,2.21,Onceki kapanisa gore %-4.33
 2026-08-25T14:45:00+00:00,2026-08-25,17:45,PASEU,hareket,Ani fiyat hareketi (yukari),1.07,229.0,Son 1 saatte %+2.14
 2026-08-25T14:45:00+00:00,2026-08-25,17:45,KONYA,gunluk,Gunluk sert hareket (asagi),1.06,3880.0,Onceki kapanisa gore %-4.26
+2026-08-26T07:15:00+00:00,2026-08-26,10:15,HALKB,gunluk,Gunluk sert hareket (yukari),2.45,38.12,Onceki kapanisa gore %+9.79
+2026-08-26T07:15:00+00:00,2026-08-26,10:15,NETAS,gap,Acilis boslugu (asagi),2.21,95.25,Acilis dunku kapanisa gore %-6.63 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-08-26T07:15:00+00:00,2026-08-26,10:15,HALKB,gap,Acilis boslugu (yukari),1.52,38.12,Acilis dunku kapanisa gore %+4.55 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-08-26T07:15:00+00:00,2026-08-26,10:15,VAKBN,gunluk,Gunluk sert hareket (yukari),1.06,32.8,Onceki kapanisa gore %+4.26
+2026-08-26T07:15:00+00:00,2026-08-26,10:15,ENJSA,gunluk,Gunluk sert hareket (yukari),1.04,113.1,Onceki kapanisa gore %+4.14
