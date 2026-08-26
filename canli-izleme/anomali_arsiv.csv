@@ -222,3 +222,7 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-08-26T12:00:00+00:00,2026-08-26,15:00,TUREX,kilit,Olasi tavan/taban kilidi,1.0,6.71,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
 2026-08-26T13:15:00+00:00,2026-08-26,16:15,ECILC,hacim,Hacim patlamasi,1.6,77.95,"16:15 barinda hacim, ayni saatin ortalamasinin 4.0 kati"
 2026-08-26T13:15:00+00:00,2026-08-26,16:15,ENERY,gunluk,Gunluk sert hareket (yukari),1.06,9.59,Onceki kapanisa gore %+4.24
+2026-08-26T14:00:00+00:00,2026-08-26,17:00,SASA,hacim,Hacim patlamasi,3.0,2.36,"17:00 barinda hacim, ayni saatin ortalamasinin 8.9 kati"
+2026-08-26T14:00:00+00:00,2026-08-26,17:00,TMSN,hacim,Hacim patlamasi,3.0,75.3,"17:00 barinda hacim, ayni saatin ortalamasinin 17.0 kati"
+2026-08-26T14:00:00+00:00,2026-08-26,17:00,SELEC,hareket,Ani fiyat hareketi (yukari),1.23,292.25,Son 1 saatte %+2.45
+2026-08-26T14:00:00+00:00,2026-08-26,17:00,SDTTR,hareket,Ani fiyat hareketi (yukari),1.06,264.25,Son 1 saatte %+2.13
