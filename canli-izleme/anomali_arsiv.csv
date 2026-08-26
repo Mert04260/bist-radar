@@ -211,3 +211,4 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-08-26T11:00:00+00:00,2026-08-26,14:00,ULKER,hacim,Hacim patlamasi,1.33,92.1,"14:00 barinda hacim, ayni saatin ortalamasinin 3.3 kati"
 2026-08-26T11:00:00+00:00,2026-08-26,14:00,AKSA,hacim,Hacim patlamasi,1.17,11.17,"14:00 barinda hacim, ayni saatin ortalamasinin 2.9 kati"
 2026-08-26T11:00:00+00:00,2026-08-26,14:00,YEOTK,gunluk,Gunluk sert hareket (yukari),1.09,35.94,Onceki kapanisa gore %+4.36
+2026-08-26T11:30:00+00:00,2026-08-26,14:30,ADEL,hareket,Ani fiyat hareketi (yukari),1.92,37.26,Son 1 saatte %+3.85
