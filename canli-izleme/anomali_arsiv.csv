@@ -193,3 +193,13 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-08-26T09:00:00+00:00,2026-08-26,12:00,EKGYO,gunluk,Gunluk sert hareket (yukari),1.1,20.9,Onceki kapanisa gore %+4.40
 2026-08-26T09:00:00+00:00,2026-08-26,12:00,ISGYO,hareket,Ani fiyat hareketi (yukari),1.08,28.3,Son 1 saatte %+2.17
 2026-08-26T09:00:00+00:00,2026-08-26,12:00,NETAS,gunluk,Gunluk sert hareket (asagi),1.05,92.55,Onceki kapanisa gore %-4.19
+2026-08-26T09:45:00+00:00,2026-08-26,12:45,BFREN,hacim,Hacim patlamasi,3.0,132.7,"12:45 barinda hacim, ayni saatin ortalamasinin 14.7 kati"
+2026-08-26T09:45:00+00:00,2026-08-26,12:45,VAKKO,hacim,Hacim patlamasi,2.62,68.3,"12:45 barinda hacim, ayni saatin ortalamasinin 6.5 kati"
+2026-08-26T09:45:00+00:00,2026-08-26,12:45,AHGAZ,hacim,Hacim patlamasi,2.49,35.96,"12:45 barinda hacim, ayni saatin ortalamasinin 6.2 kati"
+2026-08-26T09:45:00+00:00,2026-08-26,12:45,ALKIM,hacim,Hacim patlamasi,1.88,16.03,"12:45 barinda hacim, ayni saatin ortalamasinin 4.7 kati"
+2026-08-26T09:45:00+00:00,2026-08-26,12:45,KONYA,hacim,Hacim patlamasi,1.71,3880.0,"12:45 barinda hacim, ayni saatin ortalamasinin 4.3 kati"
+2026-08-26T09:45:00+00:00,2026-08-26,12:45,VAKBN,hacim,Hacim patlamasi,1.46,32.68,"12:45 barinda hacim, ayni saatin ortalamasinin 3.7 kati"
+2026-08-26T09:45:00+00:00,2026-08-26,12:45,KARSN,hacim,Hacim patlamasi,1.43,9.36,"12:45 barinda hacim, ayni saatin ortalamasinin 3.6 kati"
+2026-08-26T09:45:00+00:00,2026-08-26,12:45,DOHOL,hacim,Hacim patlamasi,1.2,21.46,"12:45 barinda hacim, ayni saatin ortalamasinin 3.0 kati"
+2026-08-26T09:45:00+00:00,2026-08-26,12:45,FENER,hacim,Hacim patlamasi,1.15,3.22,"12:45 barinda hacim, ayni saatin ortalamasinin 2.9 kati"
+2026-08-26T09:45:00+00:00,2026-08-26,12:45,ALKIM,hareket,Ani fiyat hareketi (yukari),1.05,16.03,Son 1 saatte %+2.10
