@@ -1,24 +1,24 @@
 {
  "surum": "v6",
  "mod": "gun-ici",
- "guncelleme": "27.08.2026 20:58",
- "veri_saat": "27.08 17:45",
- "gecikme_dk": 193,
+ "guncelleme": "28.08.2026 22:08",
+ "veri_saat": "28.08 17:45",
+ "gecikme_dk": 263,
  "bayat": true,
  "bar": "15m",
  "taranan": 128,
  "alinamayan": 0,
  "anomali": [
   {
-   "tip": "gap",
-   "baslik": "Acilis boslugu (yukari)",
-   "detay": "Acilis dunku kapanisa gore %+9.66 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
+   "tip": "hareket",
+   "baslik": "Ani fiyat hareketi (yukari)",
+   "detay": "Son 1 saatte %+5.99",
    "siddet": 3.0,
-   "sym": "FENER",
-   "fiyat": 3.35,
+   "sym": "CWENE",
+   "fiyat": 39.62,
    "saat": "17:45",
-   "gun": "2026-08-27",
-   "ts": "2026-08-27T14:45:00+00:00"
+   "gun": "2026-08-28",
+   "ts": "2026-08-28T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -26,43 +26,43 @@
    "detay": "Acilis dunku kapanisa gore %+9.97 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
    "siddet": 3.0,
    "sym": "HALKB",
-   "fiyat": 41.92,
+   "fiyat": 46.1,
    "saat": "17:45",
-   "gun": "2026-08-27",
-   "ts": "2026-08-27T14:45:00+00:00"
-  },
-  {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "17:45 barinda hacim, ayni saatin ortalamasinin 11.6 kati",
-   "siddet": 3.0,
-   "sym": "SDTTR",
-   "fiyat": 24.4,
-   "saat": "17:45",
-   "gun": "2026-08-27",
-   "ts": "2026-08-27T14:45:00+00:00"
+   "gun": "2026-08-28",
+   "ts": "2026-08-28T14:45:00+00:00"
   },
   {
    "tip": "hareket",
    "baslik": "Ani fiyat hareketi (yukari)",
-   "detay": "Son 1 saatte %+7.24",
+   "detay": "Son 1 saatte %+14.39",
    "siddet": 3.0,
-   "sym": "SELEC",
-   "fiyat": 326.0,
+   "sym": "PEKGY",
+   "fiyat": 18.04,
    "saat": "17:45",
-   "gun": "2026-08-27",
-   "ts": "2026-08-27T14:45:00+00:00"
+   "gun": "2026-08-28",
+   "ts": "2026-08-28T14:45:00+00:00"
+  },
+  {
+   "tip": "gunluk",
+   "baslik": "Gunluk sert hareket (yukari)",
+   "detay": "Onceki kapanisa gore %+13.32",
+   "siddet": 3.0,
+   "sym": "PEKGY",
+   "fiyat": 18.04,
+   "saat": "17:45",
+   "gun": "2026-08-28",
+   "ts": "2026-08-28T14:45:00+00:00"
   },
   {
    "tip": "hacim",
    "baslik": "Hacim patlamasi",
-   "detay": "17:45 barinda hacim, ayni saatin ortalamasinin 6.2 kati",
-   "siddet": 2.5,
-   "sym": "PNSUT",
-   "fiyat": 11.05,
+   "detay": "17:45 barinda hacim, ayni saatin ortalamasinin 7.0 kati",
+   "siddet": 2.79,
+   "sym": "CWENE",
+   "fiyat": 39.62,
    "saat": "17:45",
-   "gun": "2026-08-27",
-   "ts": "2026-08-27T14:45:00+00:00"
+   "gun": "2026-08-28",
+   "ts": "2026-08-28T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -70,76 +70,76 @@
    "detay": "Onceki kapanisa gore %+9.97",
    "siddet": 2.49,
    "sym": "HALKB",
-   "fiyat": 41.92,
+   "fiyat": 46.1,
    "saat": "17:45",
-   "gun": "2026-08-27",
-   "ts": "2026-08-27T14:45:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+8.67",
-   "siddet": 2.17,
-   "sym": "SELEC",
-   "fiyat": 326.0,
-   "saat": "17:45",
-   "gun": "2026-08-27",
-   "ts": "2026-08-27T14:45:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+6.56",
-   "siddet": 1.64,
-   "sym": "PASEU",
-   "fiyat": 254.25,
-   "saat": "17:45",
-   "gun": "2026-08-27",
-   "ts": "2026-08-27T14:45:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+6.34",
-   "siddet": 1.58,
-   "sym": "EUPWR",
-   "fiyat": 103.2,
-   "saat": "17:45",
-   "gun": "2026-08-27",
-   "ts": "2026-08-27T14:45:00+00:00"
+   "gun": "2026-08-28",
+   "ts": "2026-08-28T14:45:00+00:00"
   },
   {
    "tip": "hacim",
    "baslik": "Hacim patlamasi",
-   "detay": "17:45 barinda hacim, ayni saatin ortalamasinin 3.6 kati",
-   "siddet": 1.45,
-   "sym": "PEKGY",
-   "fiyat": 15.92,
+   "detay": "17:45 barinda hacim, ayni saatin ortalamasinin 6.1 kati",
+   "siddet": 2.44,
+   "sym": "AHGAZ",
+   "fiyat": 37.98,
    "saat": "17:45",
-   "gun": "2026-08-27",
-   "ts": "2026-08-27T14:45:00+00:00"
+   "gun": "2026-08-28",
+   "ts": "2026-08-28T14:45:00+00:00"
   },
   {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-5.27",
-   "siddet": 1.32,
-   "sym": "ADEL",
-   "fiyat": 34.84,
+   "tip": "hareket",
+   "baslik": "Ani fiyat hareketi (yukari)",
+   "detay": "Son 1 saatte %+4.24",
+   "siddet": 2.12,
+   "sym": "PASEU",
+   "fiyat": 264.5,
    "saat": "17:45",
-   "gun": "2026-08-27",
-   "ts": "2026-08-27T14:45:00+00:00"
+   "gun": "2026-08-28",
+   "ts": "2026-08-28T14:45:00+00:00"
+  },
+  {
+   "tip": "birikim",
+   "baslik": "Sessiz birikim",
+   "detay": "Hacim ortalamanin 3.8 kati, fiyat bandi sadece %0.0",
+   "siddet": 2.11,
+   "sym": "HALKB",
+   "fiyat": 46.1,
+   "saat": "17:45",
+   "gun": "2026-08-28",
+   "ts": "2026-08-28T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
    "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+5.04",
-   "siddet": 1.26,
-   "sym": "PNSUT",
-   "fiyat": 11.05,
+   "detay": "Onceki kapanisa gore %+8.25",
+   "siddet": 2.06,
+   "sym": "CWENE",
+   "fiyat": 39.62,
    "saat": "17:45",
-   "gun": "2026-08-27",
-   "ts": "2026-08-27T14:45:00+00:00"
+   "gun": "2026-08-28",
+   "ts": "2026-08-28T14:45:00+00:00"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "17:45 barinda hacim, ayni saatin ortalamasinin 4.9 kati",
+   "siddet": 1.96,
+   "sym": "CANTE",
+   "fiyat": 1.3,
+   "saat": "17:45",
+   "gun": "2026-08-28",
+   "ts": "2026-08-28T14:45:00+00:00"
+  },
+  {
+   "tip": "gunluk",
+   "baslik": "Gunluk sert hareket (yukari)",
+   "detay": "Onceki kapanisa gore %+7.44",
+   "siddet": 1.86,
+   "sym": "CANTE",
+   "fiyat": 1.3,
+   "saat": "17:45",
+   "gun": "2026-08-28",
+   "ts": "2026-08-28T14:45:00+00:00"
   }
  ]
 }
