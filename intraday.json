@@ -1,14 +1,25 @@
 {
  "surum": "v6",
  "mod": "gun-ici",
- "guncelleme": "03.09.2026 14:49",
- "veri_saat": "03.09 14:30",
- "gecikme_dk": 19,
+ "guncelleme": "03.09.2026 18:26",
+ "veri_saat": "03.09 17:45",
+ "gecikme_dk": 41,
  "bayat": false,
  "bar": "15m",
  "taranan": 128,
  "alinamayan": 0,
  "anomali": [
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "17:45 barinda hacim, ayni saatin ortalamasinin 8.4 kati",
+   "siddet": 3.0,
+   "sym": "ALKIM",
+   "fiyat": 15.27,
+   "saat": "17:45",
+   "gun": "2026-09-03",
+   "ts": "2026-09-03T14:45:00+00:00"
+  },
   {
    "tip": "gap",
    "baslik": "Acilis boslugu (asagi)",
@@ -16,9 +27,9 @@
    "siddet": 3.0,
    "sym": "GESAN",
    "fiyat": 67.2,
-   "saat": "14:30",
+   "saat": "17:45",
    "gun": "2026-09-03",
-   "ts": "2026-09-03T11:30:00+00:00"
+   "ts": "2026-09-03T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -27,9 +38,9 @@
    "siddet": 3.0,
    "sym": "HALKB",
    "fiyat": 49.44,
-   "saat": "14:30",
+   "saat": "17:45",
    "gun": "2026-09-03",
-   "ts": "2026-09-03T11:30:00+00:00"
+   "ts": "2026-09-03T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -38,9 +49,9 @@
    "siddet": 3.0,
    "sym": "PEKGY",
    "fiyat": 11.5,
-   "saat": "14:30",
+   "saat": "17:45",
    "gun": "2026-09-03",
-   "ts": "2026-09-03T11:30:00+00:00"
+   "ts": "2026-09-03T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -49,20 +60,9 @@
    "siddet": 2.87,
    "sym": "EUPWR",
    "fiyat": 74.85,
-   "saat": "14:30",
+   "saat": "17:45",
    "gun": "2026-09-03",
-   "ts": "2026-09-03T11:30:00+00:00"
-  },
-  {
-   "tip": "hareket",
-   "baslik": "Ani fiyat hareketi (yukari)",
-   "detay": "Son 1 saatte %+5.73",
-   "siddet": 2.87,
-   "sym": "MIATK",
-   "fiyat": 28.4,
-   "saat": "14:30",
-   "gun": "2026-09-03",
-   "ts": "2026-09-03T11:30:00+00:00"
+   "ts": "2026-09-03T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -71,9 +71,20 @@
    "siddet": 2.57,
    "sym": "SMRTG",
    "fiyat": 9.0,
-   "saat": "14:30",
+   "saat": "17:45",
    "gun": "2026-09-03",
-   "ts": "2026-09-03T11:30:00+00:00"
+   "ts": "2026-09-03T14:45:00+00:00"
+  },
+  {
+   "tip": "gunluk",
+   "baslik": "Gunluk sert hareket (asagi)",
+   "detay": "Onceki kapanisa gore %-10.07",
+   "siddet": 2.52,
+   "sym": "PASEU",
+   "fiyat": 175.9,
+   "saat": "17:45",
+   "gun": "2026-09-03",
+   "ts": "2026-09-03T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -82,9 +93,20 @@
    "siddet": 2.5,
    "sym": "EUPWR",
    "fiyat": 74.85,
-   "saat": "14:30",
+   "saat": "17:45",
    "gun": "2026-09-03",
-   "ts": "2026-09-03T11:30:00+00:00"
+   "ts": "2026-09-03T14:45:00+00:00"
+  },
+  {
+   "tip": "gunluk",
+   "baslik": "Gunluk sert hareket (yukari)",
+   "detay": "Onceki kapanisa gore %+10.00",
+   "siddet": 2.5,
+   "sym": "KARSN",
+   "fiyat": 12.43,
+   "saat": "17:45",
+   "gun": "2026-09-03",
+   "ts": "2026-09-03T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -93,9 +115,9 @@
    "siddet": 2.49,
    "sym": "GESAN",
    "fiyat": 67.2,
-   "saat": "14:30",
+   "saat": "17:45",
    "gun": "2026-09-03",
-   "ts": "2026-09-03T11:30:00+00:00"
+   "ts": "2026-09-03T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -104,42 +126,20 @@
    "siddet": 2.49,
    "sym": "HALKB",
    "fiyat": 49.44,
-   "saat": "14:30",
+   "saat": "17:45",
    "gun": "2026-09-03",
-   "ts": "2026-09-03T11:30:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-9.95",
-   "siddet": 2.49,
-   "sym": "PEKGY",
-   "fiyat": 11.5,
-   "saat": "14:30",
-   "gun": "2026-09-03",
-   "ts": "2026-09-03T11:30:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+9.29",
-   "siddet": 2.32,
-   "sym": "KARSN",
-   "fiyat": 12.35,
-   "saat": "14:30",
-   "gun": "2026-09-03",
-   "ts": "2026-09-03T11:30:00+00:00"
+   "ts": "2026-09-03T14:45:00+00:00"
   },
   {
    "tip": "hareket",
    "baslik": "Ani fiyat hareketi (asagi)",
-   "detay": "Son 1 saatte %-4.26",
-   "siddet": 2.13,
-   "sym": "SMRTG",
-   "fiyat": 9.0,
-   "saat": "14:30",
+   "detay": "Son 1 saatte %-4.97",
+   "siddet": 2.49,
+   "sym": "KORDS",
+   "fiyat": 75.45,
+   "saat": "17:45",
    "gun": "2026-09-03",
-   "ts": "2026-09-03T11:30:00+00:00"
+   "ts": "2026-09-03T14:45:00+00:00"
   }
  ]
 }
