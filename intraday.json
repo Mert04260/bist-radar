@@ -1,10 +1,10 @@
 {
  "surum": "v6",
  "mod": "gun-ici",
- "guncelleme": "03.09.2026 18:26",
+ "guncelleme": "03.09.2026 21:51",
  "veri_saat": "03.09 17:45",
- "gecikme_dk": 41,
- "bayat": false,
+ "gecikme_dk": 246,
+ "bayat": true,
  "bar": "15m",
  "taranan": 128,
  "alinamayan": 0,
