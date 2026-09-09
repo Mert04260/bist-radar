@@ -1,24 +1,46 @@
 {
  "surum": "v6",
  "mod": "gun-ici",
- "guncelleme": "09.09.2026 15:02",
- "veri_saat": "09.09 14:45",
- "gecikme_dk": 17,
- "bayat": false,
+ "guncelleme": "09.09.2026 19:40",
+ "veri_saat": "09.09 17:45",
+ "gecikme_dk": 115,
+ "bayat": true,
  "bar": "15m",
  "taranan": 128,
  "alinamayan": 0,
  "anomali": [
   {
-   "tip": "hareket",
-   "baslik": "Ani fiyat hareketi (yukari)",
-   "detay": "Son 1 saatte %+7.73",
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "17:45 barinda hacim, ayni saatin ortalamasinin 8.1 kati",
+   "siddet": 3.0,
+   "sym": "EKGYO",
+   "fiyat": 22.48,
+   "saat": "17:45",
+   "gun": "2026-09-09",
+   "ts": "2026-09-09T14:45:00+00:00"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "17:45 barinda hacim, ayni saatin ortalamasinin 7.6 kati",
+   "siddet": 3.0,
+   "sym": "ISCTR",
+   "fiyat": 13.91,
+   "saat": "17:45",
+   "gun": "2026-09-09",
+   "ts": "2026-09-09T14:45:00+00:00"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "17:45 barinda hacim, ayni saatin ortalamasinin 8.7 kati",
    "siddet": 3.0,
    "sym": "MIATK",
-   "fiyat": 39.3,
-   "saat": "14:45",
+   "fiyat": 37.26,
+   "saat": "17:45",
    "gun": "2026-09-09",
-   "ts": "2026-09-09T11:45:00+00:00"
+   "ts": "2026-09-09T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -27,9 +49,86 @@
    "siddet": 3.0,
    "sym": "PASEU",
    "fiyat": 115.6,
-   "saat": "14:45",
+   "saat": "17:45",
    "gun": "2026-09-09",
-   "ts": "2026-09-09T11:45:00+00:00"
+   "ts": "2026-09-09T14:45:00+00:00"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "17:45 barinda hacim, ayni saatin ortalamasinin 13.2 kati",
+   "siddet": 3.0,
+   "sym": "SASA",
+   "fiyat": 2.74,
+   "saat": "17:45",
+   "gun": "2026-09-09",
+   "ts": "2026-09-09T14:45:00+00:00"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "17:45 barinda hacim, ayni saatin ortalamasinin 6.9 kati",
+   "siddet": 2.77,
+   "sym": "DOHOL",
+   "fiyat": 21.5,
+   "saat": "17:45",
+   "gun": "2026-09-09",
+   "ts": "2026-09-09T14:45:00+00:00"
+  },
+  {
+   "tip": "hareket",
+   "baslik": "Ani fiyat hareketi (yukari)",
+   "detay": "Son 1 saatte %+5.35",
+   "siddet": 2.68,
+   "sym": "EUPWR",
+   "fiyat": 75.8,
+   "saat": "17:45",
+   "gun": "2026-09-09",
+   "ts": "2026-09-09T14:45:00+00:00"
+  },
+  {
+   "tip": "gunluk",
+   "baslik": "Gunluk sert hareket (yukari)",
+   "detay": "Onceki kapanisa gore %+10.35",
+   "siddet": 2.59,
+   "sym": "KARSN",
+   "fiyat": 15.56,
+   "saat": "17:45",
+   "gun": "2026-09-09",
+   "ts": "2026-09-09T14:45:00+00:00"
+  },
+  {
+   "tip": "hareket",
+   "baslik": "Ani fiyat hareketi (asagi)",
+   "detay": "Son 1 saatte %-5.13",
+   "siddet": 2.56,
+   "sym": "SISE",
+   "fiyat": 45.16,
+   "saat": "17:45",
+   "gun": "2026-09-09",
+   "ts": "2026-09-09T14:45:00+00:00"
+  },
+  {
+   "tip": "gunluk",
+   "baslik": "Gunluk sert hareket (yukari)",
+   "detay": "Onceki kapanisa gore %+10.20",
+   "siddet": 2.55,
+   "sym": "EKGYO",
+   "fiyat": 22.48,
+   "saat": "17:45",
+   "gun": "2026-09-09",
+   "ts": "2026-09-09T14:45:00+00:00"
+  },
+  {
+   "tip": "hareket",
+   "baslik": "Ani fiyat hareketi (asagi)",
+   "detay": "Son 1 saatte %-5.09",
+   "siddet": 2.55,
+   "sym": "MIATK",
+   "fiyat": 37.26,
+   "saat": "17:45",
+   "gun": "2026-09-09",
+   "ts": "2026-09-09T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -38,108 +137,9 @@
    "siddet": 2.49,
    "sym": "PASEU",
    "fiyat": 115.6,
-   "saat": "14:45",
+   "saat": "17:45",
    "gun": "2026-09-09",
-   "ts": "2026-09-09T11:45:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+8.92",
-   "siddet": 2.23,
-   "sym": "EKGYO",
-   "fiyat": 22.22,
-   "saat": "14:45",
-   "gun": "2026-09-09",
-   "ts": "2026-09-09T11:45:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+7.67",
-   "siddet": 1.92,
-   "sym": "PETKM",
-   "fiyat": 26.12,
-   "saat": "14:45",
-   "gun": "2026-09-09",
-   "ts": "2026-09-09T11:45:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+7.26",
-   "siddet": 1.81,
-   "sym": "BTCIM",
-   "fiyat": 3.99,
-   "saat": "14:45",
-   "gun": "2026-09-09",
-   "ts": "2026-09-09T11:45:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+5.87",
-   "siddet": 1.47,
-   "sym": "MIATK",
-   "fiyat": 39.3,
-   "saat": "14:45",
-   "gun": "2026-09-09",
-   "ts": "2026-09-09T11:45:00+00:00"
-  },
-  {
-   "tip": "hareket",
-   "baslik": "Ani fiyat hareketi (yukari)",
-   "detay": "Son 1 saatte %+2.93",
-   "siddet": 1.47,
-   "sym": "SISE",
-   "fiyat": 47.76,
-   "saat": "14:45",
-   "gun": "2026-09-09",
-   "ts": "2026-09-09T11:45:00+00:00"
-  },
-  {
-   "tip": "gap",
-   "baslik": "Acilis boslugu (yukari)",
-   "detay": "Acilis dunku kapanisa gore %+4.15 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
-   "siddet": 1.38,
-   "sym": "EGEEN",
-   "fiyat": 5755.0,
-   "saat": "14:45",
-   "gun": "2026-09-09",
-   "ts": "2026-09-09T11:45:00+00:00"
-  },
-  {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "14:45 barinda hacim, ayni saatin ortalamasinin 3.4 kati",
-   "siddet": 1.37,
-   "sym": "SISE",
-   "fiyat": 47.76,
-   "saat": "14:45",
-   "gun": "2026-09-09",
-   "ts": "2026-09-09T11:45:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+5.16",
-   "siddet": 1.29,
-   "sym": "TUPRS",
-   "fiyat": 413.0,
-   "saat": "14:45",
-   "gun": "2026-09-09",
-   "ts": "2026-09-09T11:45:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+4.95",
-   "siddet": 1.24,
-   "sym": "KRDMD",
-   "fiyat": 47.96,
-   "saat": "14:45",
-   "gun": "2026-09-09",
-   "ts": "2026-09-09T11:45:00+00:00"
+   "ts": "2026-09-09T14:45:00+00:00"
   }
  ]
 }
