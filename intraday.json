@@ -1,14 +1,25 @@
 {
  "surum": "v6",
  "mod": "gun-ici",
- "guncelleme": "16.09.2026 15:18",
- "veri_saat": "16.09 15:00",
- "gecikme_dk": 18,
- "bayat": false,
+ "guncelleme": "16.09.2026 20:04",
+ "veri_saat": "16.09 17:45",
+ "gecikme_dk": 139,
+ "bayat": true,
  "bar": "15m",
  "taranan": 128,
  "alinamayan": 0,
  "anomali": [
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "17:45 barinda hacim, ayni saatin ortalamasinin 12.9 kati",
+   "siddet": 3.0,
+   "sym": "KORDS",
+   "fiyat": 3.37,
+   "saat": "17:45",
+   "gun": "2026-09-16",
+   "ts": "2026-09-16T14:45:00+00:00"
+  },
   {
    "tip": "gap",
    "baslik": "Acilis boslugu (asagi)",
@@ -16,9 +27,9 @@
    "siddet": 3.0,
    "sym": "PASEU",
    "fiyat": 68.4,
-   "saat": "15:00",
+   "saat": "17:45",
    "gun": "2026-09-16",
-   "ts": "2026-09-16T12:00:00+00:00"
+   "ts": "2026-09-16T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -27,9 +38,20 @@
    "siddet": 3.0,
    "sym": "SELEC",
    "fiyat": 262.75,
-   "saat": "15:00",
+   "saat": "17:45",
    "gun": "2026-09-16",
-   "ts": "2026-09-16T12:00:00+00:00"
+   "ts": "2026-09-16T14:45:00+00:00"
+  },
+  {
+   "tip": "gunluk",
+   "baslik": "Gunluk sert hareket (asagi)",
+   "detay": "Onceki kapanisa gore %-10.46",
+   "siddet": 2.61,
+   "sym": "ECILC",
+   "fiyat": 60.35,
+   "saat": "17:45",
+   "gun": "2026-09-16",
+   "ts": "2026-09-16T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -38,9 +60,20 @@
    "siddet": 2.6,
    "sym": "BINHO",
    "fiyat": 8.69,
-   "saat": "15:00",
+   "saat": "17:45",
    "gun": "2026-09-16",
-   "ts": "2026-09-16T12:00:00+00:00"
+   "ts": "2026-09-16T14:45:00+00:00"
+  },
+  {
+   "tip": "gunluk",
+   "baslik": "Gunluk sert hareket (asagi)",
+   "detay": "Onceki kapanisa gore %-10.37",
+   "siddet": 2.59,
+   "sym": "HEKTS",
+   "fiyat": 2.42,
+   "saat": "17:45",
+   "gun": "2026-09-16",
+   "ts": "2026-09-16T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -49,9 +82,9 @@
    "siddet": 2.58,
    "sym": "SASA",
    "fiyat": 2.52,
-   "saat": "15:00",
+   "saat": "17:45",
    "gun": "2026-09-16",
-   "ts": "2026-09-16T12:00:00+00:00"
+   "ts": "2026-09-16T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -60,9 +93,20 @@
    "siddet": 2.55,
    "sym": "ALTNY",
    "fiyat": 14.96,
-   "saat": "15:00",
+   "saat": "17:45",
    "gun": "2026-09-16",
-   "ts": "2026-09-16T12:00:00+00:00"
+   "ts": "2026-09-16T14:45:00+00:00"
+  },
+  {
+   "tip": "gunluk",
+   "baslik": "Gunluk sert hareket (asagi)",
+   "detay": "Onceki kapanisa gore %-10.22",
+   "siddet": 2.55,
+   "sym": "ASTOR",
+   "fiyat": 245.1,
+   "saat": "17:45",
+   "gun": "2026-09-16",
+   "ts": "2026-09-16T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -71,75 +115,31 @@
    "siddet": 2.53,
    "sym": "GESAN",
    "fiyat": 53.4,
-   "saat": "15:00",
+   "saat": "17:45",
    "gun": "2026-09-16",
-   "ts": "2026-09-16T12:00:00+00:00"
+   "ts": "2026-09-16T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
    "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-10.00",
-   "siddet": 2.5,
-   "sym": "HEKTS",
-   "fiyat": 2.43,
-   "saat": "15:00",
+   "detay": "Onceki kapanisa gore %-10.13",
+   "siddet": 2.53,
+   "sym": "KORDS",
+   "fiyat": 3.37,
+   "saat": "17:45",
    "gun": "2026-09-16",
-   "ts": "2026-09-16T12:00:00+00:00"
+   "ts": "2026-09-16T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
    "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-9.98",
-   "siddet": 2.49,
-   "sym": "MIATK",
-   "fiyat": 31.22,
-   "saat": "15:00",
+   "detay": "Onceki kapanisa gore %-10.13",
+   "siddet": 2.53,
+   "sym": "SISE",
+   "fiyat": 38.16,
+   "saat": "17:45",
    "gun": "2026-09-16",
-   "ts": "2026-09-16T12:00:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-9.94",
-   "siddet": 2.49,
-   "sym": "PASEU",
-   "fiyat": 68.4,
-   "saat": "15:00",
-   "gun": "2026-09-16",
-   "ts": "2026-09-16T12:00:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-9.94",
-   "siddet": 2.49,
-   "sym": "SELEC",
-   "fiyat": 262.75,
-   "saat": "15:00",
-   "gun": "2026-09-16",
-   "ts": "2026-09-16T12:00:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-9.93",
-   "siddet": 2.48,
-   "sym": "GUBRF",
-   "fiyat": 415.0,
-   "saat": "15:00",
-   "gun": "2026-09-16",
-   "ts": "2026-09-16T12:00:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-9.79",
-   "siddet": 2.45,
-   "sym": "KARSN",
-   "fiyat": 11.7,
-   "saat": "15:00",
-   "gun": "2026-09-16",
-   "ts": "2026-09-16T12:00:00+00:00"
+   "ts": "2026-09-16T14:45:00+00:00"
   }
  ]
 }
