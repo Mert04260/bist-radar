@@ -1,10 +1,10 @@
 {
  "surum": "v6",
  "mod": "gun-ici",
- "guncelleme": "22.09.2026 15:12",
- "veri_saat": "22.09 14:45",
- "gecikme_dk": 27,
- "bayat": false,
+ "guncelleme": "22.09.2026 19:58",
+ "veri_saat": "22.09 17:45",
+ "gecikme_dk": 133,
+ "bayat": true,
  "bar": "15m",
  "taranan": 128,
  "alinamayan": 0,
@@ -15,10 +15,10 @@
    "detay": "Acilis dunku kapanisa gore %-9.92 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
    "siddet": 3.0,
    "sym": "BINHO",
-   "fiyat": 6.66,
-   "saat": "14:45",
+   "fiyat": 6.6,
+   "saat": "17:45",
    "gun": "2026-09-22",
-   "ts": "2026-09-22T11:45:00+00:00"
+   "ts": "2026-09-22T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -26,10 +26,10 @@
    "detay": "Acilis dunku kapanisa gore %-9.91 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
    "siddet": 3.0,
    "sym": "IZENR",
-   "fiyat": 4.19,
-   "saat": "14:45",
+   "fiyat": 4.23,
+   "saat": "17:45",
    "gun": "2026-09-22",
-   "ts": "2026-09-22T11:45:00+00:00"
+   "ts": "2026-09-22T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -38,9 +38,9 @@
    "siddet": 3.0,
    "sym": "KONTR",
    "fiyat": 2.31,
-   "saat": "13:45",
+   "saat": "17:45",
    "gun": "2026-09-22",
-   "ts": "2026-09-22T10:45:00+00:00"
+   "ts": "2026-09-22T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -49,9 +49,9 @@
    "siddet": 3.0,
    "sym": "MAGEN",
    "fiyat": 22.08,
-   "saat": "14:45",
+   "saat": "17:45",
    "gun": "2026-09-22",
-   "ts": "2026-09-22T11:45:00+00:00"
+   "ts": "2026-09-22T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -60,9 +60,9 @@
    "siddet": 3.0,
    "sym": "MIATK",
    "fiyat": 20.52,
-   "saat": "14:45",
+   "saat": "17:45",
    "gun": "2026-09-22",
-   "ts": "2026-09-22T11:45:00+00:00"
+   "ts": "2026-09-22T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -71,9 +71,9 @@
    "siddet": 3.0,
    "sym": "PASEU",
    "fiyat": 44.94,
-   "saat": "14:45",
+   "saat": "17:45",
    "gun": "2026-09-22",
-   "ts": "2026-09-22T11:45:00+00:00"
+   "ts": "2026-09-22T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -82,9 +82,9 @@
    "siddet": 3.0,
    "sym": "PEKGY",
    "fiyat": 6.93,
-   "saat": "14:45",
+   "saat": "17:45",
    "gun": "2026-09-22",
-   "ts": "2026-09-22T11:45:00+00:00"
+   "ts": "2026-09-22T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -93,9 +93,9 @@
    "siddet": 3.0,
    "sym": "SELEC",
    "fiyat": 172.6,
-   "saat": "14:45",
+   "saat": "17:45",
    "gun": "2026-09-22",
-   "ts": "2026-09-22T11:45:00+00:00"
+   "ts": "2026-09-22T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -104,9 +104,31 @@
    "siddet": 3.0,
    "sym": "SMRTG",
    "fiyat": 5.49,
-   "saat": "14:45",
+   "saat": "17:45",
    "gun": "2026-09-22",
-   "ts": "2026-09-22T11:45:00+00:00"
+   "ts": "2026-09-22T14:45:00+00:00"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "17:45 barinda hacim, ayni saatin ortalamasinin 7.4 kati",
+   "siddet": 2.96,
+   "sym": "AKCNS",
+   "fiyat": 191.1,
+   "saat": "17:45",
+   "gun": "2026-09-22",
+   "ts": "2026-09-22T14:45:00+00:00"
+  },
+  {
+   "tip": "gunluk",
+   "baslik": "Gunluk sert hareket (yukari)",
+   "detay": "Onceki kapanisa gore %+10.31",
+   "siddet": 2.58,
+   "sym": "KARSN",
+   "fiyat": 10.06,
+   "saat": "17:45",
+   "gun": "2026-09-22",
+   "ts": "2026-09-22T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -115,31 +137,9 @@
    "siddet": 2.54,
    "sym": "BTCIM",
    "fiyat": 2.36,
-   "saat": "14:45",
+   "saat": "17:45",
    "gun": "2026-09-22",
-   "ts": "2026-09-22T11:45:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-9.95",
-   "siddet": 2.49,
-   "sym": "MAGEN",
-   "fiyat": 22.08,
-   "saat": "14:45",
-   "gun": "2026-09-22",
-   "ts": "2026-09-22T11:45:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-9.98",
-   "siddet": 2.49,
-   "sym": "PASEU",
-   "fiyat": 44.94,
-   "saat": "14:45",
-   "gun": "2026-09-22",
-   "ts": "2026-09-22T11:45:00+00:00"
+   "ts": "2026-09-22T14:45:00+00:00"
   }
  ]
 }
