@@ -999,3 +999,43 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-09-23T12:00:00+00:00,2026-09-23,15:00,PEKGY,kilit,Olasi tavan/taban kilidi,1.0,6.24,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
 2026-09-23T12:00:00+00:00,2026-09-23,15:00,PETKM,kilit,Olasi tavan/taban kilidi,1.0,23.0,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
 2026-09-23T12:00:00+00:00,2026-09-23,15:00,SELEC,kilit,Olasi tavan/taban kilidi,1.0,155.4,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,AKCNS,gap,Acilis boslugu (yukari),3.0,208.2,Acilis dunku kapanisa gore %+9.90 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,MAGEN,gap,Acilis boslugu (asagi),3.0,17.9,Acilis dunku kapanisa gore %-9.96 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,PASEU,gap,Acilis boslugu (asagi),3.0,36.42,Acilis dunku kapanisa gore %-9.99 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,PEKGY,gap,Acilis boslugu (asagi),3.0,5.62,Acilis dunku kapanisa gore %-9.94 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,REEDR,hacim,Hacim patlamasi,3.0,4.08,"15:00 barinda hacim, ayni saatin ortalamasinin 7.6 kati"
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,SELEC,gap,Acilis boslugu (asagi),3.0,139.9,Acilis dunku kapanisa gore %-9.97 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,SMRTG,gunluk,Gunluk sert hareket (asagi),2.61,4.9,Onceki kapanisa gore %-10.42
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,PASEU,gunluk,Gunluk sert hareket (asagi),2.5,36.42,Onceki kapanisa gore %-9.99
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,MAGEN,gunluk,Gunluk sert hareket (asagi),2.49,17.9,Onceki kapanisa gore %-9.96
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,SELEC,gunluk,Gunluk sert hareket (asagi),2.49,139.9,Onceki kapanisa gore %-9.97
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,MIATK,gunluk,Gunluk sert hareket (yukari),2.48,24.8,Onceki kapanisa gore %+9.93
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,PEKGY,gunluk,Gunluk sert hareket (asagi),2.48,5.62,Onceki kapanisa gore %-9.94
+2026-09-24T10:45:00+00:00,2026-09-24,13:45,KONTR,gunluk,Gunluk sert hareket (asagi),2.36,2.3,Onceki kapanisa gore %-9.45
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,MIATK,hareket,Ani fiyat hareketi (yukari),2.23,24.8,Son 1 saatte %+4.47
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,QUAGR,gunluk,Gunluk sert hareket (asagi),2.08,2.09,Onceki kapanisa gore %-8.33
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,REEDR,hareket,Ani fiyat hareketi (yukari),1.78,4.08,Son 1 saatte %+3.55
+2026-09-24T10:45:00+00:00,2026-09-24,13:45,KONTR,gap,Acilis boslugu (asagi),1.71,2.3,Acilis dunku kapanisa gore %-5.12 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,TKFEN,hareket,Ani fiyat hareketi (yukari),1.52,279.25,Son 1 saatte %+3.04
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,AGROT,hacim,Hacim patlamasi,1.46,1.48,"15:00 barinda hacim, ayni saatin ortalamasinin 3.6 kati"
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,OTKAR,gap,Acilis boslugu (asagi),1.43,309.0,Acilis dunku kapanisa gore %-4.29 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,PETKM,gap,Acilis boslugu (yukari),1.39,22.18,Acilis dunku kapanisa gore %+4.17 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,YEOTK,gunluk,Gunluk sert hareket (asagi),1.26,30.86,Onceki kapanisa gore %-5.05
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,MIATK,gap,Acilis boslugu (yukari),1.24,24.8,Acilis dunku kapanisa gore %+3.72 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,BTCIM,gunluk,Gunluk sert hareket (asagi),1.17,2.25,Onceki kapanisa gore %-4.66
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,SDTTR,gunluk,Gunluk sert hareket (asagi),1.17,16.57,Onceki kapanisa gore %-4.66
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,AGROT,gunluk,Gunluk sert hareket (asagi),1.13,1.48,Onceki kapanisa gore %-4.52
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,EUPWR,gunluk,Gunluk sert hareket (asagi),1.13,61.35,Onceki kapanisa gore %-4.51
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,SASA,hareket,Ani fiyat hareketi (asagi),1.13,2.17,Son 1 saatte %-2.25
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,ADEL,gunluk,Gunluk sert hareket (asagi),1.12,25.98,Onceki kapanisa gore %-4.49
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,TKFEN,gunluk,Gunluk sert hareket (yukari),1.12,279.25,Onceki kapanisa gore %+4.49
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,TUREX,hareket,Ani fiyat hareketi (yukari),1.1,5.59,Son 1 saatte %+2.19
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,DEVA,gunluk,Gunluk sert hareket (asagi),1.07,97.05,Onceki kapanisa gore %-4.29
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,EGEEN,gap,Acilis boslugu (yukari),1.04,5642.5,Acilis dunku kapanisa gore %+3.13 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,GUBRF,gunluk,Gunluk sert hareket (asagi),1.04,432.0,Onceki kapanisa gore %-4.16
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,ALTNY,gunluk,Gunluk sert hareket (asagi),1.0,13.2,Onceki kapanisa gore %-4.00
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,MAGEN,kilit,Olasi tavan/taban kilidi,1.0,17.9,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,PASEU,kilit,Olasi tavan/taban kilidi,1.0,36.42,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,PEKGY,kilit,Olasi tavan/taban kilidi,1.0,5.62,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,SELEC,kilit,Olasi tavan/taban kilidi,1.0,139.9,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-09-24T12:00:00+00:00,2026-09-24,15:00,SMRTG,kilit,Olasi tavan/taban kilidi,1.0,4.9,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
