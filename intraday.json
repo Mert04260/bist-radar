@@ -1,14 +1,25 @@
 {
  "surum": "v6",
  "mod": "gun-ici",
- "guncelleme": "25.09.2026 15:24",
- "veri_saat": "25.09 15:00",
- "gecikme_dk": 24,
- "bayat": false,
+ "guncelleme": "25.09.2026 20:30",
+ "veri_saat": "25.09 17:45",
+ "gecikme_dk": 165,
+ "bayat": true,
  "bar": "15m",
  "taranan": 128,
  "alinamayan": 0,
  "anomali": [
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "17:45 barinda hacim, ayni saatin ortalamasinin 8.5 kati",
+   "siddet": 3.0,
+   "sym": "LMKDC",
+   "fiyat": 23.5,
+   "saat": "17:45",
+   "gun": "2026-09-25",
+   "ts": "2026-09-25T14:45:00+00:00"
+  },
   {
    "tip": "gap",
    "baslik": "Acilis boslugu (asagi)",
@@ -16,20 +27,9 @@
    "siddet": 3.0,
    "sym": "MAGEN",
    "fiyat": 16.11,
-   "saat": "15:00",
+   "saat": "17:45",
    "gun": "2026-09-25",
-   "ts": "2026-09-25T12:00:00+00:00"
-  },
-  {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "15:00 barinda hacim, ayni saatin ortalamasinin 28.8 kati",
-   "siddet": 3.0,
-   "sym": "MIATK",
-   "fiyat": 27.28,
-   "saat": "15:00",
-   "gun": "2026-09-25",
-   "ts": "2026-09-25T12:00:00+00:00"
+   "ts": "2026-09-25T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -38,9 +38,9 @@
    "siddet": 3.0,
    "sym": "PASEU",
    "fiyat": 32.78,
-   "saat": "15:00",
+   "saat": "17:45",
    "gun": "2026-09-25",
-   "ts": "2026-09-25T12:00:00+00:00"
+   "ts": "2026-09-25T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -49,9 +49,9 @@
    "siddet": 3.0,
    "sym": "PEKGY",
    "fiyat": 5.06,
-   "saat": "15:00",
+   "saat": "17:45",
    "gun": "2026-09-25",
-   "ts": "2026-09-25T12:00:00+00:00"
+   "ts": "2026-09-25T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -60,9 +60,9 @@
    "siddet": 3.0,
    "sym": "SELEC",
    "fiyat": 126.0,
-   "saat": "15:00",
+   "saat": "17:45",
    "gun": "2026-09-25",
-   "ts": "2026-09-25T12:00:00+00:00"
+   "ts": "2026-09-25T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -71,9 +71,9 @@
    "siddet": 2.5,
    "sym": "MAGEN",
    "fiyat": 16.11,
-   "saat": "15:00",
+   "saat": "17:45",
    "gun": "2026-09-25",
-   "ts": "2026-09-25T12:00:00+00:00"
+   "ts": "2026-09-25T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -82,9 +82,9 @@
    "siddet": 2.5,
    "sym": "MIATK",
    "fiyat": 27.28,
-   "saat": "15:00",
+   "saat": "17:45",
    "gun": "2026-09-25",
-   "ts": "2026-09-25T12:00:00+00:00"
+   "ts": "2026-09-25T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -93,9 +93,20 @@
    "siddet": 2.5,
    "sym": "PASEU",
    "fiyat": 32.78,
-   "saat": "15:00",
+   "saat": "17:45",
    "gun": "2026-09-25",
-   "ts": "2026-09-25T12:00:00+00:00"
+   "ts": "2026-09-25T14:45:00+00:00"
+  },
+  {
+   "tip": "gunluk",
+   "baslik": "Gunluk sert hareket (yukari)",
+   "detay": "Onceki kapanisa gore %+10.00",
+   "siddet": 2.5,
+   "sym": "SMRTG",
+   "fiyat": 5.39,
+   "saat": "17:45",
+   "gun": "2026-09-25",
+   "ts": "2026-09-25T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -104,9 +115,9 @@
    "siddet": 2.49,
    "sym": "PEKGY",
    "fiyat": 5.06,
-   "saat": "15:00",
+   "saat": "17:45",
    "gun": "2026-09-25",
-   "ts": "2026-09-25T12:00:00+00:00"
+   "ts": "2026-09-25T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -115,31 +126,20 @@
    "siddet": 2.48,
    "sym": "SELEC",
    "fiyat": 126.0,
-   "saat": "15:00",
+   "saat": "17:45",
    "gun": "2026-09-25",
-   "ts": "2026-09-25T12:00:00+00:00"
-  },
-  {
-   "tip": "hareket",
-   "baslik": "Ani fiyat hareketi (yukari)",
-   "detay": "Son 1 saatte %+4.28",
-   "siddet": 2.14,
-   "sym": "MIATK",
-   "fiyat": 27.28,
-   "saat": "15:00",
-   "gun": "2026-09-25",
-   "ts": "2026-09-25T12:00:00+00:00"
+   "ts": "2026-09-25T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
    "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+8.45",
-   "siddet": 2.11,
+   "detay": "Onceki kapanisa gore %+9.16",
+   "siddet": 2.29,
    "sym": "ECILC",
-   "fiyat": 68.05,
-   "saat": "15:00",
+   "fiyat": 68.5,
+   "saat": "17:45",
    "gun": "2026-09-25",
-   "ts": "2026-09-25T12:00:00+00:00"
+   "ts": "2026-09-25T14:45:00+00:00"
   }
  ]
 }
