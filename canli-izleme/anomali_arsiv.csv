@@ -1039,3 +1039,29 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-09-24T12:00:00+00:00,2026-09-24,15:00,PEKGY,kilit,Olasi tavan/taban kilidi,1.0,5.62,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
 2026-09-24T12:00:00+00:00,2026-09-24,15:00,SELEC,kilit,Olasi tavan/taban kilidi,1.0,139.9,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
 2026-09-24T12:00:00+00:00,2026-09-24,15:00,SMRTG,kilit,Olasi tavan/taban kilidi,1.0,4.9,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,MAGEN,gap,Acilis boslugu (asagi),3.0,16.11,Acilis dunku kapanisa gore %-10.00 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,MIATK,hacim,Hacim patlamasi,3.0,27.28,"15:00 barinda hacim, ayni saatin ortalamasinin 28.8 kati"
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,PASEU,gap,Acilis boslugu (asagi),3.0,32.78,Acilis dunku kapanisa gore %-9.99 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,PEKGY,gap,Acilis boslugu (asagi),3.0,5.06,Acilis dunku kapanisa gore %-9.96 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,SELEC,gap,Acilis boslugu (asagi),3.0,126.0,Acilis dunku kapanisa gore %-9.94 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,MAGEN,gunluk,Gunluk sert hareket (asagi),2.5,16.11,Onceki kapanisa gore %-10.00
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,MIATK,gunluk,Gunluk sert hareket (yukari),2.5,27.28,Onceki kapanisa gore %+10.00
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,PASEU,gunluk,Gunluk sert hareket (asagi),2.5,32.78,Onceki kapanisa gore %-9.99
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,PEKGY,gunluk,Gunluk sert hareket (asagi),2.49,5.06,Onceki kapanisa gore %-9.96
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,SELEC,gunluk,Gunluk sert hareket (asagi),2.48,126.0,Onceki kapanisa gore %-9.94
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,MIATK,hareket,Ani fiyat hareketi (yukari),2.14,27.28,Son 1 saatte %+4.28
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,ECILC,gunluk,Gunluk sert hareket (yukari),2.11,68.05,Onceki kapanisa gore %+8.45
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,QUAGR,gunluk,Gunluk sert hareket (yukari),1.45,2.19,Onceki kapanisa gore %+5.80
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,SMRTG,hacim,Hacim patlamasi,1.33,5.11,"15:00 barinda hacim, ayni saatin ortalamasinin 3.3 kati"
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,GUBRF,gunluk,Gunluk sert hareket (yukari),1.2,449.0,Onceki kapanisa gore %+4.78
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,YEOTK,gunluk,Gunluk sert hareket (yukari),1.2,30.9,Onceki kapanisa gore %+4.82
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,BINHO,hareket,Ani fiyat hareketi (yukari),1.18,6.92,Son 1 saatte %+2.37
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,TUREX,hareket,Ani fiyat hareketi (yukari),1.14,5.82,Son 1 saatte %+2.28
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,TUREX,gunluk,Gunluk sert hareket (yukari),1.08,5.82,Onceki kapanisa gore %+4.30
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,SMRTG,gunluk,Gunluk sert hareket (yukari),1.07,5.11,Onceki kapanisa gore %+4.29
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,ISDMR,gap,Acilis boslugu (yukari),1.04,63.35,Acilis dunku kapanisa gore %+3.12 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,SMRTG,gap,Acilis boslugu (asagi),1.02,5.11,Acilis dunku kapanisa gore %-3.06 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,MAGEN,kilit,Olasi tavan/taban kilidi,1.0,16.11,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,PASEU,kilit,Olasi tavan/taban kilidi,1.0,32.78,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,PEKGY,kilit,Olasi tavan/taban kilidi,1.0,5.06,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-09-25T12:00:00+00:00,2026-09-25,15:00,SELEC,kilit,Olasi tavan/taban kilidi,1.0,126.0,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
