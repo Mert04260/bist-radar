@@ -1,10 +1,10 @@
 {
  "surum": "v6",
  "mod": "gun-ici",
- "guncelleme": "29.09.2026 16:32",
- "veri_saat": "29.09 16:15",
- "gecikme_dk": 17,
- "bayat": false,
+ "guncelleme": "29.09.2026 21:50",
+ "veri_saat": "29.09 17:45",
+ "gecikme_dk": 245,
+ "bayat": true,
  "bar": "15m",
  "taranan": 128,
  "alinamayan": 0,
@@ -16,9 +16,9 @@
    "siddet": 3.0,
    "sym": "ASTOR",
    "fiyat": 211.7,
-   "saat": "16:15",
+   "saat": "17:45",
    "gun": "2026-09-29",
-   "ts": "2026-09-29T13:15:00+00:00"
+   "ts": "2026-09-29T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -27,9 +27,9 @@
    "siddet": 3.0,
    "sym": "CWENE",
    "fiyat": 20.06,
-   "saat": "16:15",
+   "saat": "17:45",
    "gun": "2026-09-29",
-   "ts": "2026-09-29T13:15:00+00:00"
+   "ts": "2026-09-29T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -38,9 +38,9 @@
    "siddet": 3.0,
    "sym": "MAGEN",
    "fiyat": 13.05,
-   "saat": "16:00",
+   "saat": "17:45",
    "gun": "2026-09-29",
-   "ts": "2026-09-29T13:00:00+00:00"
+   "ts": "2026-09-29T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -49,9 +49,9 @@
    "siddet": 3.0,
    "sym": "PASEU",
    "fiyat": 26.58,
-   "saat": "16:15",
+   "saat": "17:45",
    "gun": "2026-09-29",
-   "ts": "2026-09-29T13:15:00+00:00"
+   "ts": "2026-09-29T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -60,9 +60,20 @@
    "siddet": 3.0,
    "sym": "PEKGY",
    "fiyat": 4.11,
-   "saat": "16:00",
+   "saat": "17:45",
    "gun": "2026-09-29",
-   "ts": "2026-09-29T13:00:00+00:00"
+   "ts": "2026-09-29T14:45:00+00:00"
+  },
+  {
+   "tip": "hareket",
+   "baslik": "Ani fiyat hareketi (yukari)",
+   "detay": "Son 1 saatte %+8.98",
+   "siddet": 3.0,
+   "sym": "REEDR",
+   "fiyat": 3.52,
+   "saat": "17:45",
+   "gun": "2026-09-29",
+   "ts": "2026-09-29T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -71,9 +82,9 @@
    "siddet": 3.0,
    "sym": "SELEC",
    "fiyat": 102.1,
-   "saat": "16:00",
+   "saat": "17:45",
    "gun": "2026-09-29",
-   "ts": "2026-09-29T13:00:00+00:00"
+   "ts": "2026-09-29T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -81,10 +92,21 @@
    "detay": "Acilis dunku kapanisa gore %-8.66 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
    "siddet": 2.89,
    "sym": "REEDR",
-   "fiyat": 3.23,
-   "saat": "16:15",
+   "fiyat": 3.52,
+   "saat": "17:45",
    "gun": "2026-09-29",
-   "ts": "2026-09-29T13:15:00+00:00"
+   "ts": "2026-09-29T14:45:00+00:00"
+  },
+  {
+   "tip": "gunluk",
+   "baslik": "Gunluk sert hareket (asagi)",
+   "detay": "Onceki kapanisa gore %-10.16",
+   "siddet": 2.54,
+   "sym": "TKFEN",
+   "fiyat": 238.3,
+   "saat": "17:45",
+   "gun": "2026-09-29",
+   "ts": "2026-09-29T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -93,9 +115,9 @@
    "siddet": 2.5,
    "sym": "ASTOR",
    "fiyat": 211.7,
-   "saat": "16:15",
+   "saat": "17:45",
    "gun": "2026-09-29",
-   "ts": "2026-09-29T13:15:00+00:00"
+   "ts": "2026-09-29T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -104,9 +126,9 @@
    "siddet": 2.5,
    "sym": "MAGEN",
    "fiyat": 13.05,
-   "saat": "16:00",
+   "saat": "17:45",
    "gun": "2026-09-29",
-   "ts": "2026-09-29T13:00:00+00:00"
+   "ts": "2026-09-29T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -115,31 +137,9 @@
    "siddet": 2.49,
    "sym": "CWENE",
    "fiyat": 20.06,
-   "saat": "16:15",
+   "saat": "17:45",
    "gun": "2026-09-29",
-   "ts": "2026-09-29T13:15:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-9.96",
-   "siddet": 2.49,
-   "sym": "PASEU",
-   "fiyat": 26.58,
-   "saat": "16:15",
-   "gun": "2026-09-29",
-   "ts": "2026-09-29T13:15:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-9.96",
-   "siddet": 2.49,
-   "sym": "SELEC",
-   "fiyat": 102.1,
-   "saat": "16:00",
-   "gun": "2026-09-29",
-   "ts": "2026-09-29T13:00:00+00:00"
+   "ts": "2026-09-29T14:45:00+00:00"
   }
  ]
 }
