@@ -1178,3 +1178,69 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-09-29T13:00:00+00:00,2026-09-29,16:00,PEKGY,kilit,Olasi tavan/taban kilidi,1.0,4.11,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
 2026-09-29T13:15:00+00:00,2026-09-29,16:15,REEDR,kilit,Olasi tavan/taban kilidi,1.0,3.23,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
 2026-09-29T13:00:00+00:00,2026-09-29,16:00,SELEC,kilit,Olasi tavan/taban kilidi,1.0,102.1,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,ASTOR,gap,Acilis boslugu (asagi),3.0,190.6,Acilis dunku kapanisa gore %-9.97 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,IZENR,gap,Acilis boslugu (asagi),3.0,3.58,Acilis dunku kapanisa gore %-9.94 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,MAGEN,gap,Acilis boslugu (asagi),3.0,11.75,Acilis dunku kapanisa gore %-9.96 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,PASEU,gap,Acilis boslugu (asagi),3.0,29.22,Acilis dunku kapanisa gore %-9.93 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,PEKGY,gap,Acilis boslugu (asagi),3.0,3.7,Acilis dunku kapanisa gore %-9.98 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,SELEC,gap,Acilis boslugu (asagi),3.0,91.9,Acilis dunku kapanisa gore %-9.99 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,VAKKO,hacim,Hacim patlamasi,3.0,59.0,"15:45 barinda hacim, ayni saatin ortalamasinin 8.0 kati"
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,TUKAS,gunluk,Gunluk sert hareket (asagi),2.55,1.94,Onceki kapanisa gore %-10.19
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,YEOTK,gunluk,Gunluk sert hareket (asagi),2.51,26.92,Onceki kapanisa gore %-10.03
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,SELEC,gunluk,Gunluk sert hareket (asagi),2.5,91.9,Onceki kapanisa gore %-9.99
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,ASTOR,gunluk,Gunluk sert hareket (asagi),2.49,190.6,Onceki kapanisa gore %-9.97
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,MAGEN,gunluk,Gunluk sert hareket (asagi),2.49,11.75,Onceki kapanisa gore %-9.96
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,PEKGY,gunluk,Gunluk sert hareket (asagi),2.49,3.7,Onceki kapanisa gore %-9.98
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,AHGAZ,hacim,Hacim patlamasi,2.48,43.12,"15:45 barinda hacim, ayni saatin ortalamasinin 6.2 kati"
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,PASEU,gunluk,Gunluk sert hareket (yukari),2.48,29.22,Onceki kapanisa gore %+9.93
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,QUAGR,gunluk,Gunluk sert hareket (asagi),2.48,1.82,Onceki kapanisa gore %-9.90
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,REEDR,gunluk,Gunluk sert hareket (asagi),2.27,3.2,Onceki kapanisa gore %-9.09
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,CWENE,gunluk,Gunluk sert hareket (asagi),2.26,18.25,Onceki kapanisa gore %-9.02
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,EUPWR,gunluk,Gunluk sert hareket (asagi),2.25,50.1,Onceki kapanisa gore %-8.99
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,GESAN,gunluk,Gunluk sert hareket (asagi),2.25,39.18,Onceki kapanisa gore %-9.01
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,TKFEN,gunluk,Gunluk sert hareket (asagi),2.13,218.0,Onceki kapanisa gore %-8.52
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,BTCIM,gunluk,Gunluk sert hareket (asagi),2.09,1.86,Onceki kapanisa gore %-8.37
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,TKFEN,hareket,Ani fiyat hareketi (asagi),2.07,218.0,Son 1 saatte %-4.13
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,AKCNS,gunluk,Gunluk sert hareket (yukari),1.85,204.2,Onceki kapanisa gore %+7.42
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,MIATK,gunluk,Gunluk sert hareket (asagi),1.79,21.24,Onceki kapanisa gore %-7.17
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,VESBE,gunluk,Gunluk sert hareket (asagi),1.75,3.99,Onceki kapanisa gore %-6.99
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,ALTNY,gunluk,Gunluk sert hareket (yukari),1.71,12.52,Onceki kapanisa gore %+6.83
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,ALCTL,gunluk,Gunluk sert hareket (asagi),1.7,81.1,Onceki kapanisa gore %-6.78
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,AKCNS,hacim,Hacim patlamasi,1.68,204.2,"15:45 barinda hacim, ayni saatin ortalamasinin 4.2 kati"
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,BERA,gunluk,Gunluk sert hareket (yukari),1.64,11.56,Onceki kapanisa gore %+6.54
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,HALKB,hareket,Ani fiyat hareketi (asagi),1.64,43.54,Son 1 saatte %-3.29
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,DOHOL,gunluk,Gunluk sert hareket (asagi),1.57,18.49,Onceki kapanisa gore %-6.28
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,VESTL,gunluk,Gunluk sert hareket (asagi),1.45,17.66,Onceki kapanisa gore %-5.81
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,VESBE,hareket,Ani fiyat hareketi (asagi),1.34,3.99,Son 1 saatte %-2.68
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,MPARK,hacim,Hacim patlamasi,1.33,424.25,"15:45 barinda hacim, ayni saatin ortalamasinin 3.3 kati"
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,SASA,gunluk,Gunluk sert hareket (asagi),1.33,1.78,Onceki kapanisa gore %-5.32
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,YKBNK,gunluk,Gunluk sert hareket (asagi),1.33,34.12,Onceki kapanisa gore %-5.33
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,NETAS,gunluk,Gunluk sert hareket (asagi),1.32,70.15,Onceki kapanisa gore %-5.27
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,SMRTG,gunluk,Gunluk sert hareket (asagi),1.32,4.65,Onceki kapanisa gore %-5.30
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,CWENE,gap,Acilis boslugu (asagi),1.31,18.25,Acilis dunku kapanisa gore %-3.94 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,TKFEN,gap,Acilis boslugu (asagi),1.29,218.0,Acilis dunku kapanisa gore %-3.86 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,MAGEN,birikim,Sessiz birikim,1.2,11.75,"Hacim ortalamanin 2.2 kati, fiyat bandi sadece %0.0"
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,IZENR,gunluk,Gunluk sert hareket (yukari),1.17,3.58,Onceki kapanisa gore %+4.68
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,ENJSA,hacim,Hacim patlamasi,1.16,108.1,"15:45 barinda hacim, ayni saatin ortalamasinin 2.9 kati"
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,SOKM,gunluk,Gunluk sert hareket (asagi),1.16,54.55,Onceki kapanisa gore %-4.63
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,ZOREN,gunluk,Gunluk sert hareket (asagi),1.15,1.87,Onceki kapanisa gore %-4.59
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,REEDR,gap,Acilis boslugu (asagi),1.14,3.2,Acilis dunku kapanisa gore %-3.41 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,TABGD,hacim,Hacim patlamasi,1.13,216.3,"15:45 barinda hacim, ayni saatin ortalamasinin 2.8 kati"
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,SDTTR,hareket,Ani fiyat hareketi (asagi),1.11,15.03,Son 1 saatte %-2.21
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,ISCTR,gunluk,Gunluk sert hareket (asagi),1.1,12.38,Onceki kapanisa gore %-4.40
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,AKSEN,gunluk,Gunluk sert hareket (asagi),1.09,71.55,Onceki kapanisa gore %-4.34
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,MPARK,gunluk,Gunluk sert hareket (yukari),1.09,424.25,Onceki kapanisa gore %+4.37
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,TMSN,gunluk,Gunluk sert hareket (asagi),1.06,55.3,Onceki kapanisa gore %-4.24
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,TOASO,gunluk,Gunluk sert hareket (asagi),1.06,265.0,Onceki kapanisa gore %-4.25
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,AKBNK,gunluk,Gunluk sert hareket (asagi),1.05,67.05,Onceki kapanisa gore %-4.21
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,GESAN,hareket,Ani fiyat hareketi (asagi),1.05,39.18,Son 1 saatte %-2.10
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,ALTNY,hacim,Hacim patlamasi,1.04,12.52,"15:45 barinda hacim, ayni saatin ortalamasinin 2.6 kati"
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,VESTL,hareket,Ani fiyat hareketi (asagi),1.03,17.66,Son 1 saatte %-2.05
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,CANTE,hareket,Ani fiyat hareketi (yukari),1.01,1.01,Son 1 saatte %+2.02
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,ASTOR,kilit,Olasi tavan/taban kilidi,1.0,190.6,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,EUPWR,kilit,Olasi tavan/taban kilidi,1.0,50.1,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,MAGEN,kilit,Olasi tavan/taban kilidi,1.0,11.75,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,PASEU,kilit,Olasi tavan/taban kilidi,1.0,29.22,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,PEKGY,kilit,Olasi tavan/taban kilidi,1.0,3.7,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,SELEC,kilit,Olasi tavan/taban kilidi,1.0,91.9,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-09-30T12:45:00+00:00,2026-09-30,15:45,YEOTK,kilit,Olasi tavan/taban kilidi,1.0,26.92,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
