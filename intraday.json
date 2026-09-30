@@ -1,10 +1,10 @@
 {
  "surum": "v6",
  "mod": "gun-ici",
- "guncelleme": "30.09.2026 16:08",
- "veri_saat": "30.09 15:45",
- "gecikme_dk": 23,
- "bayat": false,
+ "guncelleme": "30.09.2026 21:27",
+ "veri_saat": "30.09 17:45",
+ "gecikme_dk": 222,
+ "bayat": true,
  "bar": "15m",
  "taranan": 128,
  "alinamayan": 0,
@@ -16,9 +16,9 @@
    "siddet": 3.0,
    "sym": "ASTOR",
    "fiyat": 190.6,
-   "saat": "15:45",
+   "saat": "17:45",
    "gun": "2026-09-30",
-   "ts": "2026-09-30T12:45:00+00:00"
+   "ts": "2026-09-30T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -26,10 +26,10 @@
    "detay": "Acilis dunku kapanisa gore %-9.94 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
    "siddet": 3.0,
    "sym": "IZENR",
-   "fiyat": 3.58,
-   "saat": "15:45",
+   "fiyat": 3.62,
+   "saat": "17:45",
    "gun": "2026-09-30",
-   "ts": "2026-09-30T12:45:00+00:00"
+   "ts": "2026-09-30T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -38,9 +38,20 @@
    "siddet": 3.0,
    "sym": "MAGEN",
    "fiyat": 11.75,
-   "saat": "15:45",
+   "saat": "17:45",
    "gun": "2026-09-30",
-   "ts": "2026-09-30T12:45:00+00:00"
+   "ts": "2026-09-30T14:45:00+00:00"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "17:45 barinda hacim, ayni saatin ortalamasinin 1349.3 kati",
+   "siddet": 3.0,
+   "sym": "PASEU",
+   "fiyat": 27.48,
+   "saat": "17:45",
+   "gun": "2026-09-30",
+   "ts": "2026-09-30T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -48,10 +59,10 @@
    "detay": "Acilis dunku kapanisa gore %-9.93 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
    "siddet": 3.0,
    "sym": "PASEU",
-   "fiyat": 29.22,
-   "saat": "15:45",
+   "fiyat": 27.48,
+   "saat": "17:45",
    "gun": "2026-09-30",
-   "ts": "2026-09-30T12:45:00+00:00"
+   "ts": "2026-09-30T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -60,9 +71,9 @@
    "siddet": 3.0,
    "sym": "PEKGY",
    "fiyat": 3.7,
-   "saat": "15:45",
+   "saat": "17:45",
    "gun": "2026-09-30",
-   "ts": "2026-09-30T12:45:00+00:00"
+   "ts": "2026-09-30T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -71,20 +82,20 @@
    "siddet": 3.0,
    "sym": "SELEC",
    "fiyat": 91.9,
-   "saat": "15:45",
+   "saat": "17:45",
    "gun": "2026-09-30",
-   "ts": "2026-09-30T12:45:00+00:00"
+   "ts": "2026-09-30T14:45:00+00:00"
   },
   {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "15:45 barinda hacim, ayni saatin ortalamasinin 8.0 kati",
-   "siddet": 3.0,
-   "sym": "VAKKO",
-   "fiyat": 59.0,
-   "saat": "15:45",
+   "tip": "hareket",
+   "baslik": "Ani fiyat hareketi (asagi)",
+   "detay": "Son 1 saatte %-5.95",
+   "siddet": 2.98,
+   "sym": "PASEU",
+   "fiyat": 27.48,
+   "saat": "17:45",
    "gun": "2026-09-30",
-   "ts": "2026-09-30T12:45:00+00:00"
+   "ts": "2026-09-30T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -93,9 +104,9 @@
    "siddet": 2.55,
    "sym": "TUKAS",
    "fiyat": 1.94,
-   "saat": "15:45",
+   "saat": "17:45",
    "gun": "2026-09-30",
-   "ts": "2026-09-30T12:45:00+00:00"
+   "ts": "2026-09-30T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -104,9 +115,9 @@
    "siddet": 2.51,
    "sym": "YEOTK",
    "fiyat": 26.92,
-   "saat": "15:45",
+   "saat": "17:45",
    "gun": "2026-09-30",
-   "ts": "2026-09-30T12:45:00+00:00"
+   "ts": "2026-09-30T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -115,9 +126,9 @@
    "siddet": 2.5,
    "sym": "SELEC",
    "fiyat": 91.9,
-   "saat": "15:45",
+   "saat": "17:45",
    "gun": "2026-09-30",
-   "ts": "2026-09-30T12:45:00+00:00"
+   "ts": "2026-09-30T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -126,20 +137,9 @@
    "siddet": 2.49,
    "sym": "ASTOR",
    "fiyat": 190.6,
-   "saat": "15:45",
+   "saat": "17:45",
    "gun": "2026-09-30",
-   "ts": "2026-09-30T12:45:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-9.96",
-   "siddet": 2.49,
-   "sym": "MAGEN",
-   "fiyat": 11.75,
-   "saat": "15:45",
-   "gun": "2026-09-30",
-   "ts": "2026-09-30T12:45:00+00:00"
+   "ts": "2026-09-30T14:45:00+00:00"
   }
  ]
 }
