@@ -1,10 +1,10 @@
 {
  "surum": "v6",
  "mod": "gun-ici",
- "guncelleme": "06.10.2026 01:09",
- "veri_saat": "05.10 17:45",
- "gecikme_dk": 444,
- "bayat": true,
+ "guncelleme": "06.10.2026 16:45",
+ "veri_saat": "06.10 16:30",
+ "gecikme_dk": 15,
+ "bayat": false,
  "bar": "15m",
  "taranan": 128,
  "alinamayan": 0,
@@ -12,13 +12,13 @@
   {
    "tip": "gap",
    "baslik": "Acilis boslugu (asagi)",
-   "detay": "Acilis dunku kapanisa gore %-9.97 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
+   "detay": "Acilis dunku kapanisa gore %-9.91 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
    "siddet": 3.0,
    "sym": "MAGEN",
-   "fiyat": 8.58,
-   "saat": "17:45",
-   "gun": "2026-10-05",
-   "ts": "2026-10-05T14:45:00+00:00"
+   "fiyat": 7.73,
+   "saat": "16:30",
+   "gun": "2026-10-06",
+   "ts": "2026-10-06T13:30:00+00:00"
   },
   {
    "tip": "gap",
@@ -26,10 +26,10 @@
    "detay": "Acilis dunku kapanisa gore %+9.99 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
    "siddet": 3.0,
    "sym": "PASEU",
-   "fiyat": 37.64,
-   "saat": "17:45",
-   "gun": "2026-10-05",
-   "ts": "2026-10-05T14:45:00+00:00"
+   "fiyat": 41.4,
+   "saat": "16:30",
+   "gun": "2026-10-06",
+   "ts": "2026-10-06T13:30:00+00:00"
   },
   {
    "tip": "gap",
@@ -37,65 +37,10 @@
    "detay": "Acilis dunku kapanisa gore %-10.00 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
    "siddet": 3.0,
    "sym": "PEKGY",
-   "fiyat": 2.7,
-   "saat": "17:45",
-   "gun": "2026-10-05",
-   "ts": "2026-10-05T14:45:00+00:00"
-  },
-  {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "17:45 barinda hacim, ayni saatin ortalamasinin 17.3 kati",
-   "siddet": 3.0,
-   "sym": "SELEC",
-   "fiyat": 79.6,
-   "saat": "17:45",
-   "gun": "2026-10-05",
-   "ts": "2026-10-05T14:45:00+00:00"
-  },
-  {
-   "tip": "hareket",
-   "baslik": "Ani fiyat hareketi (yukari)",
-   "detay": "Son 1 saatte %+12.27",
-   "siddet": 3.0,
-   "sym": "SELEC",
-   "fiyat": 79.6,
-   "saat": "17:45",
-   "gun": "2026-10-05",
-   "ts": "2026-10-05T14:45:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-11.01",
-   "siddet": 2.75,
-   "sym": "ASTOR",
-   "fiyat": 198.0,
-   "saat": "17:45",
-   "gun": "2026-10-05",
-   "ts": "2026-10-05T14:45:00+00:00"
-  },
-  {
-   "tip": "birikim",
-   "baslik": "Sessiz birikim",
-   "detay": "Hacim ortalamanin 4.7 kati, fiyat bandi sadece %0.0",
-   "siddet": 2.62,
-   "sym": "PEKGY",
-   "fiyat": 2.7,
-   "saat": "17:45",
-   "gun": "2026-10-05",
-   "ts": "2026-10-05T14:45:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+10.35",
-   "siddet": 2.59,
-   "sym": "MIATK",
-   "fiyat": 27.5,
-   "saat": "17:45",
-   "gun": "2026-10-05",
-   "ts": "2026-10-05T14:45:00+00:00"
+   "fiyat": 2.43,
+   "saat": "16:15",
+   "gun": "2026-10-06",
+   "ts": "2026-10-06T13:15:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -103,10 +48,10 @@
    "detay": "Onceki kapanisa gore %+9.99",
    "siddet": 2.5,
    "sym": "PASEU",
-   "fiyat": 37.64,
-   "saat": "17:45",
-   "gun": "2026-10-05",
-   "ts": "2026-10-05T14:45:00+00:00"
+   "fiyat": 41.4,
+   "saat": "16:30",
+   "gun": "2026-10-06",
+   "ts": "2026-10-06T13:30:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -114,32 +59,87 @@
    "detay": "Onceki kapanisa gore %-10.00",
    "siddet": 2.5,
    "sym": "PEKGY",
-   "fiyat": 2.7,
-   "saat": "17:45",
-   "gun": "2026-10-05",
-   "ts": "2026-10-05T14:45:00+00:00"
+   "fiyat": 2.43,
+   "saat": "16:15",
+   "gun": "2026-10-06",
+   "ts": "2026-10-06T13:15:00+00:00"
   },
   {
    "tip": "gunluk",
    "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-9.97",
-   "siddet": 2.49,
+   "detay": "Onceki kapanisa gore %-9.91",
+   "siddet": 2.48,
    "sym": "MAGEN",
-   "fiyat": 8.58,
-   "saat": "17:45",
-   "gun": "2026-10-05",
-   "ts": "2026-10-05T14:45:00+00:00"
+   "fiyat": 7.73,
+   "saat": "16:30",
+   "gun": "2026-10-06",
+   "ts": "2026-10-06T13:30:00+00:00"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "16:15 barinda hacim, ayni saatin ortalamasinin 6.0 kati",
+   "siddet": 2.4,
+   "sym": "ISGYO",
+   "fiyat": 23.16,
+   "saat": "16:15",
+   "gun": "2026-10-06",
+   "ts": "2026-10-06T13:15:00+00:00"
+  },
+  {
+   "tip": "hareket",
+   "baslik": "Ani fiyat hareketi (asagi)",
+   "detay": "Son 1 saatte %-2.83",
+   "siddet": 1.41,
+   "sym": "MIATK",
+   "fiyat": 27.5,
+   "saat": "16:30",
+   "gun": "2026-10-06",
+   "ts": "2026-10-06T13:30:00+00:00"
+  },
+  {
+   "tip": "hareket",
+   "baslik": "Ani fiyat hareketi (asagi)",
+   "detay": "Son 1 saatte %-2.81",
+   "siddet": 1.4,
+   "sym": "SELEC",
+   "fiyat": 77.95,
+   "saat": "16:30",
+   "gun": "2026-10-06",
+   "ts": "2026-10-06T13:30:00+00:00"
+  },
+  {
+   "tip": "birikim",
+   "baslik": "Sessiz birikim",
+   "detay": "Hacim ortalamanin 1.9 kati, fiyat bandi sadece %1.0",
+   "siddet": 1.05,
+   "sym": "PASEU",
+   "fiyat": 41.4,
+   "saat": "16:30",
+   "gun": "2026-10-06",
+   "ts": "2026-10-06T13:30:00+00:00"
   },
   {
    "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-7.27",
-   "siddet": 1.82,
-   "sym": "CWENE",
-   "fiyat": 18.62,
-   "saat": "17:45",
-   "gun": "2026-10-05",
-   "ts": "2026-10-05T14:45:00+00:00"
+   "baslik": "Gunluk sert hareket (yukari)",
+   "detay": "Onceki kapanisa gore %+4.14",
+   "siddet": 1.04,
+   "sym": "VESTL",
+   "fiyat": 18.1,
+   "saat": "16:30",
+   "gun": "2026-10-06",
+   "ts": "2026-10-06T13:30:00+00:00"
+  },
+  {
+   "tip": "kilit",
+   "baslik": "Olasi tavan/taban kilidi",
+   "detay": "Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir",
+   "siddet": 1.0,
+   "sym": "MAGEN",
+   "fiyat": 7.73,
+   "saat": "16:30",
+   "gun": "2026-10-06",
+   "ts": "2026-10-06T13:30:00+00:00"
   }
  ]
 }
