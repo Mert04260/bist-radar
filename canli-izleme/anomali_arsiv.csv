@@ -1416,3 +1416,34 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-10-07T13:45:00+00:00,2026-10-07,16:45,SELEC,gunluk,Gunluk sert hareket (asagi),1.02,71.8,Onceki kapanisa gore %-4.07
 2026-10-07T13:30:00+00:00,2026-10-07,16:30,PASEU,kilit,Olasi tavan/taban kilidi,1.0,45.54,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
 2026-10-07T13:45:00+00:00,2026-10-07,16:45,PEKGY,kilit,Olasi tavan/taban kilidi,1.0,2.19,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,PASEU,gap,Acilis boslugu (yukari),3.0,50.05,Acilis dunku kapanisa gore %+9.90 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,PEKGY,gap,Acilis boslugu (asagi),3.0,1.98,Acilis dunku kapanisa gore %-9.59 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,SELEC,hareket,Ani fiyat hareketi (yukari),3.0,74.85,Son 1 saatte %+6.09
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,PASEU,gunluk,Gunluk sert hareket (yukari),2.48,50.05,Onceki kapanisa gore %+9.90
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,PEKGY,gunluk,Gunluk sert hareket (asagi),2.4,1.98,Onceki kapanisa gore %-9.59
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,ASTOR,hareket,Ani fiyat hareketi (yukari),2.34,196.9,Son 1 saatte %+4.68
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,MAGEN,hareket,Ani fiyat hareketi (yukari),2.29,7.53,Son 1 saatte %+4.58
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,AGROT,hacim,Hacim patlamasi,2.25,1.33,"16:45 barinda hacim, ayni saatin ortalamasinin 5.6 kati"
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,ASTOR,hacim,Hacim patlamasi,2.17,196.9,"16:45 barinda hacim, ayni saatin ortalamasinin 5.4 kati"
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,AKCNS,gunluk,Gunluk sert hareket (yukari),1.87,226.6,Onceki kapanisa gore %+7.50
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,ADEL,hacim,Hacim patlamasi,1.79,25.74,"16:45 barinda hacim, ayni saatin ortalamasinin 4.5 kati"
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,BIZIM,hacim,Hacim patlamasi,1.75,18.77,"16:45 barinda hacim, ayni saatin ortalamasinin 4.4 kati"
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,EUPWR,hacim,Hacim patlamasi,1.75,50.4,"16:45 barinda hacim, ayni saatin ortalamasinin 4.4 kati"
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,ADEL,hareket,Ani fiyat hareketi (yukari),1.73,25.74,Son 1 saatte %+3.46
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,ASTOR,gunluk,Gunluk sert hareket (yukari),1.65,196.9,Onceki kapanisa gore %+6.61
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,EUPWR,hareket,Ani fiyat hareketi (yukari),1.64,50.4,Son 1 saatte %+3.28
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,SELEC,gunluk,Gunluk sert hareket (yukari),1.54,74.85,Onceki kapanisa gore %+6.17
+2026-10-08T10:45:00+00:00,2026-10-08,13:45,KONTR,gap,Acilis boslugu (asagi),1.44,2.01,Acilis dunku kapanisa gore %-4.31 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,PASEU,birikim,Sessiz birikim,1.41,50.05,"Hacim ortalamanin 2.5 kati, fiyat bandi sadece %0.0"
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,YEOTK,hacim,Hacim patlamasi,1.38,27.64,"16:45 barinda hacim, ayni saatin ortalamasinin 3.4 kati"
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,ALTNY,hacim,Hacim patlamasi,1.33,12.76,"16:45 barinda hacim, ayni saatin ortalamasinin 3.3 kati"
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,CWENE,gunluk,Gunluk sert hareket (yukari),1.33,19.04,Onceki kapanisa gore %+5.31
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,EUPWR,gunluk,Gunluk sert hareket (yukari),1.28,50.4,Onceki kapanisa gore %+5.13
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,TMSN,hacim,Hacim patlamasi,1.21,55.2,"16:45 barinda hacim, ayni saatin ortalamasinin 3.0 kati"
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,AGESA,hacim,Hacim patlamasi,1.11,229.7,"16:45 barinda hacim, ayni saatin ortalamasinin 2.8 kati"
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,PEKGY,birikim,Sessiz birikim,1.11,1.98,"Hacim ortalamanin 2.0 kati, fiyat bandi sadece %0.0"
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,KORDS,gunluk,Gunluk sert hareket (yukari),1.1,3.08,Onceki kapanisa gore %+4.41
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,CWENE,hacim,Hacim patlamasi,1.02,19.04,"16:45 barinda hacim, ayni saatin ortalamasinin 2.6 kati"
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,PASEU,kilit,Olasi tavan/taban kilidi,1.0,50.05,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,PEKGY,kilit,Olasi tavan/taban kilidi,1.0,1.98,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-10-08T13:45:00+00:00,2026-10-08,16:45,TUPRS,gunluk,Gunluk sert hareket (yukari),1.0,395.25,Onceki kapanisa gore %+4.01
