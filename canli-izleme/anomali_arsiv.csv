@@ -1513,3 +1513,12 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-10-14T12:15:00+00:00,2026-10-14,15:15,KONYA,kilit,Olasi tavan/taban kilidi,1.0,3400.0,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
 2026-10-14T12:15:00+00:00,2026-10-14,15:15,MAGEN,kilit,Olasi tavan/taban kilidi,1.0,6.81,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
 2026-10-14T12:15:00+00:00,2026-10-14,15:15,PEKGY,kilit,Olasi tavan/taban kilidi,1.0,1.32,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-10-15T12:00:00+00:00,2026-10-15,15:00,MIATK,gunluk,Gunluk sert hareket (yukari),2.5,27.5,Onceki kapanisa gore %+10.00
+2026-10-15T12:00:00+00:00,2026-10-15,15:00,MIATK,hareket,Ani fiyat hareketi (yukari),2.12,27.5,Son 1 saatte %+4.25
+2026-10-15T12:00:00+00:00,2026-10-15,15:00,PASEU,gap,Acilis boslugu (yukari),2.02,41.08,Acilis dunku kapanisa gore %+6.07 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-10-15T12:00:00+00:00,2026-10-15,15:00,PEKGY,gap,Acilis boslugu (asagi),1.77,1.25,Acilis dunku kapanisa gore %-5.30 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-10-15T12:00:00+00:00,2026-10-15,15:00,IZENR,gunluk,Gunluk sert hareket (yukari),1.4,3.76,Onceki kapanisa gore %+5.62
+2026-10-15T12:00:00+00:00,2026-10-15,15:00,PEKGY,gunluk,Gunluk sert hareket (asagi),1.33,1.25,Onceki kapanisa gore %-5.30
+2026-10-15T11:45:00+00:00,2026-10-15,14:45,BAGFS,gap,Acilis boslugu (yukari),1.26,21.02,Acilis dunku kapanisa gore %+3.79 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-10-15T12:00:00+00:00,2026-10-15,15:00,TKFEN,gunluk,Gunluk sert hareket (asagi),1.21,205.0,Onceki kapanisa gore %-4.83
+2026-10-15T11:45:00+00:00,2026-10-15,14:45,AGESA,kilit,Olasi tavan/taban kilidi,1.0,230.5,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
