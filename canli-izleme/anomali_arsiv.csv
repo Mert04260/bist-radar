@@ -1617,3 +1617,19 @@ ts,gun,saat,sym,tip,baslik,siddet,fiyat,detay
 2026-10-19T13:45:00+00:00,2026-10-19,16:45,TKFEN,kilit,Olasi tavan/taban kilidi,1.0,181.8,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
 2026-10-19T13:45:00+00:00,2026-10-19,16:45,TMSN,kilit,Olasi tavan/taban kilidi,1.0,55.55,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
 2026-10-19T13:45:00+00:00,2026-10-19,16:45,TURSG,kilit,Olasi tavan/taban kilidi,1.0,4.71,Son 1 saatte fiyat neredeyse hic oynamadi - emir defteri kilitli olabilir
+2026-10-20T12:00:00+00:00,2026-10-20,15:00,TUKAS,hacim,Hacim patlamasi,3.0,2.0,"15:00 barinda hacim, ayni saatin ortalamasinin 8.8 kati"
+2026-10-20T10:45:00+00:00,2026-10-20,13:45,KONTR,gap,Acilis boslugu (asagi),2.24,1.54,Acilis dunku kapanisa gore %-6.71 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-10-20T12:00:00+00:00,2026-10-20,15:00,TMSN,gap,Acilis boslugu (yukari),1.86,56.6,Acilis dunku kapanisa gore %+5.58 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-10-20T12:00:00+00:00,2026-10-20,15:00,PEKGY,gunluk,Gunluk sert hareket (asagi),1.67,1.12,Onceki kapanisa gore %-6.67
+2026-10-20T10:45:00+00:00,2026-10-20,13:45,KONTR,gunluk,Gunluk sert hareket (asagi),1.52,1.54,Onceki kapanisa gore %-6.10
+2026-10-20T12:00:00+00:00,2026-10-20,15:00,TKFEN,gap,Acilis boslugu (asagi),1.43,191.3,Acilis dunku kapanisa gore %-4.29 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-10-20T12:00:00+00:00,2026-10-20,15:00,AHGAZ,gunluk,Gunluk sert hareket (yukari),1.39,47.34,Onceki kapanisa gore %+5.58
+2026-10-20T12:00:00+00:00,2026-10-20,15:00,MAGEN,gunluk,Gunluk sert hareket (asagi),1.39,6.79,Onceki kapanisa gore %-5.56
+2026-10-20T12:00:00+00:00,2026-10-20,15:00,PASEU,gunluk,Gunluk sert hareket (asagi),1.39,32.56,Onceki kapanisa gore %-5.57
+2026-10-20T12:00:00+00:00,2026-10-20,15:00,PASEU,gap,Acilis boslugu (asagi),1.37,32.56,Acilis dunku kapanisa gore %-4.12 (bedelsiz/temettu duzeltmesi olabilir - teyit et)
+2026-10-20T12:00:00+00:00,2026-10-20,15:00,TKFEN,gunluk,Gunluk sert hareket (yukari),1.31,191.3,Onceki kapanisa gore %+5.23
+2026-10-20T12:00:00+00:00,2026-10-20,15:00,SELEC,hareket,Ani fiyat hareketi (asagi),1.27,63.5,Son 1 saatte %-2.53
+2026-10-20T12:00:00+00:00,2026-10-20,15:00,ASTOR,gunluk,Gunluk sert hareket (yukari),1.23,168.5,Onceki kapanisa gore %+4.92
+2026-10-20T12:00:00+00:00,2026-10-20,15:00,ENERY,gunluk,Gunluk sert hareket (yukari),1.15,13.87,Onceki kapanisa gore %+4.60
+2026-10-20T12:00:00+00:00,2026-10-20,15:00,AKCNS,gunluk,Gunluk sert hareket (yukari),1.1,190.4,Onceki kapanisa gore %+4.39
+2026-10-20T12:00:00+00:00,2026-10-20,15:00,SELEC,gunluk,Gunluk sert hareket (asagi),1.04,63.5,Onceki kapanisa gore %-4.15
