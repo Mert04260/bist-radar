@@ -1,10 +1,10 @@
 {
  "surum": "v6",
  "mod": "gun-ici",
- "guncelleme": "27.10.2026 15:50",
- "veri_saat": "27.10 15:30",
- "gecikme_dk": 20,
- "bayat": false,
+ "guncelleme": "27.10.2026 21:28",
+ "veri_saat": "27.10 17:45",
+ "gecikme_dk": 223,
+ "bayat": true,
  "bar": "15m",
  "taranan": 128,
  "alinamayan": 0,
@@ -16,9 +16,9 @@
    "siddet": 3.0,
    "sym": "ASTOR",
    "fiyat": 172.4,
-   "saat": "15:30",
+   "saat": "17:45",
    "gun": "2026-10-27",
-   "ts": "2026-10-27T12:30:00+00:00"
+   "ts": "2026-10-27T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -26,10 +26,10 @@
    "detay": "Acilis dunku kapanisa gore %+9.47 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
    "siddet": 3.0,
    "sym": "GOODY",
-   "fiyat": 1.96,
-   "saat": "15:30",
+   "fiyat": 1.94,
+   "saat": "17:45",
    "gun": "2026-10-27",
-   "ts": "2026-10-27T12:30:00+00:00"
+   "ts": "2026-10-27T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -38,9 +38,20 @@
    "siddet": 3.0,
    "sym": "KONTR",
    "fiyat": 1.52,
-   "saat": "13:45",
+   "saat": "17:45",
    "gun": "2026-10-27",
-   "ts": "2026-10-27T10:45:00+00:00"
+   "ts": "2026-10-27T14:45:00+00:00"
+  },
+  {
+   "tip": "gunluk",
+   "baslik": "Gunluk sert hareket (asagi)",
+   "detay": "Onceki kapanisa gore %-11.17",
+   "siddet": 2.79,
+   "sym": "MAGEN",
+   "fiyat": 4.77,
+   "saat": "17:45",
+   "gun": "2026-10-27",
+   "ts": "2026-10-27T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -49,9 +60,9 @@
    "siddet": 2.68,
    "sym": "TURSG",
    "fiyat": 3.41,
-   "saat": "15:30",
+   "saat": "17:45",
    "gun": "2026-10-27",
-   "ts": "2026-10-27T12:30:00+00:00"
+   "ts": "2026-10-27T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -60,31 +71,9 @@
    "siddet": 2.49,
    "sym": "ASTOR",
    "fiyat": 172.4,
-   "saat": "15:30",
+   "saat": "17:45",
    "gun": "2026-10-27",
-   "ts": "2026-10-27T12:30:00+00:00"
-  },
-  {
-   "tip": "hareket",
-   "baslik": "Ani fiyat hareketi (yukari)",
-   "detay": "Son 1 saatte %+4.83",
-   "siddet": 2.41,
-   "sym": "JANTS",
-   "fiyat": 11.94,
-   "saat": "15:30",
-   "gun": "2026-10-27",
-   "ts": "2026-10-27T12:30:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-9.50",
-   "siddet": 2.37,
-   "sym": "MAGEN",
-   "fiyat": 4.86,
-   "saat": "15:30",
-   "gun": "2026-10-27",
-   "ts": "2026-10-27T12:30:00+00:00"
+   "ts": "2026-10-27T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -93,53 +82,64 @@
    "siddet": 2.34,
    "sym": "KONTR",
    "fiyat": 1.52,
-   "saat": "13:45",
+   "saat": "17:45",
    "gun": "2026-10-27",
-   "ts": "2026-10-27T10:45:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (asagi)",
-   "detay": "Onceki kapanisa gore %-8.26",
-   "siddet": 2.07,
-   "sym": "SELEC",
-   "fiyat": 63.85,
-   "saat": "15:30",
-   "gun": "2026-10-27",
-   "ts": "2026-10-27T12:30:00+00:00"
+   "ts": "2026-10-27T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
    "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+7.76",
-   "siddet": 1.94,
-   "sym": "JANTS",
-   "fiyat": 11.94,
-   "saat": "15:30",
+   "detay": "Onceki kapanisa gore %+8.15",
+   "siddet": 2.04,
+   "sym": "ISDMR",
+   "fiyat": 54.4,
+   "saat": "17:45",
    "gun": "2026-10-27",
-   "ts": "2026-10-27T12:30:00+00:00"
+   "ts": "2026-10-27T14:45:00+00:00"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "17:45 barinda hacim, ayni saatin ortalamasinin 4.5 kati",
+   "siddet": 1.8,
+   "sym": "ADEL",
+   "fiyat": 22.02,
+   "saat": "17:45",
+   "gun": "2026-10-27",
+   "ts": "2026-10-27T14:45:00+00:00"
+  },
+  {
+   "tip": "hacim",
+   "baslik": "Hacim patlamasi",
+   "detay": "17:45 barinda hacim, ayni saatin ortalamasinin 4.5 kati",
+   "siddet": 1.8,
+   "sym": "ISDMR",
+   "fiyat": 54.4,
+   "saat": "17:45",
+   "gun": "2026-10-27",
+   "ts": "2026-10-27T14:45:00+00:00"
   },
   {
    "tip": "hareket",
-   "baslik": "Ani fiyat hareketi (asagi)",
-   "detay": "Son 1 saatte %-3.81",
-   "siddet": 1.9,
-   "sym": "GESAN",
-   "fiyat": 32.32,
-   "saat": "15:30",
+   "baslik": "Ani fiyat hareketi (yukari)",
+   "detay": "Son 1 saatte %+3.52",
+   "siddet": 1.76,
+   "sym": "ISDMR",
+   "fiyat": 54.4,
+   "saat": "17:45",
    "gun": "2026-10-27",
-   "ts": "2026-10-27T12:30:00+00:00"
+   "ts": "2026-10-27T14:45:00+00:00"
   },
   {
-   "tip": "hareket",
-   "baslik": "Ani fiyat hareketi (asagi)",
-   "detay": "Son 1 saatte %-3.57",
-   "siddet": 1.79,
-   "sym": "MAGEN",
-   "fiyat": 4.86,
-   "saat": "15:30",
+   "tip": "gunluk",
+   "baslik": "Gunluk sert hareket (asagi)",
+   "detay": "Onceki kapanisa gore %-6.77",
+   "siddet": 1.69,
+   "sym": "YEOTK",
+   "fiyat": 22.58,
+   "saat": "17:45",
    "gun": "2026-10-27",
-   "ts": "2026-10-27T12:30:00+00:00"
+   "ts": "2026-10-27T14:45:00+00:00"
   }
  ]
 }
