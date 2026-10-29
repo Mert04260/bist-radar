@@ -1,9 +1,9 @@
 {
  "surum": "v6",
  "mod": "gun-ici",
- "guncelleme": "28.10.2026 22:05",
+ "guncelleme": "29.10.2026 16:49",
  "veri_saat": "28.10 12:30",
- "gecikme_dk": 575,
+ "gecikme_dk": 1699,
  "bayat": true,
  "bar": "15m",
  "taranan": 128,
@@ -122,8 +122,8 @@
   {
    "tip": "hacim",
    "baslik": "Hacim patlamasi",
-   "detay": "12:30 barinda hacim, ayni saatin ortalamasinin 5.5 kati",
-   "siddet": 2.2,
+   "detay": "12:30 barinda hacim, ayni saatin ortalamasinin 5.4 kati",
+   "siddet": 2.15,
    "sym": "PNSUT",
    "fiyat": 8.97,
    "saat": "12:30",
