@@ -1,14 +1,25 @@
 {
  "surum": "v6",
  "mod": "gun-ici",
- "guncelleme": "05.11.2026 18:01",
- "veri_saat": "05.11 17:30",
- "gecikme_dk": 31,
- "bayat": false,
+ "guncelleme": "06.11.2026 00:28",
+ "veri_saat": "05.11 17:45",
+ "gecikme_dk": 403,
+ "bayat": true,
  "bar": "15m",
  "taranan": 128,
  "alinamayan": 0,
  "anomali": [
+  {
+   "tip": "hareket",
+   "baslik": "Ani fiyat hareketi (asagi)",
+   "detay": "Son 1 saatte %-6.61",
+   "siddet": 3.0,
+   "sym": "ASTOR",
+   "fiyat": 149.8,
+   "saat": "17:45",
+   "gun": "2026-11-05",
+   "ts": "2026-11-05T14:45:00+00:00"
+  },
   {
    "tip": "gap",
    "baslik": "Acilis boslugu (yukari)",
@@ -16,9 +27,9 @@
    "siddet": 3.0,
    "sym": "KONTR",
    "fiyat": 2.67,
-   "saat": "13:45",
+   "saat": "17:45",
    "gun": "2026-11-05",
-   "ts": "2026-11-05T10:45:00+00:00"
+   "ts": "2026-11-05T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -27,9 +38,9 @@
    "siddet": 3.0,
    "sym": "PASEU",
    "fiyat": 27.86,
-   "saat": "17:30",
+   "saat": "17:45",
    "gun": "2026-11-05",
-   "ts": "2026-11-05T14:30:00+00:00"
+   "ts": "2026-11-05T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -38,20 +49,9 @@
    "siddet": 3.0,
    "sym": "PEKGY",
    "fiyat": 0.88,
-   "saat": "17:30",
+   "saat": "17:45",
    "gun": "2026-11-05",
-   "ts": "2026-11-05T14:30:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+10.19",
-   "siddet": 2.55,
-   "sym": "MAGEN",
-   "fiyat": 5.3,
-   "saat": "17:30",
-   "gun": "2026-11-05",
-   "ts": "2026-11-05T14:30:00+00:00"
+   "ts": "2026-11-05T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -60,9 +60,9 @@
    "siddet": 2.5,
    "sym": "PEKGY",
    "fiyat": 0.88,
-   "saat": "17:30",
+   "saat": "17:45",
    "gun": "2026-11-05",
-   "ts": "2026-11-05T14:30:00+00:00"
+   "ts": "2026-11-05T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -71,9 +71,9 @@
    "siddet": 2.49,
    "sym": "KRDMD",
    "fiyat": 36.72,
-   "saat": "17:30",
+   "saat": "17:45",
    "gun": "2026-11-05",
-   "ts": "2026-11-05T14:30:00+00:00"
+   "ts": "2026-11-05T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -82,9 +82,9 @@
    "siddet": 2.49,
    "sym": "PASEU",
    "fiyat": 27.86,
-   "saat": "17:30",
+   "saat": "17:45",
    "gun": "2026-11-05",
-   "ts": "2026-11-05T14:30:00+00:00"
+   "ts": "2026-11-05T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -93,20 +93,9 @@
    "siddet": 2.47,
    "sym": "KONTR",
    "fiyat": 2.67,
-   "saat": "13:45",
+   "saat": "17:45",
    "gun": "2026-11-05",
-   "ts": "2026-11-05T10:45:00+00:00"
-  },
-  {
-   "tip": "gunluk",
-   "baslik": "Gunluk sert hareket (yukari)",
-   "detay": "Onceki kapanisa gore %+9.83",
-   "siddet": 2.46,
-   "sym": "BTCIM",
-   "fiyat": 1.9,
-   "saat": "17:30",
-   "gun": "2026-11-05",
-   "ts": "2026-11-05T14:30:00+00:00"
+   "ts": "2026-11-05T14:45:00+00:00"
   },
   {
    "tip": "gunluk",
@@ -115,20 +104,31 @@
    "siddet": 2.4,
    "sym": "SKBNK",
    "fiyat": 3.65,
-   "saat": "17:30",
+   "saat": "17:45",
    "gun": "2026-11-05",
-   "ts": "2026-11-05T14:30:00+00:00"
+   "ts": "2026-11-05T14:45:00+00:00"
   },
   {
-   "tip": "hacim",
-   "baslik": "Hacim patlamasi",
-   "detay": "17:30 barinda hacim, ayni saatin ortalamasinin 5.8 kati",
-   "siddet": 2.32,
-   "sym": "DEVA",
-   "fiyat": 78.1,
-   "saat": "17:30",
+   "tip": "gunluk",
+   "baslik": "Gunluk sert hareket (asagi)",
+   "detay": "Onceki kapanisa gore %-9.54",
+   "siddet": 2.39,
+   "sym": "ASTOR",
+   "fiyat": 149.8,
+   "saat": "17:45",
    "gun": "2026-11-05",
-   "ts": "2026-11-05T14:30:00+00:00"
+   "ts": "2026-11-05T14:45:00+00:00"
+  },
+  {
+   "tip": "gunluk",
+   "baslik": "Gunluk sert hareket (yukari)",
+   "detay": "Onceki kapanisa gore %+9.25",
+   "siddet": 2.31,
+   "sym": "BTCIM",
+   "fiyat": 1.89,
+   "saat": "17:45",
+   "gun": "2026-11-05",
+   "ts": "2026-11-05T14:45:00+00:00"
   },
   {
    "tip": "gap",
@@ -136,10 +136,10 @@
    "detay": "Acilis dunku kapanisa gore %+5.85 (bedelsiz/temettu duzeltmesi olabilir - teyit et)",
    "siddet": 1.95,
    "sym": "BRYAT",
-   "fiyat": 1294.0,
-   "saat": "17:30",
+   "fiyat": 1281.0,
+   "saat": "17:45",
    "gun": "2026-11-05",
-   "ts": "2026-11-05T14:30:00+00:00"
+   "ts": "2026-11-05T14:45:00+00:00"
   }
  ]
 }
